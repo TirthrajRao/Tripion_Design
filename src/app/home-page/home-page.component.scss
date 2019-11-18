@@ -23,6 +23,7 @@ ion-menu-button {
     font-weight: 600;
     margin-left: 5px;
     font-size  : 22px;
+    line-height: 24px
 }
 
 // ion header css end here
@@ -98,7 +99,8 @@ ion-menu-button:hover {
 
     .country_details {
         p {
-            font-size: 17px;
+            font-size: 16px;
+            font-weight: 500;
         }
 
         li {

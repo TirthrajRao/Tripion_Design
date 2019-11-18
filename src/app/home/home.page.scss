@@ -98,12 +98,14 @@ $blue  : #584BDD;
 
     .menu_content {
         padding: 25px 0px;
+        margin-top: 15px;
+
 
         .menu_list {
             outline    : none;
             align-items: center;
             display    : flex;
-            padding    : 1.35vh 25px 1.35vh 65px;
+            padding    : 1.37vh 25px 1.37vh 70px;
             cursor     : pointer;
             position   : relative;
 
