@@ -1,10 +1,10 @@
-$purple: #AA55FF;
-$blue: #584BDD;
-$green: #2FE57C;
+$purple: #0575E6;
+$blue  : #021B79;
+$green : #2FE57C;
 
 // content css start here
 ion-content {
-    --background: linear-gradient(#AA55FF, #584BDD) !important;
+    --background: linear-gradient(#0575E6, #021B79) !important;
     &:after {
         content: "";
         background-image: url('../../assets/images/illustration.png');
@@ -66,7 +66,7 @@ ion-content {
         width: 100%;
         font-weight: 500;
         outline: none;
-        background: linear-gradient(to right, $blue, $purple);
+        background: linear-gradient(to right, $purple,  $blue);
         ion-img {
             position: absolute;
             height: 24px;
