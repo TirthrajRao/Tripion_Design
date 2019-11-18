@@ -1,0 +1,106 @@
+$purple: #AA55FF;
+$blue: #584BDD;
+$green: #2FE57C;
+
+// content css end here
+ion-content {
+    --background: #AA55FF !important;
+    &:after {
+        content: "";
+        background-image: url('../../assets/images/illustration.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+        background-attachment: fixed;
+        padding-right: 100%;
+        padding-bottom: calc(100vh - 76px);
+        z-index: 1;
+        position: absolute;
+    }
+}
+
+.profile_content {
+    padding: 10px 12px;
+    position: relative;
+    z-index: 11;
+}
+
+.rawards_point {
+    padding: 0px 15px;
+    ion-img {
+        width: 80px;
+        float: left;
+    }
+    span {
+        font-size: 60px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 1.2;
+    }
+}
+
+.card {
+    margin-top: 15px;
+    .card_header {
+        p {
+            color: #434A5E;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 15px;
+            line-height: 20px;
+            border-bottom: 1px solid #C7CBD6;
+        }
+    }
+    .card_body {
+        padding: 20px 10px 6px 10px;
+        .profile_detail {
+            box-shadow: 1px 2px 7px #95989A;
+            border-radius: 5px;
+            padding: 8px 10px 13px 10px;
+            margin-bottom: 12px;
+            p {
+                color: #7F8DAB;
+                font-size: 14px;
+                line-height: 2.3;
+            }
+            h6 {
+                font-size: 18px;
+                color: #000;
+            }
+        }
+        .edit_img {
+            ion-img {
+                height: 25px;
+                width: 25px;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 16px;
+            }
+        }
+    }
+}
+
+.uograde_premium {
+    padding: 25px 5px;
+    button {
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 18px 0px;
+        color: #ffffff;
+        font-size: 16px;
+        position: relative;
+        width: 100%;
+        font-weight: 500;
+        outline: none;
+        background: #C64E21;
+        ion-img {
+            position: absolute;
+            height: 26px;
+            width: 26px;
+            left: 3%;
+            top: 10px;
+        }
+    }
+}

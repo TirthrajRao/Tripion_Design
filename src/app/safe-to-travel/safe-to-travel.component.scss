@@ -1,0 +1,54 @@
+$purple: #AA55FF;
+$blue  : #584BDD;
+
+// content css start here 
+ion-content {
+    --background: linear-gradient(#AA55FF, #584BDD);
+
+    &:after {
+        content              : "";
+        background-image     : url('../../assets/images/illustration.png');
+        background-repeat    : no-repeat;
+        background-position  : center bottom;
+        background-size      : contain;
+        background-attachment: fixed;
+        padding-right        : 100%;
+        padding-bottom       : calc(100vh - 76px);
+        z-index              : 1;
+        position             : absolute;
+    }
+}
+
+.benefits_content {
+    position: relative;
+    z-index : 11;
+    padding : 10px;
+}
+
+.card {
+    margin-bottom: 12px;
+
+    .card_header {
+        border-bottom: 1px solid #C7CBD6;
+        padding      : 12px 15px;
+
+        p {
+            color      : #434A5E;
+            font-weight: 600;
+            line-height: 30px;
+            font-size  : 18px;
+        }
+    }
+
+    .card_body {
+        padding: 6px 15px 20px 15px;
+
+        p {
+            color        : #7F8DAB;
+            font-weight  : 600;
+            line-height  : 40px;
+            font-size    : 15px;
+            border-bottom: 1px solid #C7CBD6;
+        }
+    }
+}

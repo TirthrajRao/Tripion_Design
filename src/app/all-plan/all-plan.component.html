@@ -1,0 +1,51 @@
+
+<ion-header>
+    <ion-toolbar>
+      <div class="top_part w-100">
+        <div class="float-right icon_sec">
+          <ion-menu-button></ion-menu-button>
+        </div>
+        <div class="text-center home_text">
+            USA
+        </div>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <div class="all_plan">
+    <div class="card w-100" routerLink="/home/plan-option">
+      <div class="select_plan float-left">
+        <ion-checkbox checked="true"> </ion-checkbox>
+        <ion-label class="ml-3">Plan 1</ion-label>
+      </div>
+      <div class="plan_img float-right mr-2">
+        <ion-img src="../../assets/images/plane.png"></ion-img>
+      </div>
+    </div>
+    <div class="card w-100">
+      <div class="select_plan float-left">
+        <ion-checkbox> </ion-checkbox>
+        <ion-label class="ml-3">Plan 2</ion-label>
+      </div>
+      <div class="plan_img float-right mr-2">
+        <ion-img src="../../assets/images/plane.png"></ion-img>
+      </div>
+    </div>
+    <div class="card w-100">
+      <div class="select_plan float-left">
+        <ion-checkbox> </ion-checkbox>
+        <ion-label class="ml-3">Plan 3</ion-label>
+      </div>
+      <div class="plan_img float-right mr-2">
+        <ion-img src="../../assets/images/plane.png"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div class="select_for_continue">
+    <p class="text-center text-white">Choose one of the following to continue</p>
+    <button type="submit" class="text-center text-white">Book with us</button>
+    <button type="submit" class="text-center text-white">Book with 3rd Party apps</button>
+    <button type="submit" class="text-center text-white">Do things your way</button>
+  </div>
+</ion-content>

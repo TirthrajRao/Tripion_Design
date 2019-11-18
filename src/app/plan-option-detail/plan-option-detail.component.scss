@@ -1,0 +1,47 @@
+$purple: #AA55FF;
+$blue: #584BDD;
+ 
+// content css start here 
+ion-content {
+    --background: linear-gradient(#AA55FF, #584BDD);
+    &:after {
+        content: "";
+        background-image: url('../../assets/images/illustration.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+        background-attachment: fixed;
+        padding-right: 100%;
+        padding-bottom: calc(100vh - 76px);
+        z-index: 1;
+        position: absolute;
+    }
+}
+
+.plan_option_content {
+    padding: 0px 10px;
+    position: relative;
+    z-index: 11;
+    .card {
+        border: none;
+        cursor: pointer;
+        h6 {
+            color: #434A5E;
+            font-size: 18px;
+            padding: 18px 15px;
+            font-weight: 500;
+            border-bottom: 1px solid #C7CBD6;
+        }
+        h3 {
+            color: #434A5E;
+            font-size: 18px;
+            padding: 18px 0px;
+        }
+        p {
+            padding: 0px 12px 15px 12px;
+            font-size: 15px;
+            color: #434A5E;
+            line-height: 1.7;
+        }
+    }
+}

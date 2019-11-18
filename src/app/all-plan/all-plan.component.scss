@@ -1,0 +1,87 @@
+$purple: #AA55FF;
+$blue: #584BDD;
+$green: #5ce67b;
+// header css start here 
+.home_text {
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+// header css end here 
+// ION content START HERE
+ion-content {
+    --background: linear-gradient(#AA55FF, #584BDD);
+    &:after {
+        content: "";
+        background-image: url('../../assets/images/illustration.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+        background-attachment: fixed;
+        padding-right: 100%;
+        padding-bottom: calc(100vh - 76px);
+        z-index: 1;
+        position: absolute;
+    }
+}
+
+.all_plan {
+    padding: 0px 10px;
+    position: relative;
+    z-index: 11;
+    p {
+        font-size: 18px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+    .card {
+        cursor: pointer;
+        padding: 10px 14px;
+        display: inline-block;
+        margin-bottom: 5px;
+        border-radius: 7px;
+        .select_plan {
+            margin-top: 3px;
+            ion-checkbox {
+                vertical-align: middle;
+                --background-checked: #A354FD;
+                --border-color-checked: #A354FD;
+            }
+            ion-label {
+                vertical-align: middle;
+                font-weight: 600;
+                font-size: 17px;
+            }
+        }
+        .plan_img {
+            height: 30px;
+            width: 30px;
+            i {
+                font-size: 30px;
+                color: #c7cbd6;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.select_for_continue {
+    padding: 15px 10px;
+    z-index: 11;
+    position: relative;
+    p {
+        font-weight: 500;
+        font-size: 16px;
+    }
+    button {
+        margin-top: 12px;
+        width: 100%;
+        font-weight: 500;
+        padding: 14px;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: $green;
+        outline: none;
+    }
+}

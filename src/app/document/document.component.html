@@ -1,0 +1,117 @@
+<ion-header>
+  <ion-toolbar class="toolbar-color1">
+    <ion-row>
+      <ion-col size='2'>
+        <div class="back_icon">
+          <ion-img src="../../assets/images/back_icon.png"></ion-img>
+        </div>
+      </ion-col>
+      <ion-col size='8'>
+        <div class="middle_sec text-center text-white">
+          <span>Documents</span>
+        </div>
+      </ion-col>
+      <ion-col size='2'>
+        <div class="icon_sec">
+          <ion-menu-button></ion-menu-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <div class="document_content">
+    <div class="upload_img text-center">
+      <ion-img src="../../assets/images/Upload.png"></ion-img>
+    </div>
+    <div class="back_color">
+      <div class="select_files text-center">
+        <button class="tect-center text-white">
+          <ion-img src="../../assets/images/camera.png"></ion-img>Use Camera
+        </button>
+        <p class="text-center or_text">or</p>
+        <div class="choose_file">
+          <input type="file" id="file" name="files" value="files" style="display: none;">
+          <label class="upload_photo" for="file">
+            <ion-img src="../../assets/images/file.png"></ion-img>Select from Files
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="upload_file_progress">
+        <div class="row">
+          <div class="col-3">
+            <div class="uploded_image">
+              <ion-img src="../../assets/images/doc1.png"></ion-img>
+            </div>
+          </div>
+          <div class="col-7 p-0">
+            <p class="file_name">File 1.jpg</p>
+            <div class="progress_update w-100 mt-3">
+              <ion-progress-bar value="0.8"></ion-progress-bar>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="progress_design w-100">
+              <ion-img src="../../assets/images/pause.png" class="float-right"></ion-img>
+              <span class="float-right mt-2">75%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="upload_file_progress">
+        <div class="row">
+          <div class="col-3">
+            <div class="uploded_image">
+              <ion-img src="../../assets/images/doc1.png"></ion-img>
+            </div>
+          </div>
+          <div class="col-7 p-0 progress_bar">
+            <p class="file_name">File 1.jpg</p>
+            <div class="progress_update w-100 mt-3">
+              <ion-progress-bar value="0.8"></ion-progress-bar>
+              <h6>File too big to upload. MAX SIZE = 2 MB</h6>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="progress_design w-100">
+              <ion-img src="../../assets/images/yellow.png" class="float-right"></ion-img>
+              <span class="float-right mt-2">error!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="upload_file_progress">
+        <div class="row">
+          <div class="col-3">
+            <div class="uploded_image">
+              <ion-img src="../../assets/images/doc1.png"></ion-img>
+            </div>
+          </div>
+          <div class="col-7 p-0">
+            <p class="file_name">File 1.jpg</p>
+            <div class="progress_update w-100 mt-3">
+              <ion-progress-bar value="1"></ion-progress-bar>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="progress_design w-100">
+              <ion-img src="../../assets/images/right.png" class="float-right"></ion-img>
+              <span class="float-right mt-2">100%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="finish_button">
+        <button type="submit" routerLink='/home/document'>
+          <ion-img src="../../assets/images/cloud.png"></ion-img>
+          Finish
+        </button>
+      </div>
+  </div>
+</ion-content>
