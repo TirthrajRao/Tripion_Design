@@ -1,9 +1,9 @@
-$purple: #AA55FF;
-$blue: #584BDD;
+$purple: #0575E6;
+$blue  : #021B79;
 $green: #2FE57C;
 // header css start here 
 .upload_img {
-    background:linear-gradient(#AA55FF, #584BDD);
+    background:linear-gradient(#0575E6, #021B79);
     ion-img{
     height: 120px;
     width: 120px;
@@ -46,7 +46,7 @@ ion-content {
     height: auto;
     
     button {
-        background-color: $green;
+        background-color: $blue;
         padding: 15px;
         font-size: 16px;
         font-weight: 500;
@@ -72,7 +72,7 @@ ion-content {
     label {
         width: 100%;
         color: #fff;
-        background: linear-gradient(to right, $blue, $purple);
+        background: linear-gradient(to right, $purple, $blue);
         padding: 15px;
         font-size: 16px;
         font-weight: 500;
@@ -84,6 +84,7 @@ ion-content {
             height: 24px;
             width: 24px;
             left: 5%;
+            bottom: 10px;
         }
     }
 }
@@ -101,7 +102,7 @@ ion-content {
             width: 100%;
             font-weight: 500;
             outline: none;
-            background: linear-gradient(to right, $blue, $purple);
+            background: linear-gradient(to right, $purple, $blue);
             ion-img {
                 position: absolute;
                 height: 24px;

@@ -1,7 +1,7 @@
-$purple: #AA55FF;
-$blue: #584BDD;
-$green: #5ce67b;
-// header css start here 
+$purple: #0575E6;
+$blue  : #021B79;
+$green : #2FE57C;
+
 .home_text {
     color: #fff;
     font-weight: 600;
@@ -11,7 +11,7 @@ $green: #5ce67b;
 // header css end here 
 // ION content START HERE
 ion-content {
-    --background: linear-gradient(#AA55FF, #584BDD);
+    --background: linear-gradient(#0575E6, #021B79) !important;
     &:after {
         content: "";
         background-image: url('../../assets/images/illustration.png');
@@ -27,14 +27,13 @@ ion-content {
 }
 
 .all_plan {
-    padding: 0px 10px;
+    padding: 0px 10px 15px 10px;
     position: relative;
     z-index: 11;
     p {
         font-size: 18px;
         margin-bottom: 8px;
-        text-transform: uppercase;
-    }
+          }
     .card {
         cursor: pointer;
         padding: 10px 14px;
@@ -81,7 +80,8 @@ ion-content {
         padding: 14px;
         border-radius: 5px;
         font-size: 16px;
-        background-color: $green;
+        background-color: #003574;
         outline: none;
+        box-shadow: 1px 1px 2px #2FE57C;
     }
 }

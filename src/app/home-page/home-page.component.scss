@@ -1,5 +1,5 @@
-$purple: #AA55FF;
-$blue  : #584BDD;
+$purple: #0575E6;
+$blue  : #021B79;
 
 // ion header css start here
 ion-header ion-toolbar:first-child {
@@ -46,9 +46,9 @@ ion-content {
 }
 
 .all_content {
-    padding : 20px 0px;
-    position: relative;
-    z-index : 11;
+    padding-top: 15px;
+    position   : relative;
+    z-index    : 11;
 }
 
 ion-menu-button:hover {
@@ -67,47 +67,49 @@ ion-menu-button:hover {
         }
 
         span {
-            font-size  : 20px;
+            font-size  : 19px;
             font-weight: 500;
         }
     }
 
     .city_name {
         p {
-            font-size  : 20px;
+            font-size  : 19px;
             font-weight: 500;
         }
     }
 }
 
 .home_details {
-    padding: 0px 10px;
+    padding: 0px 10px 25px;
 
     .card {
         background   : linear-gradient($purple, $blue);
-        padding      : 10px 15px;
+        padding      : 12px 15px 18px;
         border       : none;
-        border-radius: 57x;
+        border-radius: 5px;
+        min-height   : 100px;
         cursor       : pointer;
     }
 
     .booking_details p {
-        font-size  : 16px;
-        font-weight: 300;
-        margin-top : 15px;
+        font-size  : 18px;
+        font-weight: 400;
+        margin-top : 20px;
     }
 
     .country_details {
         p {
-            font-size: 16px;
+            font-size  : 16px;
             font-weight: 500;
+            line-height: 32px;
         }
 
         li {
             color      : #D9D9D9;
             list-style : none;
-            font-size  : 12px;
-            line-height: 1.5;
+            font-size  : 13px;
+            line-height: 20px;
             position   : relative;
             margin-left: 20px;
 
@@ -141,4 +143,31 @@ ion-menu-button:hover {
             }
         }
     }
+}
+
+// footer start here 
+.footer-md:before {
+    background-image: unset;
+}
+
+ion-footer ion-toolbar:last-child {
+       --background: linear-gradient(#0575E6, #021B79) !important;
+    position    : relative;
+    opacity     : 0.9;
+}
+.footer_sec{
+    padding: 16px 0px 14px 0px;
+.footer_img{
+    cursor: pointer;
+    ion-img{
+        height: 36px;
+    }
+    p{
+        color: #fff;
+        font-size: 12px;
+        margin-top: 10px;
+        line-height: 14px;
+        text-align: center;
+    }
+}
 }

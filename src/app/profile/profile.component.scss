@@ -1,10 +1,10 @@
-$purple: #AA55FF;
-$blue: #584BDD;
+$purple: #0575E6;
+$blue  : #021B79;
 $green: #2FE57C;
 
 // content css end here
 ion-content {
-    --background: #AA55FF !important;
+    --background: linear-gradient(#0575E6, #021B79);
     &:after {
         content: "";
         background-image: url('../../assets/images/illustration.png');
@@ -44,7 +44,7 @@ ion-content {
     .card_header {
         p {
             color: #434A5E;
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 600;
             padding: 15px;
             line-height: 20px;
@@ -64,7 +64,7 @@ ion-content {
                 line-height: 2.3;
             }
             h6 {
-                font-size: 18px;
+                font-size: 17px;
                 color: #000;
             }
         }
@@ -94,7 +94,7 @@ ion-content {
         width: 100%;
         font-weight: 500;
         outline: none;
-        background: #C64E21;
+        background: #003574;
         ion-img {
             position: absolute;
             height: 26px;

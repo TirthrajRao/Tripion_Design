@@ -1,9 +1,9 @@
-$purple: #AA55FF;
-$blue: #584BDD;
+$purple: #0575E6;
+$blue  : #021B79;
 
 // content css start here 
 ion-content {
-    --background: linear-gradient(#AA55FF, #584BDD);
+    --background: linear-gradient(#0575E6, #021B79);
     &:after {
         content: "";
         background-image: url('../../assets/images/illustration.png');
@@ -19,7 +19,7 @@ ion-content {
 }
 
 .plan_option_content {
-    padding: 0px 10px;
+    padding: 0px 10px 20px 10px;
     position: relative;
     z-index: 11;
     .card {
@@ -127,7 +127,7 @@ ion-content {
                 width: 100%;
                 font-weight: 500;
                 outline: none;
-                background: linear-gradient(to right, $blue, $purple);
+                background: linear-gradient(to right, $purple, $blue);
                 ion-img {
                     position: absolute;
                     height: 24px;
@@ -138,4 +138,31 @@ ion-content {
             }
         }
     }
+}
+
+// footer start here 
+.footer-md:before {
+    background-image: unset;
+}
+
+ion-footer ion-toolbar:last-child {
+       --background: linear-gradient(#0575E6, #021B79) !important;
+    position    : relative;
+    opacity     : 0.9;
+}
+.footer_sec{
+    padding: 16px 0px 14px 0px;
+.footer_img{
+    cursor: pointer;
+    ion-img{
+        height: 36px;
+    }
+    p{
+        color: #fff;
+        font-size: 12px;
+        margin-top: 10px;
+        line-height: 14px;
+        text-align: center;
+    }
+}
 }

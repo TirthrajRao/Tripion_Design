@@ -1,9 +1,10 @@
-$purple: #AA55FF;
-$blue  : #584BDD;
+$purple: #0575E6;
+$blue  : #021B79;
+$green : #2FE57C;
 
-// content css start here 
+// content css start here
 ion-content {
-    --background: linear-gradient(#AA55FF, #584BDD);
+    --background: linear-gradient(#0575E6, #021B79) !important;
 
     &:after {
         content              : "";
@@ -22,7 +23,7 @@ ion-content {
 .benefits_content {
     position: relative;
     z-index : 11;
-    padding : 10px;
+    padding : 0px 10px 20px 10px;
 }
 
 .card {
@@ -30,13 +31,21 @@ ion-content {
 
     .card_header {
         border-bottom: 1px solid #C7CBD6;
-        padding      : 12px 15px;
+        padding      : 10px 12px;
+        width: 100%;
+        display: inline-block;
 
         p {
             color      : #434A5E;
             font-weight: 600;
             line-height: 30px;
             font-size  : 18px;
+            float: left;
+        }
+        ion-img{
+            width: 32px;
+    height: 28px;
+    float: right;
         }
     }
 

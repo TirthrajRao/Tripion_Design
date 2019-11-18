@@ -1,5 +1,5 @@
-$purple: #AA55FF;
-$blue  : #584BDD;
+$purple: #0575E6;
+$blue  : #021B79;
 
 // ION HEADER START HERE
 .header-md:after {
@@ -73,10 +73,9 @@ $blue  : #584BDD;
 .main_background {
     background-image     : url("../../assets/images/illustration.png");
     background-repeat    : no-repeat;
-    background-position  : center bottom;
-    background-size      : contain;
+    background-position  : bottom;
+    background-size      : 100% auto;
     height               : calc(100vh - 30px);
-    background-attachment: fixed;
 }
 
 .bg_home {
@@ -97,15 +96,14 @@ $blue  : #584BDD;
     }
 
     .menu_content {
-        padding: 25px 0px;
-        margin-top: 15px;
+        padding: 40px 0px 0px;
 
 
         .menu_list {
             outline    : none;
             align-items: center;
             display    : flex;
-            padding    : 1.37vh 25px 1.37vh 70px;
+            padding    : 1.5vh 25px 1.5vh 70px;
             cursor     : pointer;
             position   : relative;
 

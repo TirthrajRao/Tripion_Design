@@ -1,10 +1,38 @@
-$purple: #AA55FF;
-$blue  : #584BDD;
+$purple: #0575E6;
+$blue  : #021B79;
 $green : #2FE57C;
+
+
+// ion header css start here
+ion-header ion-toolbar:first-child {
+    --background   : #fff !important;
+    height         : 80px;
+    justify-content: center;
+    align-items    : center;
+    display        : flex;
+}
+
+.header-md:after {
+    background-image: unset;
+}
+
+ion-menu-button {
+    --color: #AA55FF !important;
+}
+
+.home_text {
+    color      : #AA55FF!important;
+    font-weight: 600;
+    margin-left: 5px;
+    font-size  : 22px;
+    line-height: 24px
+}
+
+// ion header css end here
 
 // content css start here
 ion-content {
-    --background: linear-gradient(#AA55FF, #584BDD) !important;
+    --background:#fff!important;
 
     &:after {
         content              : "";
@@ -21,12 +49,14 @@ ion-content {
 }
 
 .benefits_content {
-    padding : 0px 10px;
+    padding : 0px 10px 40px 10px;
     z-index : 11;
     position: relative;
 }
 
 .card {
+    box-shadow: 2px 10px 4px #F2EEEE;
+    border: none;
     .card_header {
         border-bottom: 1px solid #C7CBD6;
         padding      : 12px 15px;
@@ -75,7 +105,7 @@ ion-content {
             width        : 100%;
             font-weight  : 500;
             outline      : none;
-            background   : linear-gradient(to right, $blue, $purple);
+            background   : linear-gradient(to right, $purple, $blue);
 
             ion-img {
                 position: absolute;

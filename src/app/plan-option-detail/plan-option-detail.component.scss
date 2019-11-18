@@ -1,9 +1,9 @@
-$purple: #AA55FF;
-$blue: #584BDD;
+$purple: #0575E6;
+$blue  : #021B79;
  
 // content css start here 
 ion-content {
-    --background: linear-gradient(#AA55FF, #584BDD);
+    --background: linear-gradient(#0575E6, #021B79);
     &:after {
         content: "";
         background-image: url('../../assets/images/illustration.png');
@@ -27,7 +27,7 @@ ion-content {
         cursor: pointer;
         h6 {
             color: #434A5E;
-            font-size: 18px;
+            font-size: 17px;
             padding: 18px 15px;
             font-weight: 500;
             border-bottom: 1px solid #C7CBD6;
@@ -41,7 +41,7 @@ ion-content {
             padding: 0px 12px 15px 12px;
             font-size: 15px;
             color: #434A5E;
-            line-height: 1.7;
+            line-height: 23px;
         }
     }
 }

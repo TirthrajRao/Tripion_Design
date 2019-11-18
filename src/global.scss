@@ -30,8 +30,8 @@
 @import "~@ionic/angular/css/flex-utils.css";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600");
 // common css
-$purple: #AA55FF;
-$blue  : #584BDD;
+$purple: #0575E6;
+$blue  : #021B79;
 $green : #5ce67b;
 
 body,
@@ -57,7 +57,7 @@ ul {
 
 // header css start here 
 ion-header ion-toolbar:first-child {
-    --background: #AA55FF !important;
+    --background: #0575E6 !important;
     height: 80px;
     justify-content: center;
     align-items: center;
@@ -80,7 +80,7 @@ ion-menu-button {
         height      : 22px;
         width       : 22px;
         float       : left;
-        margin-top  : 5px;
+        margin-top  : 2px;
         margin-right: 10px;
     }
 
