@@ -37,20 +37,20 @@ ion-content {
     }
 
     .payment_for {
-        padding: 6vh 15px 7vh 30px;
+        padding: 6vh 30px 7vh 40px;
 
         .payment_following {
-            font-size  : 17px;
+            font-size  : 18px;
             color      : #ADB3C4;
             margin-left: -18px;
             margin-top : 22px;
             font-weight: 500;
-            line-height: 45px;
+            line-height: 55px;
         }
 
         .payment_total {
-            font-size : 42px;
-            margin-top: 30px;
+            font-size : 45px;
+            margin-top: 9vh;
         }
 
         ul {
@@ -59,10 +59,10 @@ ion-content {
 
         li {
             list-style : none;
-            font-size  : 14px;
-            font-weight: 400;
+            font-size  : 20px;
+            font-weight: 500;
             color      : #fff;
-            line-height: 32px;
+            line-height: 38px;
             position   : relative;
 
             &:after {
@@ -77,8 +77,8 @@ ion-content {
 
             &:before {
                 content      : "";
-                width        : 7px;
-                height       : 7px;
+                width        : 8px;
+                height       : 8px;
                 border-radius: 50%;
                 background   : #FFFFFF;
                 position     : absolute;
@@ -98,19 +98,20 @@ ion-content {
 }
 
 .pay_now_button {
-    padding: 30px;
+    padding: 45px 30px;
 
     button {
         background   : linear-gradient(to right, $purple, $blue);
         color        : #ffffff;
-        padding      : 18px;
+        padding      : 21px 15px;
         border-radius: 5px;
-        font-size    : 17px;
+        font-size    : 20px;
         width        : 100%;
         font-weight  : 500;
         position     : relative;
         outline      : none;
         z-index      : 11;
+        cursor       : pointer;
 
         ion-img {
             position: absolute;

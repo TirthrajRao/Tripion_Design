@@ -57,11 +57,11 @@ ul {
 
 // header css start here 
 ion-header ion-toolbar:first-child {
-    --background: #0575E6 !important;
-    height: 80px;
+    --background   : #0575E6 !important;
+    height         : 80px;
     justify-content: center;
-    align-items: center;
-    display: flex;
+    align-items    : center;
+    display        : flex;
 }
 
 .header-md:after {
@@ -85,7 +85,7 @@ ion-menu-button {
     }
 
     span {
-        font-size  : 22px;
+        font-size  : 24px;
         font-weight: 600;
         line-height: 25px;
     }
@@ -93,8 +93,8 @@ ion-menu-button {
 
 .back_icon {
     ion-img {
-        height    : 16px;
-        width     : 16px;
+        height: 16px;
+        width : 16px;
         margin: 4px auto 0px auto;
     }
 }
