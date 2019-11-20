@@ -1,0 +1,115 @@
+$purple: #0575E6;
+$blue  : #021B79;
+$green : #2FE57C;
+
+// header css start here 
+ion-header ion-toolbar:first-child {
+    --background   : #fff !important;
+    height         : 80px;
+    justify-content: center;
+    align-items    : center;
+    display        : flex;
+}
+
+.header-md:after {
+    background-image: unset;
+}
+
+.middle_sec {
+    span {
+        font-size  : 24px;
+        font-weight: 600;
+        line-height: 25px;
+        color      : #804EE8 !important;
+    }
+}
+
+ion-menu-button {
+    --color: #804EE8;
+}
+
+// content css start here
+ion-content {
+    &:after {
+        content              : "";
+        background-image     : url('../../assets/images/illustration.png');
+        background-repeat    : no-repeat;
+        background-position  : center bottom;
+        background-size      : contain;
+        background-attachment: fixed;
+        padding-right        : 100%;
+        padding-bottom       : calc(100vh - 76px);
+        z-index              : 1;
+        position             : absolute;
+    }
+}
+
+.all_content {
+    padding : 0px 10px 15px 10px;
+    position: relative;
+    z-index : 11;
+}
+
+.user_details {
+    background   : linear-gradient($purple, $blue) !important;
+    border-radius: 7px;
+    padding      : 18px 13px 22px 13px;
+    position     : relative;
+      margin-top   : 18px;
+
+    .user_name {
+        p {
+            font-weight   : 600;
+            color         : #fff;
+            line-height   : 35px;
+            font-size: 17px;
+            cursor       : pointer;
+            text-transform: capitalize;
+        }
+    }
+
+    .valid_date_info {
+        display: inline-block;
+
+        .edit_icon {
+            cursor       : pointer;
+            ion-img {
+                width   : 27px;
+                position: absolute;
+                top     : 0;
+                bottom  : 0;
+            }
+        }
+
+        .valid_date {
+            small {
+                font-size  : 8px;
+                color      : #fff;
+                margin-left: 8px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size  : 12px;
+                color      : #fff;
+                font-weight: 500;
+                line-height: 5px;
+            }
+        }
+    }
+}
+
+.add_button {
+    a {
+        border-radius   : 50%;
+        background-color: #FA4D88;
+        position        : fixed;
+        bottom          : 25px;
+        right           : 25px;
+        padding         : 16px;
+
+        img {
+            height: 28px;
+        }
+    }
+}

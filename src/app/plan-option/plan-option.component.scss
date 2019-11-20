@@ -172,20 +172,20 @@ ion-footer ion-toolbar:last-child {
 }
 
 .footer_sec {
-    padding: 20px 4px 16px 3px;
+    padding: 10px 4px 10px 3px;
 
     .footer_img {
         cursor: pointer;
 
         ion-img {
-            height: 45px;
+            height: 32px;
         }
 
         p {
             color      : #fff;
-            font-size  : 13px;
-            margin-top : 13px;
-            line-height: 18px;
+            font-size  : 12px;
+            margin-top : 12px;
+            line-height: 16px;
             text-align : center;
         }
     }

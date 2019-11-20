@@ -34,12 +34,6 @@ $purple: #0575E6;
 $blue  : #021B79;
 $green : #5ce67b;
 
-body,
-html,
-* {
-    font-family: 'Montserrat', sans-serif !important;
-}
-
 h1,
 h2,
 h3,
@@ -85,9 +79,10 @@ ion-menu-button {
     }
 
     span {
-        font-size  : 24px;
+        font-size  : 23px;
         font-weight: 600;
-        line-height: 25px;
+        line-height: 30px;
+        font-family: 'Montserrat', sans-serif !important;
     }
 }
 
@@ -98,5 +93,10 @@ ion-menu-button {
         margin: 4px auto 0px auto;
     }
 }
-
+ion-content{
+    font-family: 'Montserrat', sans-serif !important;
+}
+ion-footer{
+    font-family: 'Montserrat', sans-serif !important;
+}
 // header css end here

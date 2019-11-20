@@ -1,0 +1,114 @@
+$purple: #0575E6;
+$blue  : #021B79;
+
+// ion header css start here
+ion-header ion-toolbar:first-child {
+    --background   : #000 !important;
+    height         : 80px;
+    justify-content: center;
+    align-items    : center;
+    display        : flex;
+}
+
+.header-md:after {
+    background-image: unset;
+}
+
+ion-menu-button {
+    --color: #fff !important;
+}
+
+
+// ion header css end here
+// ion content css start here
+ion-content {
+    --background: #000 !important;
+
+    &:after {
+        content              : "";
+        background-image     : url('../../assets/images/illustration.png');
+        background-repeat    : no-repeat;
+        background-position  : center bottom;
+        background-size      : contain;
+        background-attachment: fixed;
+        padding-right        : 100%;
+        padding-bottom       : calc(100vh - 76px);
+        z-index              : 1;
+        position             : absolute;
+    }
+}
+
+.all_content {
+    padding : 0px 15px 15px;
+    position: relative;
+    z-index : 11;
+}
+
+.all_visa_detail {
+    padding: 0px 10px 10px;
+}
+
+.visa_detail {
+    border-bottom: 1px solid gray;
+    margin-bottom: 30px;
+
+    p {
+        font-size  : 13px;
+        color      : #fff;
+        font-weight: 500;
+        line-height: 33px;
+    }
+
+    h6 {
+        font-size  : 17px;
+        color      : #fff;
+        font-weight: 500;
+        line-height: 20px;
+        line-height: 25px;
+    }
+}
+.visa_detail:last-child {
+    border-bottom: none;
+}
+
+.card {
+      background: linear-gradient(#E1F5FE, #9FA8DA);
+      padding: 20px 10px 50px 10px;
+
+    .all_image {
+        height  : 100px;
+        position: relative;
+        display : flex;
+
+    }
+
+    .remove_image {
+        height: 20px;
+        cursor: pointer;
+    }
+}
+
+.save_button {
+    padding: 30px 0px 10px 0px;
+    button {
+        border-radius: 9px;
+        cursor       : pointer;
+        padding      : 16px 0px;
+        color        : #ffffff;
+        font-size    : 18px;
+        position     : relative;
+        width        : 100%;
+        font-weight  : 600;
+        outline      : none;
+        background   : #003574;
+        box-shadow: 1px 8px 26px rgba( 129, 59, 219, 0.3);
+
+        ion-img {
+            position: absolute;
+            height  : 26px;
+            width   : 33px;
+            left    : 3%;
+            top     : 10px;
+        }
+    }
+}

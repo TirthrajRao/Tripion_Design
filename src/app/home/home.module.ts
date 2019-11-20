@@ -18,6 +18,11 @@ import { SafeTravelComponent } from '../safe-travel/safe-travel.component';
 import { SafeTravelDetailComponent } from '../safe-travel-detail/safe-travel-detail.component';
 import { BriefcaseComponent } from '../briefcase/briefcase.component';
 import { FolderDetailComponent } from '../folder-detail/folder-detail.component';
+import { OtherDocsComponent } from '../other-docs/other-docs.component';
+import { PassportsComponent } from '../passports/passports.component';
+import { PicturesComponent } from '../pictures/pictures.component';
+import { UserPassportDetailComponent } from '../user-passport-detail/user-passport-detail.component';
+import { VisaDetailComponent } from '../visa-detail/visa-detail.component';
 import { from } from 'rxjs';
 
 @NgModule({
@@ -76,6 +81,26 @@ import { from } from 'rxjs';
             component: FolderDetailComponent
           },
           {
+            path: 'passports',
+            component: PassportsComponent
+          },
+          {
+            path: 'other-docs',
+            component: OtherDocsComponent
+          },
+          {
+            path: 'pictures',
+            component: PicturesComponent
+          },
+          {
+            path: 'user-passport-detail',
+            component: UserPassportDetailComponent
+          },
+          {
+            path: 'visa-detail',
+            component: VisaDetailComponent
+          },
+          {
             path: 'plan-option-detail',
             component: PlanOptionDetailComponent
           },
@@ -113,6 +138,11 @@ import { from } from 'rxjs';
     SafeToTravelComponent,
     BriefcaseComponent,
     FolderDetailComponent,
+    OtherDocsComponent,
+    PassportsComponent,
+    PicturesComponent,
+    UserPassportDetailComponent,
+    VisaDetailComponent
   ]
 })
 export class HomePageModule { }

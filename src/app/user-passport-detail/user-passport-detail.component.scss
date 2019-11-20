@@ -1,0 +1,205 @@
+$purple: #0575E6;
+$blue  : #021B79;
+$green : #2FE57C;
+
+// content css start here
+ion-content {
+    --background: linear-gradient(#0575E6, #021B79) !important;
+
+    &:after {
+        content              : "";
+        background-image     : url('../../assets/images/illustration.png');
+        background-repeat    : no-repeat;
+        background-position  : center bottom;
+        background-size      : contain;
+        background-attachment: fixed;
+        padding-right        : 100%;
+        padding-bottom       : calc(100vh - 76px);
+        z-index              : 1;
+        position             : absolute;
+    }
+}
+
+.all_content {
+    padding : 0px 10px 15px 10px;
+    position: relative;
+    z-index : 11;
+}
+
+.add_button {
+    a {
+        border-radius   : 50%;
+        background-color: #FA4D88;
+        position        : fixed;
+        bottom          : 25px;
+        right           : 25px;
+        padding         : 16px;
+
+        img {
+            height: 28px;
+        }
+    }
+}
+
+.card {
+    background   : linear-gradient(#D500F9, #FFA000);
+    border-radius: 7px;
+    border       : none;
+    margin-bottom: 20px;
+
+    .card_header {
+        display      : inline-block;
+        border-bottom: 1px solid #fff;
+        padding      : 14px 0px;
+
+        ion-img {
+            cursor: pointer;
+            height: 20px;
+            float : right;
+        }
+
+        p {
+            text-align : center;
+            color      : #fff;
+            font-size  : 17px;
+            font-weight: 600;
+            line-height: 23px;
+        }
+    }
+
+    .card_body {
+        padding: 14px 10px;
+
+        .visa_number {
+            color      : #fff;
+            font-size  : 13px;
+            font-weight: 600;
+        }
+
+        .valid_date {
+            margin-bottom: 10px;
+
+            small {
+                font-size  : 8px;
+                color      : #fff;
+                margin-left: 9px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size  : 12px;
+                color      : #fff;
+                font-weight: 500;
+                line-height: 5px;
+            }
+        }
+
+    }
+}
+
+.card_detail {
+    display: inline-block;
+}
+.passport_image{
+    margin-top: 40px;
+}
+
+.passport_slide {
+    z-index: 1111;
+    width  : 100%;
+
+    ion-img {
+        height: 120px;
+    }
+}
+
+::ng-deep .slick-arrow {
+    button {
+        outline: none !important;
+    }
+}
+
+::ng-deep .passport_slider .slick-arrow {
+    background-color: transparent;
+    position        : absolute;
+    top             : 0;
+    bottom          : 0;
+    margin          : auto;
+    width           : 25px;
+    height          : 75px;
+    outline         : none !important;
+    z-index         : 111;
+    box-shadow: none !important;
+}
+
+::ng-deep .slick-arrow img {
+    height: 100%;
+    width : 100%;
+}
+
+::ng-deep .slick-arrow.nextarrow {
+    right: 0;
+}
+
+::ng-deep .slick-arrow.prevarrow {
+    left: 0;
+}
+
+::ng-deep .slick-list {
+    position: relative;
+    display : inline-block;
+    overflow: hidden;
+    width   : 100%;
+}
+
+::ng-deep .passport_slider .slick-dots li button:before {
+    font-size: 0;
+}
+::ng-deep .passport_slider ul.slick-dots li {
+    display: inline-block;
+    margin: 0px 2.5px;
+}
+::ng-deep .passport_slider .slick-dots li.slick-active button  {
+    background-color: #fff;
+    border       : 1px solid #fff;
+}
+::ng-deep .passport_slider .slick-dots li button {
+    width        : 10px;
+    height       : 10px;
+    padding      : 3px;
+    background   : transparent;
+    border-radius: 50%;
+    border       : 1px solid #707070;
+}
+
+
+// second slider start here
+::ng-deep .passport_slider1 .slick-arrow {
+    background-color: transparent;
+    position        : absolute;
+    top             : 0;
+    bottom          : 0;
+    margin          : auto;
+    width           : 25px;
+    height          : 40px;
+    outline         : none !important;
+    z-index         : 111;
+    box-shadow: none !important;
+}
+::ng-deep .passport_slider1 .slick-dots li button:before {
+    font-size: 0;
+}
+::ng-deep .passport_slider1 ul.slick-dots li {
+    display: inline-block;
+    margin: 0px 2.5px;
+}
+::ng-deep .passport_slider1 .slick-dots li.slick-active button  {
+  padding: 3px;
+}
+::ng-deep .passport_slider1 .slick-dots li button {
+    width        : 10px;
+    height       : 10px;
+    padding      : 2.5px;
+    background   : #fff;
+    border-radius: 50%;
+}
