@@ -34,7 +34,7 @@
         </div>
         <div class="col-6">
           <div class="valid_date_info w-100">
-            <div class="edit_icon">
+            <div class="edit_icon" routerLink='/home/edit-user-passport-detail'>
               <ion-img src="../../assets/images/edit_icon.png" class="float-left"></ion-img>
             </div>
             <div class="valid_date float-right">
@@ -47,30 +47,57 @@
       </div>
     </div>
     <div class="user_details">
-        <div class="row">
-          <div class="col-6">
-            <div class="user_name">
-              <p>Tirthraj Barot</p>
-            </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="user_name">
+            <p>Tirthraj Barot</p>
           </div>
-          <div class="col-6">
-            <div class="valid_date_info w-100">
-              <div class="edit_icon">
-                <ion-img src="../../assets/images/edit_icon.png" class="float-left"></ion-img>
-              </div>
-              <div class="valid_date float-right">
-                <small> Valid Up To :
-                </small>
-                <p>17-05-2019</p>
-              </div>
+        </div>
+        <div class="col-6">
+          <div class="valid_date_info w-100">
+            <div class="edit_icon">
+              <ion-img src="../../assets/images/edit_icon.png" class="float-left"></ion-img>
+            </div>
+            <div class="valid_date float-right">
+              <small> Valid Up To :
+              </small>
+              <p>17-05-2019</p>
             </div>
           </div>
         </div>
       </div>
-       <div class="add_button">
+    </div>
+    <div class="add_button" id="add-password">
       <a href="javascript:void(0);">
-         <img src="../../assets/images/plus.png">
+        <img src="../../assets/images/plus.png">
       </a>
+    </div>
+  </div>
+  <div class="modal_content_with_overlay" id="add-passport-modal" style="display: none;">
+    <div class="modal_body">
+      <div class="modal_header">
+        <p class="text-center">Add Passport</p>
+      </div>
+      <div class="modal_content">
+          <ion-input placeholder="Name in Passport" type="text"></ion-input>
+          <ion-input placeholder="Passport Number" type="text"></ion-input>
+        <ion-input placeholder="Date of Expiry" type="text"></ion-input>
+        <ion-input placeholder="Pictures of the Passport" type="text"></ion-input>
+               <div class="select_files">
+          <button>
+            <ion-img src="../../assets/images/file.png"></ion-img>Select from Files
+          </button>
+        </div>
+        <div class="selected_image_preview">
+            <ul>
+              <li><ion-img src="../../assets/images/doc1.png"></ion-img></li>
+              <li><ion-img src="../../assets/images/Passport.png"></ion-img></li>
+            </ul>
+          </div>
+        <div class="make_folder">
+          <button><i class="fas fa-plus"></i>Add Passport</button>
+        </div>
+      </div>
     </div>
   </div>
 </ion-content>

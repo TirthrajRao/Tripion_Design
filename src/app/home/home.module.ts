@@ -23,7 +23,7 @@ import { PassportsComponent } from '../passports/passports.component';
 import { PicturesComponent } from '../pictures/pictures.component';
 import { UserPassportDetailComponent } from '../user-passport-detail/user-passport-detail.component';
 import { VisaDetailComponent } from '../visa-detail/visa-detail.component';
-import { from } from 'rxjs';
+import { EditUserPassportDetailComponent } from '../edit-user-passport-detail/edit-user-passport-detail.component';
 
 @NgModule({
   imports: [
@@ -101,6 +101,10 @@ import { from } from 'rxjs';
             component: VisaDetailComponent
           },
           {
+            path: 'edit-user-passport-detail',
+            component: EditUserPassportDetailComponent
+          },
+          {
             path: 'plan-option-detail',
             component: PlanOptionDetailComponent
           },
@@ -142,7 +146,8 @@ import { from } from 'rxjs';
     PassportsComponent,
     PicturesComponent,
     UserPassportDetailComponent,
-    VisaDetailComponent
+    VisaDetailComponent,
+    EditUserPassportDetailComponent
   ]
 })
 export class HomePageModule { }

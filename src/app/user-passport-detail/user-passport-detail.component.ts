@@ -32,6 +32,14 @@ export class UserPassportDetailComponent implements OnInit {
       prevArrow: '<button class="prevarrow" ><img src="../assets/images/prev.png"></button>',
       nextArrow: '<button class="nextarrow"><img src="../assets/images/next.png"></button>',
     });
-  }
 
+    
+    $('#add-visa').click(function () {
+      $('#add-visa-modal').fadeIn();
+    });
+    $('.make_folder').click(function () {
+      $('#add-visa-modal').css("display", 'none');
+    });
+  }
+  
 }

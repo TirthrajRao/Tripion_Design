@@ -1,8 +1,7 @@
 $purple: #0575E6;
 $blue  : #021B79;
-$green : #2FE57C;
 
-// header css start here 
+// ion header css start here
 ion-header ion-toolbar:first-child {
     --background   : #fff !important;
     height         : 80px;
@@ -15,21 +14,24 @@ ion-header ion-toolbar:first-child {
     background-image: unset;
 }
 
-.middle_sec {
-    span {
-        font-size  : 24px;
-        font-weight: 600;
-        line-height: 25px;
-        color      : #003574 !important;
-    }
-}
-
 ion-menu-button {
-    --color: #003574;
+    --color: #707070 !important;
 }
 
-// content css start here
+.home_text {
+    color      : #000;
+    font-weight: 600;
+    margin-left: 5px;
+    font-size  : 22px;
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+// ion header css end here
+// ion content css start here
 ion-content {
+    --background: #fff !important;
+
     &:after {
         content              : "";
         background-image     : url('../../assets/images/illustration.png');
@@ -45,59 +47,53 @@ ion-content {
 }
 
 .all_content {
-    padding : 0px 10px 15px 10px;
-    position: relative;
-    z-index : 11;
+    padding: 10px;
+    position   : relative;
+    z-index    : 11;
 }
-
-.user_details {
-    background   : linear-gradient($purple, $blue) !important;
-    border-radius: 7px;
-    padding      : 18px 13px 22px 13px;
-    position     : relative;
-    margin-top   : 18px;
-
-    .user_name {
-        p {
-            font-weight   : 600;
-            color         : #fff;
-            line-height   : 35px;
-            font-size     : 17px;
-            cursor        : pointer;
-            text-transform: capitalize;
+.all_detail{
+    display: inline-block;
+    padding: 6px 10px;
+    position: relative;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    ion-img{
+        width: 24px;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        bottom: 0;
+    }
+    .user_detail{
+        small{
+            color: #7F8DAB;
+            font-size: 13px;
+            line-height: 30px;
+        }
+        p{
+            color: #000;
+            font-size: 18px;
+            font-weight: 600;
         }
     }
+}
+.card {
+    background-color: rgba(127, 141, 171, 0.16);
+    padding: 20px 10px 30px 10px;
+    border: none;
 
-    .valid_date_info {
-        display: inline-block;
+  .all_image {
+      height  : 125px;
+      position: relative;
+      display : flex;
 
-        .edit_icon {
-            cursor: pointer;
+  }
 
-            ion-img {
-                width   : 27px;
-                position: absolute;
-                top     : 0;
-                bottom  : 0;
-            }
-        }
-
-        .valid_date {
-            small {
-                font-size  : 8px;
-                color      : #fff;
-                margin-left: 8px;
-                font-weight: 500;
-            }
-
-            p {
-                font-size  : 12px;
-                color      : #fff;
-                font-weight: 500;
-                line-height: 5px;
-            }
-        }
-    }
+  .remove_image {
+      height: 20px;
+      cursor: pointer;
+  }
 }
 
 .add_button {
@@ -108,12 +104,36 @@ ion-content {
         bottom          : 25px;
         right           : 25px;
         padding         : 16px;
+        z-index: 111;
 
         img {
             height: 28px;
         }
     }
 }
+.save_button {
+    padding: 30px;
+     button {
+         width           : 100%;
+         outline         : none;
+         font-size       : 16px;
+         font-weight     : 500;
+         padding         : 15px 0px;
+         text-align      : center;
+         color           : #fff;
+         border-radius   : 7px;
+         background-color: #003574;
+         box-shadow      : 1px 3px 7px rgba(119, 59, 219, 0.5);
+         position        : relative;
+ 
+         i {
+             position   : absolute;
+             font-size  : 27px !important;
+             left       : 5%;
+             line-height: 18px;
+         }
+     }
+ }
 
 // modal design css 
 .modal_content_with_overlay {
@@ -160,16 +180,25 @@ ion-content {
         --color            : #7F8DAB;
         --padding-bottom: 5px;
     }
+
+    .form-control {
+        border       : none;
+        font-size    : 14px !important;
+        border-bottom: 1px solid rgba(104, 95, 134, 0.4);
+        color        : #7F8DAB;
+        border-radius: 0px;
+        padding      : 0px 3px;
+    }
 }
 
 .make_folder {
-    margin-top: 10px;
+   margin-top: 10px;
     button {
         width           : 100%;
         outline         : none;
-        font-size       : 16px;
+        font-size       : 18px;
         font-weight     : 500;
-        padding         : 15px 0px;
+        padding         : 16px 0px;
         text-align      : center;
         color           : #fff;
         border-radius   : 7px;

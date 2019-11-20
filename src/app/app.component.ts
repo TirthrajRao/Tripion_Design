@@ -27,7 +27,7 @@ export class AppComponent {
   }
   menuRadius() {
     setTimeout(() => {
-      document.querySelector('ion-menu').shadowRoot.querySelector('.menu-inner').setAttribute('style', 'border-radius:0px 30px 0px 0px; width: calc(100% - 35px);');
+      document.querySelector('ion-menu').shadowRoot.querySelector('.menu-inner').setAttribute('style', 'border-radius:0px 30px 0px 0px; width: calc(100% - 50px);');
     }, 2000);
   }
 }

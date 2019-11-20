@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-passports',
@@ -9,6 +10,16 @@ export class PassportsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+
+    $('#add-password').click(function () {
+      $('#add-passport-modal').fadeIn();
+    });
+    $('.make_folder').click(function () {
+      $('#add-passport-modal').css("display", 'none');
+    });
+  }
 
 }
+
+

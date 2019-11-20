@@ -81,10 +81,39 @@
           </div>
         </div>
       </div>
-    <div class="add_button">
+    <div class="add_button" id="add-visa">
       <a href="javascript:void(0);">
         <img src="../../assets/images/plus.png">
       </a>
     </div>
   </div>
+  <div class="modal_content_with_overlay" id="add-visa-modal" style="display: none;">
+      <div class="modal_body">
+        <div class="modal_header">
+          <p class="text-center">Add Visa</p>
+        </div>
+        <div class="modal_content">
+          <select class="form-control">
+            <option selected>Passport</option>
+            <option>2</option>
+          </select>
+          <ion-input placeholder="Country" type="text"></ion-input>
+          <ion-input placeholder="Date of Expiry" type="text"></ion-input>
+                 <div class="select_files">
+            <button>
+              <ion-img src="../../assets/images/file.png"></ion-img>Select from Files
+            </button>
+          </div>
+          <div class="selected_image_preview">
+              <ul>
+                <li><ion-img src="../../assets/images/doc1.png"></ion-img></li>
+                <li><ion-img src="../../assets/images/Passport.png"></ion-img></li>
+              </ul>
+            </div>
+          <div class="make_folder">
+            <button><i class="fas fa-plus"></i>Add Visa</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </ion-content>

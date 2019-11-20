@@ -89,7 +89,7 @@ ion-content {
 }
 
 .save_button {
-    padding: 30px 0px 10px 0px;
+    padding: 30px 20px 10px 20px;
     button {
         border-radius: 9px;
         cursor       : pointer;
@@ -101,6 +101,7 @@ ion-content {
         font-weight  : 600;
         outline      : none;
         background   : #003574;
+        z-index: 111;
         box-shadow: 1px 8px 26px rgba( 129, 59, 219, 0.3);
 
         ion-img {
@@ -112,3 +113,4 @@ ion-content {
         }
     }
 }
+
