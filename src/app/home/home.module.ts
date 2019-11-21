@@ -24,7 +24,11 @@ import { PicturesComponent } from '../pictures/pictures.component';
 import { UserPassportDetailComponent } from '../user-passport-detail/user-passport-detail.component';
 import { VisaDetailComponent } from '../visa-detail/visa-detail.component';
 import { EditUserPassportDetailComponent } from '../edit-user-passport-detail/edit-user-passport-detail.component';
-
+import { FrequentFlyerComponent } from '../frequent-flyer/frequent-flyer.component';
+import { FrequentFlyerDetailComponent } from '../frequent-flyer-detail/frequent-flyer-detail.component';
+import { ServiceInquiryComponent } from '../service-inquiry/service-inquiry.component';
+import { VisaInquiryComponent } from '../visa-inquiry/visa-inquiry.component';
+import { from } from 'rxjs';
 @NgModule({
   imports: [
     CommonModule,
@@ -105,6 +109,22 @@ import { EditUserPassportDetailComponent } from '../edit-user-passport-detail/ed
             component: EditUserPassportDetailComponent
           },
           {
+            path: 'frequent-flyer',
+            component: FrequentFlyerComponent
+          },
+          {
+            path: 'frequent-flyer-detail',
+            component: FrequentFlyerDetailComponent
+          },
+          {
+            path: 'service-inquiry',
+            component: ServiceInquiryComponent
+          },
+          {
+            path: 'visa-inquiry',
+            component: VisaInquiryComponent
+          },
+          {
             path: 'plan-option-detail',
             component: PlanOptionDetailComponent
           },
@@ -147,7 +167,12 @@ import { EditUserPassportDetailComponent } from '../edit-user-passport-detail/ed
     PicturesComponent,
     UserPassportDetailComponent,
     VisaDetailComponent,
-    EditUserPassportDetailComponent
+    EditUserPassportDetailComponent,
+    FrequentFlyerComponent,
+    FrequentFlyerDetailComponent,
+    ServiceInquiryComponent,
+    VisaInquiryComponent
+
   ]
 })
 export class HomePageModule { }

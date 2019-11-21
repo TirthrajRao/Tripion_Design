@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar class="toolbar-color1">
+    <ion-row>
+      <ion-col size='2'>
+        <div class="back_icon">
+          <ion-img src="../../assets/images/back_icon.png"></ion-img>
+        </div>
+      </ion-col>
+      <ion-col size='8'>
+        <div class="middle_sec text-center text-white">
+          <span>Frequent Flyer Program</span>
+        </div>
+      </ion-col>
+      <ion-col size='2'>
+        <div class="icon_sec">
+          <ion-menu-button></ion-menu-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="benefits_content">
+    <div class="country_name w-100" routerLink='/home/frequent-flyer-detail'>
+      <p class="float-left">Emirates</p>
+      <img src="../../assets/images/f1.png" class="float-right">
+    </div>
+    <div class="country_name w-100">
+      <p class="float-left">Jet Airways</p>
+      <img src="../../assets/images/f2.png" class="float-right">
+    </div>
+    <div class="country_name w-100">
+      <p class="float-left">Air India</p>
+      <img src="../../assets/images/f3.png" class="float-right">
+    </div>
+    <div class="add_button" id="add_passport">
+      <a href="javascript:void(0);">
+        <img src="../../assets/images/plus.png">
+      </a>
+    </div>
+  </div>
+  <div class="modal_content_with_overlay" id="add-passport-modal" style="display: none;">
+    <div class="modal_body">
+      <div class="modal_header">
+        <p class="text-center">Add Airlines</p>
+      </div>
+      <div class="modal_content">
+        <ion-item>
+          <ion-label position="floating">Name of Airlines</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Details</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <div class="make_folder">
+          <button><i class="fas fa-plus"></i>Add Airline</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

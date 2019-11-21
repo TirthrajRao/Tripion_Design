@@ -14,8 +14,11 @@ export class EditUserPassportDetailComponent implements OnInit {
     $('#add-visa').click(function () {
       $('#add-visa-modal').fadeIn();
     });
-    $('.make_folder').click(function () {
-      $('#add-visa-modal').css("display", 'none');
+    $('#add-visa-modal .modal_body').click(function(event){
+      event.stopPropagation();
+    });
+    $('#add-visa-modal').click(function(){
+      $(this).fadeOut();
     });
   }
 
