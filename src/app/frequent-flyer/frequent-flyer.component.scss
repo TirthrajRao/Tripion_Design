@@ -124,14 +124,13 @@ ion-content {
 
 .make_folder {
     margin-top: 40px;
-
+    text-align      : center;
     button {
-        width           : 100%;
+        width           : 80%;
         outline         : none;
         font-size       : 16px;
         font-weight     : 500;
         padding         : 15px 0px;
-        text-align      : center;
         color           : #fff;
         border-radius   : 7px;
         background-color: #003574;
@@ -139,10 +138,9 @@ ion-content {
         position        : relative;
 
         i {
-            position   : absolute;
-            font-size  : 27px !important;
-            left       : 5%;
-            line-height: 18px;
+            font-size   : 18px !important;
+            line-height : 20px;
+            margin-right: 15px;
         }
     }
 }

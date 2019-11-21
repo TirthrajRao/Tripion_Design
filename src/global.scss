@@ -99,4 +99,10 @@ ion-content{
 ion-footer{
     font-family: 'Montserrat', sans-serif !important;
 }
+ion-label{
+    font-family: 'Montserrat', sans-serif !important;
+}
+body *[routerlink] {
+    outline: none !important;
+}
 // header css end here

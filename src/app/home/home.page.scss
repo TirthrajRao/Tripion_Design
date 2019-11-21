@@ -96,21 +96,21 @@ $blue  : #021B79;
     }
 
     .menu_content {
-        padding: 40px 0px 0px;
-
-
+        margin: 40px 0px 0px;
+        height: calc(100vh - 240px);
+           
         .menu_list {
             outline    : none;
             align-items: center;
-            display    : flex;
-            padding    : 1.5vh 25px 1.5vh 70px;
+            display    : block;
+            padding    : 0 25px 0 50px;
             cursor     : pointer;
             position   : relative;
 
             ion-img {
-                width   : 18px;
+                width   : 15px;
                 position: absolute;
-                left    : 25px;
+                left    : 20px;
                 top     : 0;
                 bottom  : 0;
                 margin  : auto;
@@ -118,7 +118,7 @@ $blue  : #021B79;
 
             span {
                 font-weight: 500;
-                font-size  : 16px;
+                font-size  : 14px;
                 display    : inline-block;
                 width      : 100%;
                 line-height: 20px;

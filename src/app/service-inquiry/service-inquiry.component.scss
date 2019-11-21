@@ -54,9 +54,9 @@ ion-content {
             font-weight: 600;
             font-size  : 16px;
         }
-        
+
     }
-   
+
 }
 
 .service_info {
@@ -88,24 +88,27 @@ ion-content {
     }
 
 }
-.select_plan_accomndation{
-      margin-top      : 10px;
+
+.select_plan_accomndation {
+    margin-top      : 10px;
     border-radius   : 5px;
     background-color: #fff;
-      
+
     p {
         color     : #707070;
         font-size : 14px;
         text-align: center;
         margin-top: 10px;
-        padding: 0px 10px 15px 10px;
+        padding   : 0px 10px 15px 10px;
     }
 }
 
 .next_btn {
-  padding: 10px 24px;
+    padding: 30px 0;
+    text-align: center;
+
     button {
-        width           : 100%;
+        width           : 80%;
         outline         : none;
         font-size       : 16px;
         font-weight     : 500;
@@ -118,11 +121,9 @@ ion-content {
         position        : relative;
 
         i {
-            position   : absolute;
-            font-size  : 27px !important;
-            right       : 5%;
-            line-height: 18px;
+            font-size  : 16px !important;
+            line-height: 16px;
+            margin-left: 15px;
         }
     }
 }
-

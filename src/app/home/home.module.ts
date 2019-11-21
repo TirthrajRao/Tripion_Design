@@ -28,6 +28,8 @@ import { FrequentFlyerComponent } from '../frequent-flyer/frequent-flyer.compone
 import { FrequentFlyerDetailComponent } from '../frequent-flyer-detail/frequent-flyer-detail.component';
 import { ServiceInquiryComponent } from '../service-inquiry/service-inquiry.component';
 import { VisaInquiryComponent } from '../visa-inquiry/visa-inquiry.component';
+
+
 import { from } from 'rxjs';
 @NgModule({
   imports: [

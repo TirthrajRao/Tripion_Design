@@ -138,24 +138,27 @@ ion-content {
         }
 
         .make_folder {
-            margin-top      : 25px;
-            width           : 100%;
-            outline         : none;
-            font-size       : 16px;
-            font-weight     : 500;
-            padding         : 15px 0px;
-            text-align      : center;
-            color           : #fff;
-            border-radius   : 7px;
-            background-color: #003574;
-            box-shadow      : 1px 3px 7px rgba(119, 59, 219, 0.5);
-            position        : relative;
+            text-align: center;
+            margin-top: 25px;
 
-            i {
-                position   : absolute;
-                font-size  : 27px !important;
-                left       : 5%;
-                line-height: 18px;
+            button {
+                width           : 80%;
+                outline         : none;
+                font-size       : 16px;
+                font-weight     : 500;
+                padding         : 15px 0px;
+                text-align      : center;
+                color           : #fff;
+                border-radius   : 7px;
+                background-color: #003574;
+                box-shadow      : 1px 3px 7px rgba(119, 59, 219, 0.5);
+                position        : relative;
+
+                i {
+                    font-size   : 18px !important;
+                    line-height : 20px;
+                    margin-right: 15px;
+                }
             }
         }
     }
