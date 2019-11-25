@@ -71,7 +71,7 @@ ion-content {
 
 ion-item {
     --padding-start    : 0px;
-    --inner-padding-top: 5px;
+    --inner-padding-top: 0px;
 }
 
 .duration_status {
@@ -84,8 +84,7 @@ ion-item {
     label {
         font-size   : 13px !important;
         color       : #7F8DAB;
-        padding-left: 10px;
-    }
+           }
 
     ion-label {
         font-size: 13px !important;
@@ -104,8 +103,8 @@ ion-item {
 .item-label-floating .sc-ion-input-md-h,
 .item-label-stacked.sc-ion-input-md-h,
 .item-label-stacked .sc-ion-input-md-h {
-    --padding-top   : 5px;
-    --padding-bottom: 0px;
+    --padding-top   : 0px;
+    --padding-bottom: 10px;
     --padding-start : 0;
 }
 
@@ -133,3 +132,5 @@ ion-item {
         }
     }
 }
+
+
