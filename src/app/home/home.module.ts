@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
@@ -28,6 +28,12 @@ import { FrequentFlyerComponent } from '../frequent-flyer/frequent-flyer.compone
 import { FrequentFlyerDetailComponent } from '../frequent-flyer-detail/frequent-flyer-detail.component';
 import { ServiceInquiryComponent } from '../service-inquiry/service-inquiry.component';
 import { VisaInquiryComponent } from '../visa-inquiry/visa-inquiry.component';
+import { AirTicketsInquiryComponent } from '../air-tickets-inquiry/air-tickets-inquiry.component';
+import { AccomodationInquiryComponent } from '../accomodation-inquiry/accomodation-inquiry.component';
+import { ToursInquiryComponent } from '../tours-inquiry/tours-inquiry.component';
+import { TransferInquiryComponent } from '../transfer-inquiry/transfer-inquiry.component';
+import { OtherDetailsInquiryComponent } from '../other-details-inquiry/other-details-inquiry.component';
+import { AmendmentsComponent } from '../amendments/amendments.component';
 
 
 import { from } from 'rxjs';
@@ -127,6 +133,30 @@ import { from } from 'rxjs';
             component: VisaInquiryComponent
           },
           {
+            path: 'air-tickets-inquiry',
+            component: AirTicketsInquiryComponent
+          },
+          {
+            path: 'accomodation',
+            component: AccomodationInquiryComponent
+          },
+          {
+            path: 'tours',
+            component: ToursInquiryComponent
+          },
+          {
+            path: 'transfers',
+            component: TransferInquiryComponent
+          },
+          {
+            path: 'other-details',
+            component: OtherDetailsInquiryComponent
+          },
+          {
+            path: 'amendments',
+            component: AmendmentsComponent
+          },
+          {
             path: 'plan-option-detail',
             component: PlanOptionDetailComponent
           },
@@ -173,8 +203,13 @@ import { from } from 'rxjs';
     FrequentFlyerComponent,
     FrequentFlyerDetailComponent,
     ServiceInquiryComponent,
-    VisaInquiryComponent
-
+    VisaInquiryComponent,
+    AirTicketsInquiryComponent,
+    AccomodationInquiryComponent,
+    ToursInquiryComponent,
+    TransferInquiryComponent,
+    OtherDetailsInquiryComponent,
+    AmendmentsComponent
   ]
 })
 export class HomePageModule { }

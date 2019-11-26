@@ -79,21 +79,27 @@
         <p class="text-center">Add Passport</p>
       </div>
       <div class="modal_content">
-          <ion-input placeholder="Name in Passport" type="text"></ion-input>
-          <ion-input placeholder="Passport Number" type="text"></ion-input>
+        <ion-input placeholder="Name in Passport" type="text"></ion-input>
+        <ion-input placeholder="Passport Number" type="text"></ion-input>
         <ion-input placeholder="Date of Expiry" type="text"></ion-input>
         <ion-input placeholder="Pictures of the Passport" type="text"></ion-input>
-               <div class="select_files">
-          <button>
+        <div class="select_files">
+          <input type="file" class="form-control" id="file" placeholder="Enter Your Password" name="files" value="files"
+            style="display: none;">
+          <label class="text-center" for="file">
             <ion-img src="../../assets/images/file.png"></ion-img>Select from Files
-          </button>
+          </label>
         </div>
         <div class="selected_image_preview">
-            <ul>
-              <li><ion-img src="../../assets/images/doc1.png"></ion-img></li>
-              <li><ion-img src="../../assets/images/Passport.png"></ion-img></li>
-            </ul>
-          </div>
+          <ul>
+            <li>
+              <ion-img src="../../assets/images/doc1.png"></ion-img>
+            </li>
+            <li>
+              <ion-img src="../../assets/images/Passport.png"></ion-img>
+            </li>
+          </ul>
+        </div>
         <div class="make_folder">
           <button><i class="fas fa-plus"></i>Add Passport</button>
         </div>

@@ -43,10 +43,10 @@
           <div class="passport_image">
             <div class="passport_slider">
               <div class="passport_slide">
-                  <ion-img src="../../assets/images/visa1.png"></ion-img>
+                <ion-img src="../../assets/images/visa1.png"></ion-img>
               </div>
               <div class="passport_slide">
-                  <ion-img src="../../assets/images/visa1.png"></ion-img>
+                <ion-img src="../../assets/images/visa1.png"></ion-img>
               </div>
             </div>
           </div>
@@ -54,33 +54,33 @@
       </div>
     </div>
     <div class="card">
-        <div class="card_header w-100">
-          <div routerLink='/home/visa-detail'>
-            <ion-img src="../../assets/images/pencil.png"></ion-img>
-          </div>
-          <p class="texr-center">Canada</p>
+      <div class="card_header w-100">
+        <div routerLink='/home/visa-detail'>
+          <ion-img src="../../assets/images/pencil.png"></ion-img>
         </div>
-        <div class="card_body">
-          <div class="card_detail w-100">
-            <p class="float-left visa_number">Visa Number : 00-0000-0000</p>
-            <div class="float-right valid_date">
-              <small> Valid Up To :
-              </small>
-              <p>17-07-2028</p>
-            </div>
-            <div class="passport_image">
-              <div class="passport_slider1">
-                <div class="passport_slide">
-                    <ion-img src="../../assets/images/image11.png"></ion-img>
-                </div>
-                <div class="passport_slide">
-                    <ion-img src="../../assets/images/visa1.png"></ion-img>
-                </div>
+        <p class="texr-center">Canada</p>
+      </div>
+      <div class="card_body">
+        <div class="card_detail w-100">
+          <p class="float-left visa_number">Visa Number : 00-0000-0000</p>
+          <div class="float-right valid_date">
+            <small> Valid Up To :
+            </small>
+            <p>17-07-2028</p>
+          </div>
+          <div class="passport_image">
+            <div class="passport_slider1">
+              <div class="passport_slide">
+                <ion-img src="../../assets/images/image11.png"></ion-img>
+              </div>
+              <div class="passport_slide">
+                <ion-img src="../../assets/images/visa1.png"></ion-img>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
     <div class="add_button" id="add-visa">
       <a href="javascript:void(0);">
         <img src="../../assets/images/plus.png">
@@ -88,32 +88,38 @@
     </div>
   </div>
   <div class="modal_content_with_overlay" id="add-visa-modal" style="display: none;">
-      <div class="modal_body">
-        <div class="modal_header">
-          <p class="text-center">Add Visa</p>
+    <div class="modal_body">
+      <div class="modal_header">
+        <p class="text-center">Add Visa</p>
+      </div>
+      <div class="modal_content">
+        <select class="form-control">
+          <option selected>Passport</option>
+          <option>2</option>
+        </select>
+        <ion-input placeholder="Country" type="text"></ion-input>
+        <ion-input placeholder="Date of Expiry" type="text"></ion-input>
+        <div class="select_files">
+          <input type="file" class="form-control" id="file" placeholder="Enter Your Password" name="files" value="files"
+            style="display: none;">
+          <label class="text-center" for="file">
+            <ion-img src="../../assets/images/file.png"></ion-img>Select from Files
+          </label>
+        </div>>
+        <div class="selected_image_preview">
+          <ul>
+            <li>
+              <ion-img src="../../assets/images/doc1.png"></ion-img>
+            </li>
+            <li>
+              <ion-img src="../../assets/images/Passport.png"></ion-img>
+            </li>
+          </ul>
         </div>
-        <div class="modal_content">
-          <select class="form-control">
-            <option selected>Passport</option>
-            <option>2</option>
-          </select>
-          <ion-input placeholder="Country" type="text"></ion-input>
-          <ion-input placeholder="Date of Expiry" type="text"></ion-input>
-                 <div class="select_files">
-            <button>
-              <ion-img src="../../assets/images/file.png"></ion-img>Select from Files
-            </button>
-          </div>
-          <div class="selected_image_preview">
-              <ul>
-                <li><ion-img src="../../assets/images/doc1.png"></ion-img></li>
-                <li><ion-img src="../../assets/images/Passport.png"></ion-img></li>
-              </ul>
-            </div>
-          <div class="make_folder">
-            <button><i class="fas fa-plus"></i>Add Visa</button>
-          </div>
+        <div class="make_folder">
+          <button><i class="fas fa-plus"></i>Add Visa</button>
         </div>
       </div>
     </div>
+  </div>
 </ion-content>

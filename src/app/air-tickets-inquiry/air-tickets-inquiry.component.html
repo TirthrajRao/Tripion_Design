@@ -1,3 +1,200 @@
-<p>
-  air-tickets-inquiry works!
-</p>
+<ion-header>
+  <ion-toolbar class="toolbar-color1">
+    <ion-row>
+      <ion-col size='2'>
+        <div class="back_icon">
+          <ion-img src="../../assets/images/back_icon.png"></ion-img>
+        </div>
+      </ion-col>
+      <ion-col size='8'>
+        <div class="middle_sec text-center text-white">
+          <span>New Trip</span>
+        </div>
+      </ion-col>
+      <ion-col size='2'>
+        <div class="icon_sec">
+          <ion-menu-button></ion-menu-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="all_content">
+    <div class="services_detail">
+      <p class="ml-3 visa_text">Air Tickets</p>
+      <div class="general_details">
+        <div class="general_details_header">
+          <p>Passengers</p>
+        </div>
+        <div class="general_details_body">
+          <ion-item>
+            <ion-label position="floating">Infants</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Children</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Adults</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Senior Citizens</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        </div>
+      </div>
+
+      <div class="general_details mt-3">
+        <div class="general_details_header">
+          <p>Journey Type</p>
+        </div>
+        <div class="duration_status mt-2">
+          <form action="#">
+            <div class="row">
+              <div class="col-5 pl-4">
+                <input type="radio" class="mr-2" id="test3" name="radio-group" checked>
+                <label for="test3">Round Trip</label>
+              </div>
+              <div class="col-7">
+                <input type="radio" class="mr-2" id="test4" name="radio-group">
+                <label for="test4">One Way</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="general_details mt-3">
+        <div class="general_details_header">
+          <p>Flight Tire Prefernece</p>
+        </div>
+        <div class="duration_status mt-2">
+                   <form action="#">
+            <div class="row">
+              <div class="col-5 pl-4">
+                <input type="radio" class="mr-2" id="test6" name="radio-group" checked>
+                <label for="test6">Economy</label>
+              </div>
+              <div class="col-7">
+                <input type="radio" class="mr-2" id="test7" name="radio-group">
+                <label for="test7">Business Class</label>
+              </div>
+              <div class="col-12 pl-4">
+                <input type="radio" class="mr-2" id="test8" name="radio-group">
+                <label for="test8">First Class</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="general_details mt-3">
+        <div class="general_details_header">
+          <p>Flight Seat Preference</p>
+        </div>
+        <div class="duration_status mt-2">
+          <form action="#">
+            <div class="row">
+              <div class="col-5 pl-4">
+                <input type="radio" class="mr-2" id="test9" name="radio-group" checked>
+                <label for="test9">Aisle</label>
+              </div>
+              <div class="col-7">
+                <input type="radio" class="mr-2" id="test10" name="radio-group">
+                <label for="test10">Middle</label>
+              </div>
+              <div class="col-5 pl-4">
+                <input type="radio" class="mr-2" id="test12" name="radio-group">
+                <label for="test12">Window</label>
+              </div>
+              <div class="col-7">
+                <input type="radio" class="mr-2" id="test13" name="radio-group">
+                <label for="test13">Emergency Exit Row</label>
+              </div>
+            </div>
+          </form>
+          <ion-item class="pl-2">
+            <ion-label position="floating">Other</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        </div>
+      </div>
+
+      <div class="general_details mt-3">
+        <div class="general_details_header">
+          <p>In-Flight Meal</p>
+        </div>
+        <div class="duration_status p-3">
+          <ion-item>
+            <ion-label>Kosher Meal</ion-label>
+            <ion-select cancelText="Dismiss">
+              <ion-select-option value="brown">Meal 1</ion-select-option>
+              <ion-select-option value="blonde">Meal 2</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+      </div>
+
+      <div class="general_details mt-3">
+        <div class="general_details_header">
+          <p>Seat Belt Extender</p>
+        </div>
+        <div class="duration_status mt-2">
+          <form action="#">
+            <div class="row">
+              <div class="col-5 pl-4">
+                <input type="radio" class="mr-2" id="yes" name="radio-group" checked>
+                <label for="yes">Yes</label>
+              </div>
+              <div class="col-7">
+                <input type="radio" class="mr-2" id="no" name="radio-group">
+                <label for="no">No</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="general_details mt-3">
+        <div class="general_details_header">
+          <p>Wheel Chair Assistance</p>
+        </div>
+        <div class="duration_status mt-2">
+          <form action="#">
+            <div class="row">
+              <div class="col-5 pl-4">
+                <input type="radio" class="mr-2" id="yes1" name="radio-group" checked>
+                <label for="yes1">Yes</label>
+              </div>
+              <div class="col-7">
+                <input type="radio" class="mr-2" id="no1" name="radio-group">
+                <label for="no1">No</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="general_details mt-3">
+        <div class="general_details_header">
+          <p>Number of Quotes</p>
+        </div>
+        <div class="duration_status">
+          <ion-item class="pl-2">
+            <ion-label position="floating">Other</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+          <h1 class="text-center error_msg">Only visible if Air Tickets Standalone Inquiry</h1>
+        </div>
+      </div>
+
+    </div>
+    <div class="next_btn">
+      <button type="submit">Next<i class="fas fa-arrow-right"></i></button>
+    </div>
+  </div>
+</ion-content>

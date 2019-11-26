@@ -49,6 +49,10 @@ ul {
     margin : 0;
 }
 
+ion-menu {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
 // header css start here 
 ion-header ion-toolbar:first-child {
     --background   : #0575E6 !important;
@@ -78,6 +82,11 @@ ion-menu-button {
         margin-right: 10px;
     }
 
+    i {
+        font-size   : 23px;
+        margin-right: 10px;
+    }
+
     span {
         font-size  : 23px;
         font-weight: 600;
@@ -93,18 +102,28 @@ ion-menu-button {
         margin: 4px auto 0px auto;
     }
 }
-ion-content{
+
+ion-content {
     font-family: 'Montserrat', sans-serif !important;
 }
-ion-footer{
+
+ion-footer {
     font-family: 'Montserrat', sans-serif !important;
 }
-ion-label{
+
+ion-label {
     font-family: 'Montserrat', sans-serif !important;
+}
+.form-control:focus {
+      background-color: #fff;
+    border-color: #707070;
+     outline: none !important; 
+    box-shadow:none !important;
 }
 body *[routerlink] {
     outline: none !important;
 }
+
 // header css end here
 
 // custom radio button start 
@@ -112,63 +131,68 @@ body *[routerlink] {
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
     position: absolute;
-    left: -9999px;
+    left    : -9999px;
 }
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label
-{
-    position: relative;
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+    position    : relative;
     padding-left: 28px;
-    cursor: pointer;
-    line-height: 20px;
-    display: inline-block;
-    }
+    cursor      : pointer;
+    line-height : 20px;
+    display     : inline-block;
+}
+
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
     position: absolute;
-    left: -9999px;
+    left    : -9999px;
 }
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label
-{
-    position: relative;
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+    position    : relative;
     padding-left: 24px;
-    cursor: pointer;
-    line-height: 16px;
-    display: inline-block;
-   }
-[type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #707070;
-    border-radius: 100%;
-    background: #fff;
+    cursor      : pointer;
+    line-height : 16px;
+    display     : inline-block;
 }
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
-    content: '';
-    width: 15px;
-    height: 15px;
-    background: #4A92E8;
-    position: absolute;
-     left: 0px;
-     border: 1px solid #707070;
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+    content      : '';
+    position     : absolute;
+    left         : 0;
+    top          : 0;
+    width        : 15px;
+    height       : 15px;
+    border       : 1px solid #707070;
     border-radius: 100%;
+    background   : #fff;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+    content           : '';
+    width             : 15px;
+    height            : 15px;
+    background        : #4A92E8;
+    position          : absolute;
+    left              : 0px;
+    border            : 1px solid #707070;
+    border-radius     : 100%;
     -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    transition        : all 0.2s ease;
 }
-[type="radio"]:not(:checked) + label:after {
-    opacity: 0;
+
+[type="radio"]:not(:checked)+label:after {
+    opacity          : 0;
     -webkit-transform: scale(0);
-    transform: scale(0);
+    transform        : scale(0);
 }
-[type="radio"]:checked + label:after {
-    opacity: 1;
+
+[type="radio"]:checked+label:after {
+    opacity          : 1;
     -webkit-transform: scale(1);
-    transform: scale(1);
+    transform        : scale(1);
 }

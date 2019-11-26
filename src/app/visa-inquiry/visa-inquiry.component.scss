@@ -45,7 +45,7 @@ ion-content {
 
         p {
             color      : #000;
-            font-size  : 16px;
+            font-size  : 18px;
             font-weight: 600;
         }
     }
@@ -54,8 +54,9 @@ ion-content {
         padding: 15px;
 
         ion-label {
-            font-size: 13px !important;
+            font-size: 14px !important;
             --color  : #7F8DAB;
+            font-weight: 500;
         }
 
         ion-input {
@@ -76,19 +77,22 @@ ion-item {
 
 .duration_status {
     p {
-        font-size  : 13px !important;
+        font-size  : 14px !important;
         color      : #7F8DAB;
         line-height: 30px;
+        font-weight: 500;
     }
 
     label {
-        font-size   : 13px !important;
+        font-size   : 14px !important;
         color       : #7F8DAB;
+        font-weight: 600;
            }
 
     ion-label {
-        font-size: 13px !important;
+        font-size: 14px !important;
         --color  : #7F8DAB;
+        font-weight: 500;
     }
 
     h6 {

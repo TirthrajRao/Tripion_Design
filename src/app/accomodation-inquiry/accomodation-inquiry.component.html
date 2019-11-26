@@ -1,3 +1,204 @@
-<p>
-  accomodation-inquiry works!
-</p>
+<ion-header>
+  <ion-toolbar class="toolbar-color1">
+    <ion-row>
+      <ion-col size='2'>
+        <div class="back_icon">
+          <ion-img src="../../assets/images/back_icon.png"></ion-img>
+        </div>
+      </ion-col>
+      <ion-col size='8'>
+        <div class="middle_sec text-center text-white">
+          <span>New Trip</span>
+        </div>
+      </ion-col>
+      <ion-col size='2'>
+        <div class="icon_sec">
+          <ion-menu-button></ion-menu-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="all_content">
+    <div class="services_detail">
+      <p class="ml-3 visa_text">Accomodation</p>
+      <div class="general_details">
+        <div class="general_details_body">
+          <ion-item>
+            <ion-label>Accomodation Type</ion-label>
+            <ion-select cancelText="Dismiss">
+              <ion-select-option value="one">1</ion-select-option>
+              <ion-select-option value="two"> 2</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-label>Room Category Preference</ion-label>
+            <ion-select cancelText="Dismiss">
+              <ion-select-option value="brown">Meal 1</ion-select-option>
+              <ion-select-option value="blonde">Meal 2</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <div class="duration_status mt-2">
+            <p>Smoking Room</p>
+            <form action="#">
+              <div class="row">
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="test1" name="radio-group" checked>
+                  <label for="test1">Yes</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="test2" name="radio-group">
+                  <label for="test2">No</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="duration_status mt-2">
+            <p>Wheelchair Accessible</p>
+            <form action="#">
+              <div class="row">
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="Accessible1" name="radio-group" checked>
+                  <label for="Accessible1">Yes</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="Accessible2" name="radio-group">
+                  <label for="Accessible2">No</label>
+                </div>
+              </div>
+            </form>
+            <ion-item>
+              <ion-label position="floating">Any Special Requirement?</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="general_details mt-3">
+        <div class="general_details_header">
+          <p>Meal Plans</p>
+        </div>
+        <div class="general_details_body">
+          <div class="duration_status mt-2">
+            <form action="#">
+              <div class="row">
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="Plans1" name="radio-group" checked>
+                  <label for="Plans1">CP ( Continental Plan ) - Only Breakfast</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="Plans2" name="radio-group">
+                  <label for="Plans2">AP ( American Plan ) - All Meals</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="Plans3" name="radio-group">
+                  <label for="Plans3">MAP - Breakfast & 1 Major Meal</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="general_details mt-3">
+        <div class="general_details_header">
+          <p>Culinary Preferrence</p>
+        </div>
+        <div class="general_details_body">
+          <div class="duration_status mt-2">
+            <form action="#">
+              <div class="row">
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test3" name="radio-group" checked>
+                  <label for="test3">Vegetarian</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test4" name="radio-group">
+                  <label for="test4">Vegan</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test5" name="radio-group">
+                  <label for="test5">Gluten & Lactose Free</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test6" name="radio-group">
+                  <label for="test6">Non Veg</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test7" name="radio-group">
+                  <label for="test7">Jain ( Only where available )</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test8" name="radio-group">
+                  <label for="test8">Other</label>
+                </div>
+              </div>
+              <ion-item>
+                <ion-label position="floating">Any Special Requirement?</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="general_details mt-3">
+          <div class="general_details_header w-100 d-inline-block">
+              <p class="float-left">Room - 1</p>
+              <i class="fas fa-minus-circle float-right"></i>
+            </div>
+        <div class="general_details_body">
+          <div class="duration_status">
+            <ion-item>
+              <ion-label position="floating">Infants</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Children</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Adults</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="general_details mt-3">
+        <div class="general_details_header w-100 d-inline-block">
+          <p class="float-left">Room - 2</p>
+          <i class="fas fa-minus-circle float-right"></i>
+        </div>
+        <div class="general_details_body">
+          <div class="duration_status">
+            <ion-item>
+              <ion-label position="floating">Infants</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Children</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Adults</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          </div>
+        </div>
+      </div>
+      <div class="add_room_btn text-center">
+        <button type="submit"><i class="fas fa-plus-circle"></i>Add Room</button>
+      </div>
+
+    </div>
+    <div class="next_btn">
+      <button type="submit">Next<i class="fas fa-arrow-right"></i></button>
+    </div>
+  </div>
+</ion-content>
