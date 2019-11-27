@@ -3,9 +3,9 @@
     <ion-row>
       <ion-col size='2'>
         <div class="back_icon">
-            <ion-buttons slot="start">
-                <ion-back-button></ion-back-button>
-            </ion-buttons>
+          <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
           <!-- <ion-img src="../../assets/images/back_icon.png"></ion-img> -->
         </div>
       </ion-col>
@@ -25,95 +25,946 @@
 
 <ion-content>
   <div class="all_content">
-    <div class="services_detail">
-      <p class="ml-2">Services</p>
-      <div class="select_plan" routerLink='/home/visa-inquiry'>
-        <ion-checkbox checked="true"> </ion-checkbox>
-        <ion-label class="ml-3">Visa</ion-label>
-      </div>
-      <div class="select_plan" routerLink='/home/air-tickets-inquiry'>
-        <ion-checkbox checked="false"> </ion-checkbox>
-        <ion-label class="ml-3">Air Tickets</ion-label>
-      </div>
-      <div class="select_plan">
-        <ion-checkbox checked="false"> </ion-checkbox>
-        <ion-label class="ml-3">Passport</ion-label>
-      </div>
-    </div>
-    <div class="service_info">
-      <span><i class="fas fa-info"></i></span>
-      <div class="service_info_detail">
-        <p class="text-center">Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis
-          nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea
-          commodo consequat.</p>
-      </div>
-    </div>
-    <div class="services_detail">
-      <p class="ml-2">Personalize (Minimum : 3)</p>
-      <div class="select_plan_accomndation">
-        <div class="select_plan" routerLink='/home/accomodation'>
-          <ion-checkbox checked="false"> </ion-checkbox>
-          <ion-label class="ml-3">Accomodation</ion-label>
+    <!-- all services detai form start here  -->
+    <div class="all_service_details">
+      <div class="services_detail">
+        <p class="ml-2">Services</p>
+        <div class="select_plan">
+          <ion-checkbox checked="false" id="visa" (click)="visaFormOpen()"> </ion-checkbox>
+          <ion-label class="ml-3">Visa</ion-label>
         </div>
-        <p>Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis
-          nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea
-          commodo consequat.</p>
+        <div class="select_plan">
+          <ion-checkbox checked="false" id="air-ticket" (click)="airTicketOpen()"> </ion-checkbox>
+          <ion-label class="ml-3">Air Tickets</ion-label>
+        </div>
+        <div class="select_plan">
+          <ion-checkbox checked="false" id="passport"> </ion-checkbox>
+          <ion-label class="ml-3">Passport</ion-label>
+        </div>
+      </div>
+      <div class="service_info">
+        <span><i class="fas fa-info"></i></span>
+        <div class="service_info_detail">
+          <p class="text-center">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis
+            nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea
+            commodo consequat.</p>
+        </div>
+      </div>
+      <div class="services_detail">
+        <p class="ml-2">Personalize (Minimum : 3)</p>
+        <div class="select_plan_accomndation">
+          <div class="select_plan">
+            <ion-checkbox checked="false" id="accomodation" (click)="accomodationOpen()"> </ion-checkbox>
+            <ion-label class="ml-3">Accomodation</ion-label>
+          </div>
+          <p>Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis
+            nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea
+            commodo consequat.</p>
+
+        </div>
+        <div class="select_plan">
+          <ion-checkbox checked="false" id="tours" (click)="toursOpen()"> </ion-checkbox>
+          <ion-label class="ml-3">Tours</ion-label>
+        </div>
+        <div class="select_plan">
+          <ion-checkbox checked="false" id="tranfer" (click)="transferOpen()"> </ion-checkbox>
+          <ion-label class="ml-3">Transfers</ion-label>
+        </div>
+        <div class="select_plan">
+          <ion-checkbox checked="false" id="consulting"> </ion-checkbox>
+          <ion-label class="ml-3">Consulting</ion-label>
+        </div>
+        <div class="select_plan">
+          <ion-checkbox checked="false" id="air-ticket-1"> </ion-checkbox>
+          <ion-label class="ml-3">Air Tickets</ion-label>
+        </div>
+        <div class="select_plan">
+          <ion-checkbox checked="false" id="insurance"> </ion-checkbox>
+          <ion-label class="ml-3">Insurance </ion-label>
+        </div>
+        <div class="select_plan">
+          <ion-checkbox checked="false" id="group-travel"> </ion-checkbox>
+          <ion-label class="ml-3">Group Travel</ion-label>
+        </div>
+        <div class="select_plan">
+          <ion-checkbox checked="false" id="personal-tour-travel"> </ion-checkbox>
+          <ion-label class="ml-3">Personal Tour Guide</ion-label>
+        </div>
+      </div>
+      <div class="service_info">
+        <span><i class="fas fa-info"></i></span>
+        <div class="service_info_detail">
+          <p class="text-center">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis
+            nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea
+            commodo consequat.</p>
+        </div>
+      </div>
+      <div class="next_btn">
+        <button type="submit" (click)="next()">Next<i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <!-- all services detail form end here  -->
+    <!-- visa form start here  -->
+    <div class="visa_service_detail" id="visa_form" *ngIf="isVisa">
+      <div class="services_detail">
+        <p class="ml-3 visa_text">Visa</p>
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>General Details</p>
+          </div>
+          <div class="general_details_body">
+            <ion-item>
+              <ion-label position="floating">Name in Passport</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Passport Number</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Date of Birth</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Place of Birth</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Address in Passport</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Duration of Travel</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Intended date of Departure</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Intended date of Arrival</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Passport Valid Until ?</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <form action="#">
+              <p>Date and Duration Status</p>
+              <div class="row">
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="flexible" name="radio-group" checked>
+                  <label for="flexible">Flexible</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="fix" name="radio-group">
+                  <label for="fix">Fixed</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_body">
+            <form action="#">
+              <p>Purpose of Travel</p>
+              <div class="row">
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="tourism" name="radio-group" checked>
+                  <label for="tourism">Tourism</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="buisness" name="radio-group">
+                  <label for="buisness">Business</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="function" name="radio-group">
+                  <label for="function">Family Reunion / Functions</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_body">
+            <form action="#">
+              <p>Type of Visa</p>
+              <div class="row">
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="buis" name="radio-group" checked>
+                  <label for="buis">Business</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="student" name="radio-group">
+                  <label for="student">Student</label>
+                </div>
+                <div class="col-12 ">
+                  <input type="radio" class="mr-2" id="tourist1" name="radio-group">
+                  <label for="test8">tourist1</label>
+                </div>
+              </div>
+              <ion-item>
+                <ion-label position="floating">Other</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+            </form>
+            <p class="mt-2">Previous Rejections</p>
+            <form action="#">
+              <div class="row">
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="test11" name="radio-group" checked>
+                  <label for="test11">Yes</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="test12" name="radio-group">
+                  <label for="test12">No</label>
+                </div>
+              </div>
+              <ion-item>
+                <ion-label position="floating">Destination, Duration of Journey</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+            </form>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_body">
+            <form action="#">
+              <p>Previous International Travel</p>
+              <div class="row">
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="yes" name="radio-group" checked>
+                  <label for="yes">Yes</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="no" name="radio-group">
+                  <label for="no">No</label>
+                </div>
+              </div>
+              <h6 class="mt-2">France - 12 days, USA - 18 days.</h6>
+            </form>
+
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Number of Applicants</p>
+          </div>
+          <div class="general_details_body">
+            <ion-item>
+              <ion-label position="floating">Applicants</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          </div>
+        </div>
+      </div>
+      <div class="next_btn">
+        <button type="submit">Next<i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <!-- visa form end here  -->
+    <!-- air tickets form start here  -->
+    <div class="air_tickets_detail" id="air_ticket_form" *ngIf="isAirticket">
+      <div class="services_detail">
+        <p class="ml-3 visa_text">Air Tickets</p>
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Passengers</p>
+          </div>
+          <div class="general_details_body">
+            <ion-item>
+              <ion-label position="floating">Infants</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Children</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Adults</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Senior Citizens</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Journey Type</p>
+          </div>
+          <div class="general_details_body">
+            <form action="#">
+              <div class="row">
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="round" name="radio-group" checked>
+                  <label for="round">Round Trip</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="way" name="radio-group">
+                  <label for="way">One Way</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Flight Tire Prefernece</p>
+          </div>
+          <div class="general_details_body">
+            <form action="#">
+              <div class="row">
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="economy" name="radio-group" checked>
+                  <label for="economy">Economy</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="class" name="radio-group">
+                  <label for="class">Business Class</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="first" name="radio-group">
+                  <label for="first">First Class</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Flight Seat Preference</p>
+          </div>
+          <div class="general_details_body">
+            <form action="#">
+              <div class="row">
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="ais" name="radio-group" checked>
+                  <label for="ais">Aisle</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="mid" name="radio-group">
+                  <label for="mid">Middle</label>
+                </div>
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="window" name="radio-group">
+                  <label for="window">Window</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="Exit" name="radio-group">
+                  <label for="Exit">Emergency Exit Row</label>
+                </div>
+              </div>
+              <ion-item>
+                <ion-label position="floating">Other</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+            </form>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>In-Flight Meal</p>
+          </div>
+          <div class="general_details_body">
+            <ion-item>
+              <ion-label>Kosher Meal</ion-label>
+              <ion-select cancelText="Dismiss">
+                <ion-select-option value="brown">Meal 1</ion-select-option>
+                <ion-select-option value="blonde">Meal 2</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Seat Belt Extender</p>
+          </div>
+          <div class="general_details_body">
+            <form action="#">
+              <div class="row">
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="test1" name="radio-group" checked>
+                  <label for="test1">Yes</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="test2" name="radio-group">
+                  <label for="test2">No</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Wheel Chair Assistance</p>
+          </div>
+          <div class="general_details_body">
+            <form action="#">
+              <div class="row">
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="yes1" name="radio-group" checked>
+                  <label for="yes1">Yes</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="no1" name="radio-group">
+                  <label for="no1">No</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Number of Quotes</p>
+          </div>
+          <div class="general_details_body">
+            <ion-item>
+              <ion-label position="floating">Other</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <h1 class="text-center error_msg">Only visible if Air Tickets Standalone Inquiry</h1>
+          </div>
+        </div>
 
       </div>
-      <div class="select_plan" routerLink='/home/tours'>
-        <ion-checkbox checked="false"> </ion-checkbox>
-        <ion-label class="ml-3">Tours</ion-label>
-      </div>
-      <div class="select_plan" routerLink='/home/transfers'>
-        <ion-checkbox checked="false"> </ion-checkbox>
-        <ion-label class="ml-3">Transfers</ion-label>
-      </div>
-      <div class="select_plan" routerLink='/home/other-details'>
-        <ion-checkbox checked="false"> </ion-checkbox>
-        <ion-label class="ml-3">Consulting</ion-label>
-      </div>
-      <div class="select_plan">
-        <ion-checkbox checked="false"> </ion-checkbox>
-        <ion-label class="ml-3">Air Tickets</ion-label>
-      </div>
-      <div class="select_plan">
-        <ion-checkbox checked="false"> </ion-checkbox>
-        <ion-label class="ml-3">Insurance </ion-label>
-      </div>
-      <div class="select_plan">
-        <ion-checkbox checked="false"> </ion-checkbox>
-        <ion-label class="ml-3">Group Travel</ion-label>
-      </div>
-      <div class="select_plan">
-        <ion-checkbox checked="false"> </ion-checkbox>
-        <ion-label class="ml-3">Personal Tour Guide</ion-label>
+      <div class="next_btn">
+        <button type="submit">Next<i class="fas fa-arrow-right"></i></button>
       </div>
     </div>
-    <div class="service_info">
-      <span><i class="fas fa-info"></i></span>
-      <div class="service_info_detail">
-        <p class="text-center">Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis
-          nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea
-          commodo consequat.</p>
+    <!-- air tickets form end here  -->
+
+    <!-- Accomodation form start here  -->
+    <div class="accomodation_detail" id="accomodation_form" *ngIf="isAccomodation">
+      <div class="services_detail">
+        <p class="ml-3 visa_text">Accomodation</p>
+        <div class="general_details">
+          <div class="general_details_body">
+            <ion-item>
+              <ion-label>Accomodation Type</ion-label>
+              <ion-select cancelText="Dismiss">
+                <ion-select-option value="one">1</ion-select-option>
+                <ion-select-option value="two"> 2</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <ion-label>Room Category Preference</ion-label>
+              <ion-select cancelText="Dismiss">
+                <ion-select-option value="brown">Meal 1</ion-select-option>
+                <ion-select-option value="blonde">Meal 2</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <form action="#">
+              <div class="row">
+                <p class="w-100 pl-3">Smoking Room</p>
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="test1" name="radio-group" checked>
+                  <label for="test1">Yes</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="test2" name="radio-group">
+                  <label for="test2">No</label>
+                </div>
+                <p class="w-100 pl-3">Wheelchair Accessible</p>
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="Accessible1" name="radio-group" checked>
+                  <label for="Accessible1">Yes</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="Accessible2" name="radio-group">
+                  <label for="Accessible2">No</label>
+                </div>
+              </div>
+              <ion-item>
+                <ion-label position="floating">Any Special Requirement?</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+            </form>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Meal Plans</p>
+          </div>
+          <div class="general_details_body">
+            <form action="#">
+              <div class="row">
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="Plans1" name="radio-group" checked>
+                  <label for="Plans1">CP ( Continental Plan ) - Only Breakfast</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="Plans2" name="radio-group">
+                  <label for="Plans2">AP ( American Plan ) - All Meals</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="Plans3" name="radio-group">
+                  <label for="Plans3">MAP - Breakfast & 1 Major Meal</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Culinary Preferrence</p>
+          </div>
+          <div class="general_details_body">
+            <form action="#">
+              <div class="row">
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test3" name="radio-group" checked>
+                  <label for="test3">Vegetarian</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test4" name="radio-group">
+                  <label for="test4">Vegan</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test5" name="radio-group">
+                  <label for="test5">Gluten & Lactose Free</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test6" name="radio-group">
+                  <label for="test6">Non Veg</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test7" name="radio-group">
+                  <label for="test7">Jain ( Only where available )</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test8" name="radio-group">
+                  <label for="test8">Other</label>
+                </div>
+              </div>
+              <ion-item>
+                <ion-label position="floating">Any Special Requirement?</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+            </form>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header w-100 d-inline-block">
+            <p class="float-left">Room - 1</p>
+            <i class="fas fa-minus-circle float-right"></i>
+          </div>
+          <div class="general_details_body pt-0">
+            <ion-item>
+              <ion-label position="floating">Infants</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Children</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Adults</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header w-100 d-inline-block">
+            <p class="float-left">Room - 2</p>
+            <i class="fas fa-minus-circle float-right"></i>
+          </div>
+          <div class="general_details_body pt-0">
+            <ion-item>
+              <ion-label position="floating">Infants</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Children</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Adults</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          </div>
+        </div>
+        <div class="add_room_btn text-center">
+          <button type="submit"><i class="fas fa-plus-circle"></i>Add Room</button>
+        </div>
+      </div>
+      <div class="next_btn">
+        <button type="submit">Next<i class="fas fa-arrow-right"></i></button>
       </div>
     </div>
-    <div class="next_btn">
-      <button type="submit">Next<i class="fas fa-arrow-right"></i></button>
+    <!-- Accomodation form start here  -->
+    <!-- Tours form start here  -->
+    <div class="tours_detail" id="tours_form" *ngIf="isTours">
+      <div class="services_detail">
+        <p class="ml-3 visa_text">Tours</p>
+        <div class="general_details">
+          <div class="general_details_body">
+            <ion-item>
+              <ion-label>Tour Basis</ion-label>
+              <ion-select cancelText="Dismiss">
+                <ion-select-option value="one">1</ion-select-option>
+                <ion-select-option value="two"> 2</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Language Preference</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Duration Preference</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Any Special Request ?</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Itinerary Pace</p>
+          </div>
+          <div class="general_details_body ">
+            <div class="relax_img">
+              <ion-img src="../../assets/images/relax.png"></ion-img>
+              <h2 class="text-center">Relaxed</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="next_btn">
+        <button type="submit">Next<i class="fas fa-arrow-right"></i></button>
+      </div>
     </div>
+    <!-- Tours form end here  -->
+    <!-- transfer form start here  -->
+    <div class="transfer_detail_form" id="tranfer_form" *ngIf="isTours">
+      <div class="services_detail">
+        <p class="ml-3 visa_text">Transfer</p>
+        <div class="general_details">
+          <div class="general_details_body">
+            <form action="#">
+              <ion-item>
+                <ion-label position="floating">From</ion-label>
+                <ion-datetime></ion-datetime>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">To</ion-label>
+                <ion-datetime></ion-datetime>
+              </ion-item>
+              <p class="mt-2">Transfer Basis</p>
+              <div class="row mt-2">
+                <div class="col-5">
+                  <input type="radio" class="mr-2" id="Plans1" name="radio-group" checked>
+                  <label for="Plans1">Private</label>
+                </div>
+                <div class="col-7">
+                  <input type="radio" class="mr-2" id="Plans2" name="radio-group">
+                  <label for="Plans2">Sharing</label>
+                </div>
+              </div>
+              <ion-item>
+                <ion-label position="floating">Any Special Requirement?</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+            </form>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Train</p>
+          </div>
+          <div class="general_details_body">
+            <ion-item>
+              <ion-label>Meal</ion-label>
+              <ion-select>
+                <ion-select-option value="meal1">Vegetarian</ion-select-option>
+                <ion-select-option value="meal2">Vegan</ion-select-option>
+                <ion-select-option value="meal3">Non Veg</ion-select-option>
+                <ion-select-option value="meal4">Jain ( Only where available )</ion-select-option>
+                <ion-select-option value="meal5">Other</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <ion-label>Seat Preference</ion-label>
+              <ion-select interface="popover">
+                <ion-select-option value="nes">Window</ion-select-option>
+                <ion-select-option value="n64">Front</ion-select-option>
+                <ion-select-option value="ps">Back</ion-select-option>
+                <ion-select-option value="genesis">aisle</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <ion-label>Tyre</ion-label>
+              <ion-select value="notifications" interface="action-sheet">
+                <ion-select-option value="enable">one Tyre</ion-select-option>
+                <ion-select-option value="mute">two Tyre</ion-select-option>
+                <ion-select-option value="mute_week">three Tyre</ion-select-option>
+                </ion-select>
+            </ion-item>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Air</p>
+          </div>
+          <div class="general_details_body">
+            <div class="select_plan_check">
+              <ion-checkbox checked="false"> </ion-checkbox>
+              <ion-label class="ml-3">Heli Taxi</ion-label>
+            </div>
+            <div class="select_plan_check">
+              <ion-checkbox checked="false"> </ion-checkbox>
+              <ion-label class="ml-3">Private Jet</ion-label>
+            </div>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Chauffer ?</p>
+          </div>
+          <div class="general_details_body">
+            <ion-item>
+              <ion-label>Car Type</ion-label>
+              <ion-select cancelText="Dismiss">
+                <ion-select-option value="Chauffer1">
+                  Intermediate Car</ion-select-option>
+                <ion-select-option value="Chauffer2">Luxury Car</ion-select-option>
+                <ion-select-option value="Chauffer3">Mini Car</ion-select-option>
+                <ion-select-option value="Chauffer4">Economy Car</ion-select-option>
+                <ion-select-option value="Chauffer5">Standard Car</ion-select-option>
+                <ion-select-option value="Chauffer6">Compact Car</ion-select-option>
+                <ion-select-option value="Chauffer7"> Full Size SUV</ion-select-option>
+                <ion-select-option value="Chauffer8"> Full Size Car</ion-select-option>
+                <ion-select-option value="Chauffer9"> Premium SUV</ion-select-option>
+                <ion-select-option value="Chauffer10">Full Size Car</ion-select-option>
+                <ion-select-option value="Chauffer11">Full Size SUV</ion-select-option>
+                <ion-select-option value="Chauffer12">Full Size Van</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Self Drive ?</p>
+          </div>
+          <div class="general_details_body">
+            <ion-item>
+              <ion-label>Car Type</ion-label>
+              <ion-select cancelText="Dismiss">
+                <ion-select-option value="Chauffer1">
+                  Intermediate Car</ion-select-option>
+                <ion-select-option value="Chauffer2">Luxury Car</ion-select-option>
+                <ion-select-option value="Chauffer3">Mini Car</ion-select-option>
+                <ion-select-option value="Chauffer4">Economy Car</ion-select-option>
+                <ion-select-option value="Chauffer5">Standard Car</ion-select-option>
+                <ion-select-option value="Chauffer6">Compact Car</ion-select-option>
+                <ion-select-option value="Chauffer7"> Full Size SUV</ion-select-option>
+                <ion-select-option value="Chauffer8"> Full Size Car</ion-select-option>
+                <ion-select-option value="Chauffer9"> Premium SUV</ion-select-option>
+                <ion-select-option value="Chauffer10">Full Size Car</ion-select-option>
+                <ion-select-option value="Chauffer11">Full Size SUV</ion-select-option>
+                <ion-select-option value="Chauffer12">Full Size Van</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <div class="select_plan_check mt-2">
+              <ion-checkbox checked="false"> </ion-checkbox>
+              <ion-label class="ml-3">Suggest Rental</ion-label>
+            </div>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Cruise ?</p>
+          </div>
+          <div class="general_details_body">
+            <ion-item>
+              <ion-label>Cabin Category</ion-label>
+              <ion-select cancelText="Dismiss">
+                <ion-select-option value="Cabin1">Inside</ion-select-option>
+                <ion-select-option value="Cabin2">Outside</ion-select-option>
+                <ion-select-option value="Cabin1">Balcony</ion-select-option>
+                <ion-select-option value="Cabin1">Suite</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <ion-label>Shore Excrusion</ion-label>
+              <ion-select cancelText="Dismiss">
+                <ion-select-option value="Excrusion1">Shore Excrusion 1</ion-select-option>
+                <ion-select-option value="Excrusion2">Shore Excrusion 2</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>City Cards ?</p>
+          </div>
+          <div class="general_details_body">
+            <ion-item>
+              <ion-label position="floating">Name of city card</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          </div>
+        </div>
+      </div>
+      <div class="next_btn">
+        <button type="submit">Next<i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <!-- transfer form end here  -->
+    <!-- other details form start here  -->
+    <div class="other_detail_content" style="display: none;">
+      <div class="services_detail">
+        <p class="ml-3 visa_text">Other Details</p>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Communication Preference </p>
+          </div>
+          <div class="general_details_body">
+            <form action="#">
+              <div class="row">
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test3" name="radio-group" checked>
+                  <label for="test3">Whatsapp</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test4" name="radio-group">
+                  <label for="test4">Phone</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test5" name="radio-group">
+                  <label for="test5">Mail</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test6" name="radio-group">
+                  <label for="test6">Visit Us</label>
+                </div>
+                <div class="col-12">
+                  <input type="radio" class="mr-2" id="test7" name="radio-group">
+                  <label for="test7">Message</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Budget</p>
+          </div>
+          <div class="general_details_body">
+            <ion-item>
+              <ion-label>Budget Preference</ion-label>
+              <ion-select cancelText="Dismiss">
+                <ion-select-option value="Budget1">Budget 1</ion-select-option>
+                <ion-select-option value="Budget2">Budget 2</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <ion-label>Budget Amount</ion-label>
+              <ion-select cancelText="Dismiss">
+                <ion-select-option value="Amount1">Amount 1</ion-select-option>
+                <ion-select-option value="Amount2">Amount 2</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Mode of Payment</p>
+          </div>
+          <div class="general_details_body">
+            <div class="select_plan_check">
+              <ion-checkbox checked="false"> </ion-checkbox>
+              <ion-label class="ml-3">Cash</ion-label>
+            </div>
+            <div class="select_plan_check">
+              <ion-checkbox checked="false"> </ion-checkbox>
+              <ion-label class="ml-3">Cheque</ion-label>
+            </div>
+            <div class="select_plan_check">
+              <ion-checkbox checked="false"> </ion-checkbox>
+              <ion-label class="ml-3">Bank Transfer</ion-label>
+            </div>
+            <div class="select_plan_check">
+              <ion-checkbox checked="false"> </ion-checkbox>
+              <ion-label class="ml-3">NEFT/RTGS</ion-label>
+            </div>
+            <div class="select_plan_check">
+              <ion-checkbox checked="false"> </ion-checkbox>
+              <ion-label class="ml-3">Gpay/Paytm</ion-label>
+            </div>
+            <div class="select_plan_check">
+              <ion-checkbox checked="false"> </ion-checkbox>
+              <ion-label class="ml-3">Credit/Debit Card</ion-label>
+            </div>
+          </div>
+        </div>
+
+        <div class="general_details">
+          <div class="general_details_header">
+            <p>Mode of Payment</p>
+          </div>
+          <div class="general_details_body">
+            <p>Plans</p>
+            <ion-item>
+              <ion-label position="floating">2</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <div class="total_cost w-100 d-inline-block">
+              <p class="float-left">Cost</p>
+              <p class="float-right">₹ 3000</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="next_btn">
+        <button type="submit">Next<i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <!-- other details form end here  -->
+
   </div>
 </ion-content>

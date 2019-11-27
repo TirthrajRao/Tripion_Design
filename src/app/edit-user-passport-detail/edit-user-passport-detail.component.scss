@@ -2,6 +2,11 @@ $purple: #0575E6;
 $blue  : #021B79;
 
 // ion header css start here
+i.back_icon_blue {
+    color: #000;
+    font-size: 28px;
+}
+
 ion-header ion-toolbar:first-child {
     --background   : #fff !important;
     height         : 80px;

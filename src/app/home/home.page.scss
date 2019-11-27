@@ -75,11 +75,11 @@ $blue  : #021B79;
     background-repeat  : no-repeat;
     background-position: bottom;
     background-size    : 100% auto;
-    height             : calc(100vh - 30px);
+    height             : calc(100vh - 20px);
 }
 
 .bg_home {
-    padding-top: 30px;
+    padding-top: 20px;
 
     &:before {
         content      : "";
@@ -97,7 +97,7 @@ $blue  : #021B79;
 
     .menu_content {
         margin: 40px 0px 0px;
-        height: calc(100vh - 240px);
+        height: calc(100vh - 250px);
 
         .menu_list {
             outline    : none;
@@ -135,17 +135,17 @@ $blue  : #021B79;
 
             span {
                 font-weight: 500;
-                font-size  : 22px;
+                font-size  : 21px;
                 display    : inline-block;
                 width      : 100%;
                 @media(max-height: 812px){
-                    font-size  : 20px;
+                    font-size  : 19px;
                 }
                 @media(max-height: 750px){
-                    font-size  : 18px;
+                    font-size  : 16px;
                 }
                 @media(max-height: 600px){
-                    font-size  : 16px;
+                    font-size  : 15px;
                 }
                 @media(max-height: 480px){
                     font-size  : 14px;
