@@ -537,7 +537,7 @@ var AppComponent = /** @class */ (function () {
     };
     AppComponent.prototype.menuRadius = function () {
         setTimeout(function () {
-            document.querySelector('ion-menu').shadowRoot.querySelector('.menu-inner').setAttribute('style', 'border-radius:0px 30px 0px 0px');
+            document.querySelector('ion-menu').shadowRoot.querySelector('.menu-inner').setAttribute('style', 'border-radius:0px 30px 0px 0px;');
         }, 2000);
     };
     AppComponent.ctorParameters = function () { return [
