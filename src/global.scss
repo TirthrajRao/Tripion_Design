@@ -54,6 +54,21 @@ ion-menu {
 }
 
 // header css start here 
+
+ion-back-button.sc-ion-back-button-md-h.sc-ion-back-button-md-s.md.button.back-button-has-icon-only.ion-activatable.ion-focusable.hydrated {
+    --icon-margin-bottom: 15px;
+
+    button.button-native.sc-ion-back-button-md {
+        background-image   : url('./assets/images/back_icon.png');
+        background-repeat  : no-repeat;
+        background-size    : 22%;
+        background-position: center 22%;
+    } 
+}
+ion-icon.sc-ion-back-button-md {
+    display: none;
+}
+
 ion-header ion-toolbar:first-child {
     --background   : #0575E6 !important;
     height         : 80px;
@@ -97,9 +112,9 @@ ion-menu-button {
 
 .back_icon {
     ion-img {
-        height: 16px;
-        width : 16px;
-        margin: 4px auto 0px auto;
+        height   : 16px;
+        width    : 16px;
+        // margin: 8px 0px 0px 8px;
     }
 }
 
@@ -114,12 +129,14 @@ ion-footer {
 ion-label {
     font-family: 'Montserrat', sans-serif !important;
 }
+
 .form-control:focus {
-      background-color: #fff;
-    border-color: #707070;
-     outline: none !important; 
-    box-shadow:none !important;
+    background-color: #fff;
+    border-color    : #707070;
+    outline         : none !important;
+    box-shadow      : none !important;
 }
+
 body *[routerlink] {
     outline: none !important;
 }

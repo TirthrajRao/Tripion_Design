@@ -3,7 +3,10 @@
     <ion-row>
       <ion-col size='2'>
         <div class="back_icon">
-          <ion-img src="../../assets/images/back_icon.png"></ion-img>
+            <ion-buttons slot="start">
+                <ion-back-button></ion-back-button>
+            </ion-buttons>
+          <!-- <ion-img src="../../assets/images/back_icon.png"></ion-img> -->
         </div>
       </ion-col>
       <ion-col size='8'>
@@ -65,20 +68,21 @@
             <ion-item>
               <ion-label>Meal</ion-label>
               <ion-select>
-                  <ion-select-option value="meal1">Meal 1</ion-select-option>
-                  <ion-select-option value="meal2">Meal 2</ion-select-option>
+                  <ion-select-option value="meal1">Vegetarian</ion-select-option>
+                  <ion-select-option value="meal2">Vegan</ion-select-option>
+                  <ion-select-option value="meal3">Non Veg</ion-select-option>
+                  <ion-select-option value="meal4">Jain ( Only where available )</ion-select-option>
+                  <ion-select-option value="meal5">Other</ion-select-option>
                 </ion-select>
             </ion-item>
             <ion-item>
               <ion-label>Seat Preference</ion-label>
               <ion-select interface="popover">
-                  <ion-select-option value="nes">NES</ion-select-option>
-                  <ion-select-option value="n64">Nintendo64</ion-select-option>
-                  <ion-select-option value="ps">PlayStation</ion-select-option>
-                  <ion-select-option value="genesis">Sega Genesis</ion-select-option>
-                  <ion-select-option value="saturn">Sega Saturn</ion-select-option>
-                  <ion-select-option value="snes">SNES</ion-select-option>
-                </ion-select>
+                  <ion-select-option value="nes">Window</ion-select-option>
+                  <ion-select-option value="n64">Front</ion-select-option>
+                  <ion-select-option value="ps">Back</ion-select-option>
+                  <ion-select-option value="genesis">aisle</ion-select-option>
+                   </ion-select>
             </ion-item>
             <ion-item>
               <ion-label>Tire</ion-label>
@@ -120,8 +124,19 @@
             <ion-item>
               <ion-label>Car Type</ion-label>
               <ion-select cancelText="Dismiss">
-                <ion-select-option value="Chauffer1">Chauffer ? 1</ion-select-option>
-                <ion-select-option value="Chauffer2">Chauffer ? 2</ion-select-option>
+                <ion-select-option value="Chauffer1">
+                   Intermediate Car</ion-select-option>
+                <ion-select-option value="Chauffer2">Luxury Car</ion-select-option>
+                <ion-select-option value="Chauffer3">Mini Car</ion-select-option>
+                <ion-select-option value="Chauffer4">Economy Car</ion-select-option>
+                <ion-select-option value="Chauffer5">Standard Car</ion-select-option>
+                <ion-select-option value="Chauffer6">Compact Car</ion-select-option>
+                <ion-select-option value="Chauffer7"> Full Size SUV</ion-select-option>
+                <ion-select-option value="Chauffer8"> Full Size Car</ion-select-option>
+                <ion-select-option value="Chauffer9"> Premium SUV</ion-select-option>
+                <ion-select-option value="Chauffer10">Full Size Car</ion-select-option>
+                <ion-select-option value="Chauffer11">Full Size SUV</ion-select-option>
+                <ion-select-option value="Chauffer12">Full Size Van</ion-select-option>
               </ion-select>
             </ion-item>
           </div>
@@ -137,8 +152,19 @@
             <ion-item>
               <ion-label>Car Type</ion-label>
               <ion-select cancelText="Dismiss">
-                <ion-select-option value="Car1" selected>Car 1</ion-select-option>
-                <ion-select-option value="Car2">Car 2</ion-select-option>
+                  <ion-select-option value="Chauffer1">
+                      Intermediate Car</ion-select-option>
+                   <ion-select-option value="Chauffer2">Luxury Car</ion-select-option>
+                   <ion-select-option value="Chauffer3">Mini Car</ion-select-option>
+                   <ion-select-option value="Chauffer4">Economy Car</ion-select-option>
+                   <ion-select-option value="Chauffer5">Standard Car</ion-select-option>
+                   <ion-select-option value="Chauffer6">Compact Car</ion-select-option>
+                   <ion-select-option value="Chauffer7"> Full Size SUV</ion-select-option>
+                   <ion-select-option value="Chauffer8"> Full Size Car</ion-select-option>
+                   <ion-select-option value="Chauffer9"> Premium SUV</ion-select-option>
+                   <ion-select-option value="Chauffer10">Full Size Car</ion-select-option>
+                   <ion-select-option value="Chauffer11">Full Size SUV</ion-select-option>
+                   <ion-select-option value="Chauffer12">Full Size Van</ion-select-option>
               </ion-select>
             </ion-item>
             <div class="select_plan mt-2">
