@@ -3,7 +3,10 @@
     <ion-row>
       <ion-col size='2'>
         <div class="back_icon">
-          <ion-img src="../../assets/images/back_icon.png"></ion-img>
+            <ion-buttons slot="start">
+                <ion-back-button></ion-back-button>
+            </ion-buttons>
+          <!-- <ion-img src="../../assets/images/back_icon.png"></ion-img> -->
         </div>
       </ion-col>
       <ion-col size='8'>
@@ -104,27 +107,29 @@
       </div>
       <div class="attechments" style="display: none;">
         <div class="row">
-          <div class="col-3">
+          <div class="col-3 px-2">
             <div class="attach_img">
               <i class="fas fa-camera"></i>
               <p>PHOTO</p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-3 px-2">
             <div class="attach_img">
-              <i class="fas fa-video"></i>
+                <input type="file" class="form-control" id="file_vedio" name="files"
+                value="files" style="display: none;" accept="video/mp4,video/x-m4v,video/*">
+              <label for="file_vedio"><i class="fas fa-video"></i></label>
               <p>VIDEO</p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-3 px-2">
             <div class="attach_img">
               <i class="fas fa-map-marker-alt"></i>
               <p>LOCATION</p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-3 px-2">
             <div class="attach_img">
-              <input type="file" class="form-control" id="file" placeholder="Enter Your Password" name="files"
+              <input type="file" class="form-control" id="file" name="files"
                 value="files" style="display: none;">
               <label for="file"><i class="fas fa-link"></i></label>
               <p>FILE</p>

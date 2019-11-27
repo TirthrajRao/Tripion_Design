@@ -4,6 +4,13 @@ $green : #2FE57C;
 
 
 // ion header css start here
+button.button-native.sc-ion-back-button-ios {
+    display: none;
+}
+.back_icon_purple{
+    color: #804EE8;
+    font-size: 28px;
+}
 ion-header ion-toolbar:first-child {
     --background   : #fff !important;
     height         : 80px;
