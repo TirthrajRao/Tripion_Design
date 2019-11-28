@@ -129,11 +129,11 @@ import { from } from 'rxjs';
             component: ServiceInquiryComponent
           },
           {
-            path: 'visa-inquiry',
+            path: 'visa',
             component: VisaInquiryComponent
           },
           {
-            path: 'air-tickets-inquiry',
+            path: 'air-tickets',
             component: AirTicketsInquiryComponent
           },
           {
@@ -149,7 +149,7 @@ import { from } from 'rxjs';
             component: TransferInquiryComponent
           },
           {
-            path: 'other-details',
+            path: 'other-detail',
             component: OtherDetailsInquiryComponent
           },
           {

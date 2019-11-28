@@ -29,190 +29,178 @@
       <p class="ml-3 visa_text">Transfer</p>
       <div class="general_details">
         <div class="general_details_body">
-          <div class="duration_status">
-            <form action="#">
-              <ion-item>
-                <ion-label position="floating">From</ion-label>
-                <ion-datetime></ion-datetime>
-              </ion-item>
-              <ion-item>
-                <ion-label position="floating">To</ion-label>
-                <ion-datetime></ion-datetime>
-              </ion-item>
-              <p class="mt-2">Transfer Basis</p>
-              <div class="row mt-2">
-                <div class="col-5 pl-4">
-                  <input type="radio" class="mr-2" id="Plans1" name="radio-group" checked>
-                  <label for="Plans1">Private</label>
-                </div>
-                <div class="col-7">
-                  <input type="radio" class="mr-2" id="Plans2" name="radio-group">
-                  <label for="Plans2">Sharing</label>
-                </div>
+          <form action="#">
+            <ion-item>
+              <ion-label position="floating">From</ion-label>
+              <ion-datetime></ion-datetime>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">To</ion-label>
+              <ion-datetime></ion-datetime>
+            </ion-item>
+            <p class="mt-2">Transfer Basis</p>
+            <div class="row mt-2">
+              <div class="col-5">
+                <input type="radio" class="mr-2" id="Plans1" name="radio-group" checked>
+                <label for="Plans1">Private</label>
               </div>
-              <ion-item>
-                <ion-label position="floating">Any Special Requirement?</ion-label>
-                <ion-input type="text"></ion-input>
-              </ion-item>
-            </form>
-          </div>
+              <div class="col-7">
+                <input type="radio" class="mr-2" id="Plans2" name="radio-group">
+                <label for="Plans2">Sharing</label>
+              </div>
+            </div>
+            <ion-item>
+              <ion-label position="floating">Any Special Requirement?</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          </form>
         </div>
       </div>
 
-      <div class="general_details mt-3">
+      <div class="general_details">
         <div class="general_details_header">
           <p>Train</p>
         </div>
         <div class="general_details_body">
-          <div class="duration_status mt-2">
-            <ion-item>
-              <ion-label>Meal</ion-label>
-              <ion-select>
-                  <ion-select-option value="meal1">Vegetarian</ion-select-option>
-                  <ion-select-option value="meal2">Vegan</ion-select-option>
-                  <ion-select-option value="meal3">Non Veg</ion-select-option>
-                  <ion-select-option value="meal4">Jain ( Only where available )</ion-select-option>
-                  <ion-select-option value="meal5">Other</ion-select-option>
-                </ion-select>
-            </ion-item>
-            <ion-item>
-              <ion-label>Seat Preference</ion-label>
-              <ion-select interface="popover">
-                  <ion-select-option value="nes">Window</ion-select-option>
-                  <ion-select-option value="n64">Front</ion-select-option>
-                  <ion-select-option value="ps">Back</ion-select-option>
-                  <ion-select-option value="genesis">aisle</ion-select-option>
-                   </ion-select>
-            </ion-item>
-            <ion-item>
-              <ion-label>Tire</ion-label>
-              <ion-select value="notifications" interface="action-sheet">
-                  <ion-select-option value="enable">Enable</ion-select-option>
-                  <ion-select-option value="mute">Mute</ion-select-option>
-                  <ion-select-option value="mute_week">Mute for a week</ion-select-option>
-                  <ion-select-option value="mute_year">Mute for a year</ion-select-option>
-                </ion-select>
-            </ion-item>
+          <ion-item>
+            <ion-label>Meal</ion-label>
+            <ion-select>
+              <ion-select-option value="meal1">Breakfast</ion-select-option>
+              <ion-select-option value="meal2">Lunck</ion-select-option>
+              <ion-select-option value="meal3">Dinner</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-label>Seat Preference</ion-label>
+            <ion-select interface="popover">
+              <ion-select-option value="nes">Window</ion-select-option>
+              <ion-select-option value="n64">Front</ion-select-option>
+              <ion-select-option value="ps">Back</ion-select-option>
+              <ion-select-option value="genesis">aisle</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-label>Tyre</ion-label>
+            <ion-select value="notifications" interface="action-sheet">
+              <ion-select-option value="enable">Economy</ion-select-option>
+              <ion-select-option value="mute">Business</ion-select-option>
+              <ion-select-option value="mute_week">First</ion-select-option>
+              <ion-select-option value="mute_week">Premium Economy</ion-select-option>
+              </ion-select>
+          </ion-item>
+        </div>
+      </div>
+
+      <div class="general_details">
+        <div class="general_details_header">
+          <p>Air</p>
+        </div>
+        <div class="general_details_body">
+          <div class="select_plan_check">
+            <ion-checkbox checked="false"> </ion-checkbox>
+            <ion-label class="ml-3">Heli Taxi</ion-label>
+          </div>
+          <div class="select_plan_check">
+            <ion-checkbox checked="false"> </ion-checkbox>
+            <ion-label class="ml-3">Private Jet</ion-label>
           </div>
         </div>
       </div>
 
-      <div class="general_details mt-3">
-          <div class="general_details_header">
-            <p>Air</p>
-          </div>
-          <div class="general_details_body">
-            <div class="duration_status">
-              <div class="select_plan">
-                <ion-checkbox checked="false"> </ion-checkbox>
-                <ion-label class="ml-3">Heli Taxi</ion-label>
-              </div>
-              <div class="select_plan">
-                <ion-checkbox checked="false"> </ion-checkbox>
-                <ion-label class="ml-3">Private Jet</ion-label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      <div class="general_details mt-3">
+      <div class="general_details">
         <div class="general_details_header">
           <p>Chauffer ?</p>
         </div>
         <div class="general_details_body">
-          <div class="duration_status">
-            <ion-item>
-              <ion-label>Car Type</ion-label>
-              <ion-select cancelText="Dismiss">
-                <ion-select-option value="Chauffer1">
-                   Intermediate Car</ion-select-option>
-                <ion-select-option value="Chauffer2">Luxury Car</ion-select-option>
-                <ion-select-option value="Chauffer3">Mini Car</ion-select-option>
-                <ion-select-option value="Chauffer4">Economy Car</ion-select-option>
-                <ion-select-option value="Chauffer5">Standard Car</ion-select-option>
-                <ion-select-option value="Chauffer6">Compact Car</ion-select-option>
-                <ion-select-option value="Chauffer7"> Full Size SUV</ion-select-option>
-                <ion-select-option value="Chauffer8"> Full Size Car</ion-select-option>
-                <ion-select-option value="Chauffer9"> Premium SUV</ion-select-option>
-                <ion-select-option value="Chauffer10">Full Size Car</ion-select-option>
-                <ion-select-option value="Chauffer11">Full Size SUV</ion-select-option>
-                <ion-select-option value="Chauffer12">Full Size Van</ion-select-option>
-              </ion-select>
-            </ion-item>
-          </div>
+          <ion-item>
+            <ion-label>Car Type</ion-label>
+            <ion-select cancelText="Dismiss">
+              <ion-select-option value="Chauffer1">
+                Intermediate Car</ion-select-option>
+              <ion-select-option value="Chauffer2">Luxury Car</ion-select-option>
+              <ion-select-option value="Chauffer3">Mini Car</ion-select-option>
+              <ion-select-option value="Chauffer4">Economy Car</ion-select-option>
+              <ion-select-option value="Chauffer5">Standard Car</ion-select-option>
+              <ion-select-option value="Chauffer6">Compact Car</ion-select-option>
+              <ion-select-option value="Chauffer7"> Full Size SUV</ion-select-option>
+              <ion-select-option value="Chauffer8"> Full Size Car</ion-select-option>
+              <ion-select-option value="Chauffer9"> Premium SUV</ion-select-option>
+              <ion-select-option value="Chauffer10">Full Size Car</ion-select-option>
+              <ion-select-option value="Chauffer11">Full Size SUV</ion-select-option>
+              <ion-select-option value="Chauffer12">Full Size Van</ion-select-option>
+            </ion-select>
+          </ion-item>
         </div>
       </div>
 
-      <div class="general_details mt-3">
+      <div class="general_details">
         <div class="general_details_header">
           <p>Self Drive ?</p>
         </div>
         <div class="general_details_body">
-          <div class="duration_status">
-            <ion-item>
-              <ion-label>Car Type</ion-label>
-              <ion-select cancelText="Dismiss">
-                  <ion-select-option value="Chauffer1">
-                      Intermediate Car</ion-select-option>
-                   <ion-select-option value="Chauffer2">Luxury Car</ion-select-option>
-                   <ion-select-option value="Chauffer3">Mini Car</ion-select-option>
-                   <ion-select-option value="Chauffer4">Economy Car</ion-select-option>
-                   <ion-select-option value="Chauffer5">Standard Car</ion-select-option>
-                   <ion-select-option value="Chauffer6">Compact Car</ion-select-option>
-                   <ion-select-option value="Chauffer7"> Full Size SUV</ion-select-option>
-                   <ion-select-option value="Chauffer8"> Full Size Car</ion-select-option>
-                   <ion-select-option value="Chauffer9"> Premium SUV</ion-select-option>
-                   <ion-select-option value="Chauffer10">Full Size Car</ion-select-option>
-                   <ion-select-option value="Chauffer11">Full Size SUV</ion-select-option>
-                   <ion-select-option value="Chauffer12">Full Size Van</ion-select-option>
-              </ion-select>
-            </ion-item>
-            <div class="select_plan mt-2">
-              <ion-checkbox checked="false"> </ion-checkbox>
-              <ion-label class="ml-3">Suggest Rental</ion-label>
-            </div>
+          <ion-item>
+            <ion-label>Car Type</ion-label>
+            <ion-select cancelText="Dismiss">
+              <ion-select-option value="Chauffer1">
+                Intermediate Car</ion-select-option>
+              <ion-select-option value="Chauffer2">Luxury Car</ion-select-option>
+              <ion-select-option value="Chauffer3">Mini Car</ion-select-option>
+              <ion-select-option value="Chauffer4">Economy Car</ion-select-option>
+              <ion-select-option value="Chauffer5">Standard Car</ion-select-option>
+              <ion-select-option value="Chauffer6">Compact Car</ion-select-option>
+              <ion-select-option value="Chauffer7"> Full Size SUV</ion-select-option>
+              <ion-select-option value="Chauffer8"> Full Size Car</ion-select-option>
+              <ion-select-option value="Chauffer9"> Premium SUV</ion-select-option>
+              <ion-select-option value="Chauffer10">Full Size Car</ion-select-option>
+              <ion-select-option value="Chauffer11">Full Size SUV</ion-select-option>
+              <ion-select-option value="Chauffer12">Full Size Van</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <div class="select_plan_check mt-2">
+            <ion-checkbox checked="false"> </ion-checkbox>
+            <ion-label class="ml-3">Suggest Rental</ion-label>
           </div>
         </div>
       </div>
 
-      <div class="general_details mt-3">
+      <div class="general_details">
         <div class="general_details_header">
           <p>Cruise ?</p>
         </div>
         <div class="general_details_body">
-          <div class="duration_status">
-            <ion-item>
-              <ion-label>Cabin Category</ion-label>
-              <ion-select cancelText="Dismiss">
-                <ion-select-option value="Cabin1">Cabin Category 1</ion-select-option>
-                <ion-select-option value="Cabin2">Cabin Category 2</ion-select-option>
-              </ion-select>
-            </ion-item>
-            <ion-item>
-              <ion-label>Shore Excrusion</ion-label>
-              <ion-select cancelText="Dismiss">
-                <ion-select-option value="Excrusion1">Shore Excrusion 1</ion-select-option>
-                <ion-select-option value="Excrusion2">Shore Excrusion 2</ion-select-option>
-              </ion-select>
-            </ion-item>
-          </div>
+          <ion-item>
+            <ion-label>Cabin Category</ion-label>
+            <ion-select cancelText="Dismiss">
+              <ion-select-option value="Cabin1">Inside</ion-select-option>
+              <ion-select-option value="Cabin2">Outside</ion-select-option>
+              <ion-select-option value="Cabin1">Balcony</ion-select-option>
+              <ion-select-option value="Cabin1">Suite</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-label>Shore Excrusion</ion-label>
+            <ion-select cancelText="Dismiss">
+              <ion-select-option value="Excrusion1">Adventure</ion-select-option>
+              <ion-select-option value="Excrusion2">Swimming</ion-select-option>
+              <ion-select-option value="Excrusion2">Motorcoach</ion-select-option>
+              <ion-select-option value="Excrusion2">Boating</ion-select-option>
+              <ion-select-option value="Excrusion2">Sight-seeing</ion-select-option>
+            </ion-select>
+          </ion-item>
         </div>
       </div>
 
-      <div class="general_details mt-3">
-          <div class="general_details_header">
-            <p>City Cards ?</p>
-          </div>
-          <div class="general_details_body">
-            <div class="duration_status">
-              <ion-item>
-                  <ion-label position="floating">Name of city card</ion-label>
-                  <ion-input type="text"></ion-input>
-              </ion-item>
-            </div>
-          </div>
+      <div class="general_details">
+        <div class="general_details_header">
+          <p>City Cards ?</p>
         </div>
-
+        <div class="general_details_body">
+          <ion-item>
+            <ion-label position="floating">Name of city card</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        </div>
+      </div>
     </div>
     <div class="next_btn">
       <button type="submit">Next<i class="fas fa-arrow-right"></i></button>

@@ -68,120 +68,118 @@
             <ion-label position="floating">Passport Valid Until ?</ion-label>
             <ion-input type="text"></ion-input>
           </ion-item>
-          <div class="duration_status mt-2">
+          <form action="#">
             <p>Date and Duration Status</p>
-            <form action="#">
-              <div class="row">
-                <div class="col-5 pl-4">
-                  <input type="radio" class="mr-2" id="test1" name="radio-group" checked>
-                  <label for="test1">Flexible</label>
-                </div>
-                <div class="col-7">
-                  <input type="radio" class="mr-2" id="test2" name="radio-group">
-                  <label for="test2">Fixed</label>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div class="general_details p-3 mt-3">
-        <div class="duration_status mt-2">
-          <p>Purpose of Travel</p>
-          <form action="#">
             <div class="row">
-              <div class="col-5 pl-4">
-                <input type="radio" class="mr-2" id="test3" name="radio-group" checked>
-                <label for="test3">Tourism</label>
+              <div class="col-5">
+                <input type="radio" class="mr-2" id="flexible" name="radio-group" checked>
+                <label for="flexible">Flexible</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="test4" name="radio-group">
-                <label for="test4">Business</label>
-              </div>
-              <div class="col-12 pl-4">
-                <input type="radio" class="mr-2" id="test5" name="radio-group">
-                <label for="test5">Family Reunion / Functions</label>
+                <input type="radio" class="mr-2" id="fix" name="radio-group">
+                <label for="fix">Fixed</label>
               </div>
             </div>
           </form>
         </div>
       </div>
 
-      <div class="general_details p-3 mt-3">
-        <div class="duration_status mt-2">
-          <p>Type of Visa</p>
+      <div class="general_details">
+        <div class="general_details_body">
           <form action="#">
+            <p>Purpose of Travel</p>
             <div class="row">
-              <div class="col-5 pl-4">
-                <input type="radio" class="mr-2" id="test6" name="radio-group" checked>
-                <label for="test6">Business</label>
+              <div class="col-5">
+                <input type="radio" class="mr-2" id="tourism" name="radio-group" checked>
+                <label for="tourism">Tourism</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="test7" name="radio-group">
-                <label for="test7">Student</label>
+                <input type="radio" class="mr-2" id="buisness" name="radio-group">
+                <label for="buisness">Business</label>
               </div>
-              <div class="col-12 pl-4">
-                <input type="radio" class="mr-2" id="test8" name="radio-group">
-                <label for="test8">Tourist</label>
+              <div class="col-12">
+                <input type="radio" class="mr-2" id="function" name="radio-group">
+                <label for="function">Family Reunion / Functions</label>
               </div>
             </div>
           </form>
-          <ion-item>
-            <ion-label position="floating">Other</ion-label>
-            <ion-input type="text"></ion-input>
-          </ion-item>
+        </div>
+      </div>
+
+      <div class="general_details">
+        <div class="general_details_body">
+          <form action="#">
+            <p>Type of Visa</p>
+            <div class="row">
+              <div class="col-5">
+                <input type="radio" class="mr-2" id="buis" name="radio-group" checked>
+                <label for="buis">Business</label>
+              </div>
+              <div class="col-7">
+                <input type="radio" class="mr-2" id="student" name="radio-group">
+                <label for="student">Student</label>
+              </div>
+              <div class="col-12 ">
+                <input type="radio" class="mr-2" id="tourist1" name="radio-group">
+                <label for="test8">tourist1</label>
+              </div>
+            </div>
+            <ion-item>
+              <ion-label position="floating">Other</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          </form>
           <p class="mt-2">Previous Rejections</p>
           <form action="#">
-              <div class="row">
-                <div class="col-5 pl-4">
-                  <input type="radio" class="mr-2" id="test11" name="radio-group" checked>
-                  <label for="test11">Yes</label>
-                </div>
-                <div class="col-7">
-                  <input type="radio" class="mr-2" id="test12" name="radio-group">
-                  <label for="test12">No</label>
-                </div>
-              </div>
-            </form>
-          <ion-item>
-            <ion-label position="floating">Destination, Duration of Journey</ion-label>
-            <ion-input type="text"></ion-input>
-          </ion-item>
-        </div>
-      </div>
-
-      <div class="general_details p-3 mt-3">
-        <div class="duration_status mt-2">
-          <p>Previous International Travel</p>
-          <form action="#">
             <div class="row">
-              <div class="col-5 pl-4">
-                <input type="radio" class="mr-2" id="test9" name="radio-group" checked>
-                <label for="test9">Yes</label>
+              <div class="col-5">
+                <input type="radio" class="mr-2" id="test11" name="radio-group" checked>
+                <label for="test11">Yes</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="test10" name="radio-group">
-                <label for="test10">No</label>
+                <input type="radio" class="mr-2" id="test12" name="radio-group">
+                <label for="test12">No</label>
               </div>
             </div>
+            <ion-item>
+              <ion-label position="floating">Destination, Duration of Journey</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
           </form>
-          <h6 class="mt-2">France - 12 days, USA - 18 days.</h6>
         </div>
       </div>
 
-      <div class="general_details mt-3">
+      <div class="general_details">
+        <div class="general_details_body">
+          <form action="#">
+            <p>Previous International Travel</p>
+            <div class="row">
+              <div class="col-5">
+                <input type="radio" class="mr-2" id="yes" name="radio-group" checked>
+                <label for="yes">Yes</label>
+              </div>
+              <div class="col-7">
+                <input type="radio" class="mr-2" id="no" name="radio-group">
+                <label for="no">No</label>
+              </div>
+            </div>
+            <h6 class="mt-2">France - 12 days, USA - 18 days.</h6>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="general_details">
         <div class="general_details_header">
           <p>Number of Applicants</p>
         </div>
-        <div class="duration_status p-3">
+        <div class="general_details_body">
           <ion-item>
             <ion-label position="floating">Applicants</ion-label>
             <ion-input type="text"></ion-input>
           </ion-item>
         </div>
       </div>
-
     </div>
 
     <div class="next_btn">
