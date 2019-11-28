@@ -36,7 +36,7 @@ ion-content {
           }
     .card {
         cursor: pointer;
-        padding: 14px;
+        padding: 20px 14px;
         display: inline-block;
         margin-bottom: 5px;
         border-radius: 7px;
@@ -46,11 +46,13 @@ ion-content {
                 vertical-align: middle;
                 --background-checked: #A354FD;
                 --border-color-checked: #A354FD;
+                --border-color: #707070;
+                --size:28px;
             }
             ion-label {
                 vertical-align: middle;
                 font-weight: 600;
-                font-size: 17px;
+                font-size: 18px;
             }
         }
         .plan_img {

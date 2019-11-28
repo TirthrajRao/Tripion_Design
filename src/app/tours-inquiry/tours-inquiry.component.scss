@@ -156,7 +156,7 @@ ion-item {
     }
 }
 
-status bar css start here
+// status bar css start here
 
 .status_bar {
     padding: 15px 10px;
@@ -189,6 +189,7 @@ status bar css start here
         cursor       : grab;
         transition   : border 1s;
         box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.26);
+        z-index: 11111;
 
         &:active {
             cursor: grabbing;
