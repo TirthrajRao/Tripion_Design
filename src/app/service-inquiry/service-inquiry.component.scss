@@ -104,15 +104,15 @@ ion-content {
 }
 
 .next_btn {
-    padding   : 20px 0;
+    padding   : 10px 0;
     text-align: center;
 
     button {
-        width           : 80%;
+        width           : 83%;
         outline         : none;
-        font-size       : 16px;
+        font-size       : 18px;
         font-weight     : 500;
-        padding         : 15px 0px;
+        padding         : 19px 0px;
         text-align      : center;
         color           : #fff;
         border-radius   : 7px;
@@ -142,7 +142,7 @@ ion-content {
 .general_details {
     border-radius   : 6px;
     background-color: #fff;
-    margin-bottom: 15px;
+    margin-bottom   : 15px;
 
     .general_details_header {
         padding      : 10px 15px;
@@ -153,6 +153,7 @@ ion-content {
             font-size  : 18px;
             font-weight: 600;
         }
+
         i {
             color      : red;
             cursor     : pointer;
@@ -222,44 +223,48 @@ ion-item {
     line-height: 22px;
     margin-top : 10px;
 }
+
 // air_tickets form css end here
 // accomodation form css start here
 .add_room_btn {
     padding: 20px 0px;
 
     button {
-        width: 60%;
-    outline: none;
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 600;
-    padding: 10px 0px;
-    color: #fff;
-    border-radius: 7px;
-    background-color: #FFA000;
+        width           : 60%;
+        outline         : none;
+        font-size       : 16px;
+        line-height     : 30px;
+        font-weight     : 600;
+        padding         : 10px 0px;
+        color           : #fff;
+        border-radius   : 7px;
+        background-color: #FFA000;
 
         i {
-            font-size  : 20px !important;
-            line-height: 28px;
+            font-size   : 20px !important;
+            line-height : 28px;
             margin-right: 15px;
 
         }
     }
 }
+
 // accomodation form css end here
 // tours form css start here
 .relax_img {
-    ion-img{
+    ion-img {
         margin: auto;
         height: 180px;
-        width: 180px;
+        width : 180px;
     }
-    h2{
-     font-size: 17px;
+
+    h2 {
+        font-size  : 17px;
         font-weight: 500;
-        margin-top: 5px;
+        margin-top : 5px;
     }
 }
+
 // tours form css end here
 // transfer form css start here
 .select_plan_check {
@@ -279,15 +284,16 @@ ion-item {
         font-weight   : 500;
     }
 }
+
 // transfer form css end here
 // other details form start end here
-.total_cost{
-    p{
-        color: #000 !important;
-        font-size     : 18px !important;
-        font-weight   : 500;
-        margin-top: 10px;
+.total_cost {
+    p {
+        color      : #000 !important;
+        font-size  : 18px !important;
+        font-weight: 500;
+        margin-top : 10px;
     }
 }
-// other details form start end here
 
+// other details form start end here

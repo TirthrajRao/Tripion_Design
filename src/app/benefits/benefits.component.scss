@@ -101,26 +101,25 @@ ion-content {
     }
 
     .card_footer {
-        padding: 0px 15px 22px 15px;
-
+        padding: 0px 22px 22px 22px;
         button {
             border-radius: 30px;
-            padding      : 15px;
-            color        : #ffffff;
-            font-size    : 16px;
-            position     : relative;
-            width        : 100%;
-            font-weight  : 500;
-            outline      : none;
-            background   : linear-gradient(to right, $purple, $blue);
-
-            ion-img {
-                position: absolute;
-                height  : 24px;
-                width   : 24px;
-                bottom  : 10px;
-                left    : 6%;
+            line-height: 46px;
+            color: #ffffff;
+            font-size: 15px;
+            position: relative;
+            width: 100%;
+            font-weight: 500;
+            outline: none;
+            background: -webkit-gradient(linear, left top, right top, from(#0575E6), to(#021B79));
+            background: linear-gradient(to right, #0575E6, #021B79);
+            box-shadow: 2px 1px 3px rgba(129, 59, 219, 0.5);
+    
+            i {
+                margin-right: 15px;
+                font-size   : 25px;
             }
         }
     }
 }
+

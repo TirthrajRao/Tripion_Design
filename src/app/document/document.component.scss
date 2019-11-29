@@ -1,146 +1,162 @@
 $purple: #0575E6;
 $blue  : #021B79;
-$green: #2FE57C;
+$green : #2FE57C;
+
 // header css start here 
 .upload_img {
-    background:linear-gradient(#0575E6, #021B79);
-    ion-img{
-    height: 120px;
-    width: 120px;
-    margin: auto;
+    background: linear-gradient(#0575E6, #021B79);
+
+    ion-img {
+        height: 120px;
+        width : 120px;
+        margin: auto;
     }
 }
+
 // header css end here 
 // content css start here
 ion-content {
     --background: #fff;
+
     &:after {
 
-        content: "";
-        background-image: url('../../assets/images/illustration.png');
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        background-size: contain;
+        content              : "";
+        background-image     : url('../../assets/images/illustration.png');
+        background-repeat    : no-repeat;
+        background-position  : center bottom;
+        background-size      : contain;
         background-attachment: fixed;
-        padding-right: 100%;
-        padding-bottom: calc(100vh - 76px);
-        z-index: 1;
-        position: absolute;
+        padding-right        : 100%;
+        padding-bottom       : calc(100vh - 76px);
+        z-index              : 1;
+        position             : absolute;
     }
 }
 
 .document_content {
     position: relative;
-    z-index: 11;
+    z-index : 11;
 }
-.back_color{
+
+.back_color {
     background-color: #707070;
 }
 
 .select_files {
-    padding: 18px 30px 10px 30px;
-    background-image: url('../../assets/images/Untitled-1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding              : 18px 30px 10px 30px;
+    background-image     : url('../../assets/images/Untitled-1.png');
+    background-repeat    : no-repeat;
+    background-size      : cover;
     background-attachment: fixed;
-    height: auto;
-    
+    height               : auto;
+
     button {
+        width           : 100%;
+        color           : #fff;
         background-color: $blue;
-        padding: 15px;
-        font-size: 16px;
-        font-weight: 500;
-        width: 100%;
-        border-radius: 5px;
-        outline: none;
-        position: relative;
-        cursor: pointer;
+        padding         : 17px 10px;
+        font-size       : 16px;
+        font-weight     : 500;
+        border-radius   : 5px;
+        position        : relative;
+        cursor          : pointer;
+        box-shadow      : 2px 1px 3px rgba(129, 59, 219, 0.5);
+
+
         ion-img {
             position: absolute;
-            height: 24px;
-            width: 24px;
-            left: 5%;
-            bottom: 11px;
+            left    : -4%;
+            top     : 12px;
+            height  : 22px;
         }
     }
+
     .or_text {
-        color: #fff;
-        padding: 10px 0px;
+        color         : #fff;
+        padding       : 10px 0px;
         text-transform: uppercase;
-        font-size: 15px;
-        font-weight: 500;
+        font-size     : 15px;
+        font-weight   : 500;
     }
+
     label {
-        width: 100%;
-        color: #fff;
-        background: linear-gradient(to right, $purple, $blue);
-        padding: 15px;
-        font-size: 16px;
-        font-weight: 500;
+        width        : 100%;
+        color        : #fff;
+        background   : linear-gradient(to right, $purple, $blue);
+        padding      : 16px 10px;
+        font-size    : 16px;
+        font-weight  : 500;
         border-radius: 5px;
-        position: relative;
-        cursor: pointer;
+        position     : relative;
+        cursor       : pointer;
+        box-shadow   : 2px 1px 3px rgba(129, 59, 219, 0.5);
+
         ion-img {
             position: absolute;
-            height: 24px;
-            width: 24px;
-            left: 5%;
-            bottom: 12x;
+            left    : -4%;
+            top     : 12px;
+            height  : 25px;
         }
     }
 }
 
 
-    .finish_button {
-        padding: 30px;
-       
-        button {
-            border-radius: 30px;
-            padding: 15px;
-            color: #ffffff;
-            font-size: 16px;
-            position: relative;
-            width: 100%;
-            font-weight: 500;
-            outline: none;
-            background: linear-gradient(to right, $purple, $blue);
-            ion-img {
-                position: absolute;
-                height: 24px;
-                width: 24px;
-                bottom: 10px;
-                left: 6%;
-            }
+.finish_button {
+    padding: 30px;
+
+    button {
+        border-radius: 30px;
+        padding      : 16px 10px;
+        color        : #ffffff;
+        font-size    : 16px;
+        position     : relative;
+        width        : 100%;
+        font-weight  : 500;
+        outline      : none;
+        background   : linear-gradient(to right, $purple, $blue);
+        box-shadow   : 2px 1px 3px rgba(129, 59, 219, 0.5);
+
+        ion-img {
+            position: absolute;
+            left    : 6%;
+            top     : 14px;
+            height  : 20px;
         }
     }
+}
 
 .upload_file_progress {
-    padding: 15px 15px 0px 15px;
+    padding      : 15px 15px 0px 15px;
     border-bottom: 1px solid #C7CBD6;
+
     .progress_bar {
         p {
-            font-size: 14px;
-            color: #434A5E;
+            font-size  : 14px;
+            color      : #434A5E;
             font-weight: 400;
         }
+
         h6 {
-            font-size: 9px;
-            color: #434A5E;
+            font-size : 9px;
+            color     : #434A5E;
             margin-top: 10px;
         }
     }
+
     .uploded_image {
         height: 75px;
-        width: 48px;
+        width : 48px;
     }
+
     .progress_design {
         ion-img {
             height: 25px;
-            width: 25px;
+            width : 25px;
         }
+
         span {
             font-size: 10px;
-            color: #434A5E;
+            color    : #434A5E;
         }
     }
 }

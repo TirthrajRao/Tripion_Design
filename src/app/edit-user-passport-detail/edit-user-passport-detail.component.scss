@@ -3,7 +3,7 @@ $blue  : #021B79;
 
 // ion header css start here
 i.back_icon_blue {
-    color: #000;
+    color    : #000;
     font-size: 28px;
 }
 
@@ -52,53 +52,58 @@ ion-content {
 }
 
 .all_content {
-    padding: 10px;
-    position   : relative;
-    z-index    : 11;
-}
-.all_detail{
-    display: inline-block;
-    padding: 8px 10px;
+    padding : 10px;
     position: relative;
+    z-index : 11;
+}
+
+.all_detail {
+    display      : inline-block;
+    padding      : 8px 10px;
+    position     : relative;
     margin-bottom: 18px;
     border-radius: 6px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    ion-img{
-        width: 24px;
+    box-shadow   : 1px 1px 5px rgba(0, 0, 0, 0.5);
+
+    ion-img {
+        width   : 24px;
         position: absolute;
-        right: 10px;
-        top: 0;
-        bottom: 0;
+        right   : 10px;
+        top     : 0;
+        bottom  : 0;
     }
-    .user_detail{
-        small{
-            color: #7F8DAB;
-            font-size: 13px;
+
+    .user_detail {
+        small {
+            color      : #7F8DAB;
+            font-size  : 13px;
             line-height: 30px;
         }
-        p{
-            color: #000;
-            font-size: 18px;
+
+        p {
+            color      : #000;
+            font-size  : 18px;
             font-weight: 600;
         }
     }
 }
+
 .card {
     background-color: rgba(127, 141, 171, 0.16);
-    padding: 20px 10px 30px 10px;
-    border: none;
+    padding         : 20px 10px 30px 10px;
+    border          : none;
 
-  .all_image {
-      height  : 125px;
-      position: relative;
-      display : flex;
+    .all_image {
+        height  : 125px;
+        position: relative;
+        display : flex;
 
-  }
+    }
 
-  .remove_image {
-      height: 20px;
-      cursor: pointer;
-  }
+    .remove_image {
+        height: 20px;
+        cursor: pointer;
+    }
 }
 
 .add_button {
@@ -109,22 +114,25 @@ ion-content {
         bottom          : 25px;
         right           : 25px;
         padding         : 16px;
-        z-index: 111;
+        z-index         : 111;
 
         img {
             height: 28px;
         }
     }
 }
+
 .save_button {
-    padding: 30px 0px;
+    padding   : 30px 0px;
     text-align: center;
+
     button {
         width           : 80%;
         outline         : none;
-        font-size       : 16px;
+        font-size       : 18px;
         font-weight     : 500;
-        padding         : 15px 0px;
+        padding         : 0px 15px;
+        line-height: 50px;
         text-align      : center;
         color           : #fff;
         border-radius   : 7px;
@@ -133,12 +141,12 @@ ion-content {
         position        : relative;
 
         i {
-            font-size   : 18px !important;
+            font-size   : 24px !important;
             line-height : 20px;
-            margin-right: 15px;
+            margin-right: 20px;
         }
-     }
- }
+    }
+}
 
 // modal design css 
 .modal_content_with_overlay {
@@ -183,7 +191,7 @@ ion-content {
         --placeholder-color: #7F8DAB;
         font-size          : 13px !important;
         --color            : #7F8DAB;
-        --padding-bottom: 5px;
+        --padding-bottom   : 5px;
     }
 
     .form-control {
@@ -197,32 +205,33 @@ ion-content {
 }
 
 .make_folder {
-   margin-top: 10px;
-   text-align: center;
+    margin-top: 10px;
+    text-align: center;
 
-   button {
-       width           : 80%;
-       outline         : none;
-       font-size       : 16px;
-       font-weight     : 500;
-       padding         : 15px 0px;
-       text-align      : center;
-       color           : #fff;
-       border-radius   : 7px;
-       background-color: #003574;
-       box-shadow      : 1px 3px 7px rgba(119, 59, 219, 0.5);
-       position        : relative;
+    button {
+        width           : 80%;
+        outline         : none;
+        font-size       : 16px;
+        font-weight     : 500;
+        padding         : 15px 0px;
+        text-align      : center;
+        color           : #fff;
+        border-radius   : 7px;
+        background-color: #003574;
+        box-shadow      : 1px 3px 7px rgba(119, 59, 219, 0.5);
+        position        : relative;
 
-       i {
-           font-size   : 18px !important;
-           line-height : 20px;
-           margin-right: 15px;
-       }
+        i {
+            font-size   : 18px !important;
+            line-height : 20px;
+            margin-right: 15px;
+        }
     }
 }
 
 .select_files {
     margin: 20px 0px;
+
     label {
         background   : linear-gradient(#584BDD, #B755FF);
         padding      : 16px 0px;
@@ -239,19 +248,19 @@ ion-content {
         ion-img {
             position: absolute;
             height  : 24px;
-            width   : 24px;
-            bottom  : 11px;
-            left    : 5%;
+            top     : 14px;
         }
     }
 }
-.selected_image_preview{
-    ul li{
+
+.selected_image_preview {
+    ul li {
         list-style: none;
-        display: inline-block;
-        padding: 10px;
-        ion-img{
-            width: 25vw;
+        display   : inline-block;
+        padding   : 10px;
+
+        ion-img {
+            width : 25vw;
             height: 100px;
         }
     }

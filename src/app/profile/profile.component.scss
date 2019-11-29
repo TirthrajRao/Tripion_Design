@@ -8,7 +8,7 @@ ion-content {
 
     &:after {
         content              : "";
-        background-image     : url('../../assets/images/illustration_2.png');
+        background-image     : url('../../assets/images/illustration.png');
         background-repeat    : no-repeat;
         background-position  : center bottom;
         background-size      : contain;
@@ -21,7 +21,7 @@ ion-content {
 }
 
 .profile_content {
-    padding : 0px 10px 15px 10px;
+    padding : 0px 10px;
     position: relative;
     z-index : 11;
 }
@@ -62,7 +62,7 @@ ion-content {
         .profile_detail {
             box-shadow   : 1px 2px 7px #95989A;
             border-radius: 5px;
-            padding: 6px 10px 12px 10px;
+            padding      : 6px 10px 12px 10px;
             margin-bottom: 20px;
 
             p {
@@ -92,12 +92,12 @@ ion-content {
 }
 
 .uograde_premium {
-    padding: 45px 16px 10px 16px;
+ padding: 40px 30px;
 
     button {
         border-radius: 9px;
         cursor       : pointer;
-        padding      : 21px 0px;
+        line-height  : 54px;
         color        : #ffffff;
         font-size    : 16px;
         position     : relative;
@@ -105,13 +105,12 @@ ion-content {
         font-weight  : 600;
         outline      : none;
         background   : #003574;
+        box-shadow   : 3px 5px 8px rgba(0, 0, 0, 0.5);
 
-        ion-img {
-            position: absolute;
-            height  : 26px;
-            width   : 33px;
-            left    : 3%;
-            top     : 15px;
+        i {
+            margin-right: 15px;
+            font-size   : 25px;
+            color: #FFF700;
         }
     }
 }
