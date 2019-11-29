@@ -145,6 +145,9 @@ ion-datetime.md.in-item.hydrated{
     font-size: 14px;
 }
 
+.no-ripple {
+    --ripple-color: transparent;
+  }
 // header css end here
 
 // custom radio button start 
