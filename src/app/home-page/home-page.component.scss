@@ -34,7 +34,7 @@ ion-content {
 
     &:after {
         content              : "";
-        background-image     : url('../../assets/images/illustration.png');
+        background-image     : url('../../assets/images/illustration_2.png');
         background-repeat    : no-repeat;
         background-position  : center bottom;
         background-size      : contain;
@@ -165,13 +165,13 @@ ion-footer ion-toolbar:last-child {
         cursor: pointer;
 
         ion-img {
-            height: 32px;
+            height: 25px;
         }
 
         p {
             color      : #fff;
             font-size  : 12px;
-            margin-top : 12px;
+            margin-top : 6px;
             line-height: 16px;
             text-align : center;
         }

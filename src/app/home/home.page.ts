@@ -23,3 +23,6 @@ export class HomePage {
     });
   }
 }
+
+
+// this.statusBar.backgroundColorByHexString('#000000');
