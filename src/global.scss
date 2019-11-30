@@ -60,17 +60,6 @@ i.back_icon_white {
     font-size: 28px;
 }
 
-// ion-back-button {
-//     --icon-margin-bottom: 15px;
-
-//     button.button-native.sc-ion-back-button-md {
-//         background-image   : url('./assets/images/back_icon.png');
-//         background-repeat  : no-repeat;
-//         background-size    : 20%;
-//         background-position: center;
-//         z-index            : 111;
-//          } 
-// }
 ion-icon.sc-ion-back-button-md {
     display: none;
 }
@@ -105,7 +94,7 @@ ion-menu-button {
     --color: #fff;
 }
 
-.icon_sec {
+.icon_sec, .back_icon {
     -webkit-box-pack: center;
     justify-content : center;
     height          : 100%;
@@ -115,15 +104,15 @@ ion-menu-button {
     flex-wrap       : wrap;
 }
 
-.back_icon {
-    -webkit-box-pack: center;
-    justify-content : center;
-    height          : 100%;
-    align-content   : center;
-    display         : -webkit-box;
-    display         : flex;
-    flex-wrap       : wrap;
-}
+// .back_icon {
+//     -webkit-box-pack: center;
+//     justify-content : center;
+//     height          : 100%;
+//     align-content   : center;
+//     display         : -webkit-box;
+//     display         : flex;
+//     flex-wrap       : wrap;
+// }
 
 .middle_sec {
     justify-content: center;
