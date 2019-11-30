@@ -3,7 +3,11 @@ $blue  : #021B79;
 $green : #2FE57C;
 
 // header css start here 
-
+:host ion-back-button {
+    button.button-native.sc-ion-back-button-md {
+        background-image   : url('../../assets/images/p_icon.png');
+    } 
+}
 i.back_icon_blue {
     color    : $blue;
     font-size: 28px;
