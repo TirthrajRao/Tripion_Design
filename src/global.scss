@@ -55,8 +55,8 @@ ion-menu {
 
 // header css start here 
 
-i.back_icon_white{
-    color: #fff;
+i.back_icon_white {
+    color    : #fff;
     font-size: 28px;
 }
 
@@ -68,29 +68,35 @@ i.back_icon_white{
 //         background-repeat  : no-repeat;
 //         background-size    : 20%;
 //         background-position: center;
-//         z-index: 111;
+//         z-index            : 111;
 //          } 
 // }
 ion-icon.sc-ion-back-button-md {
     display: none;
 }
-.sc-ion-back-button-md-h{
+
+.sc-ion-back-button-md-h {
     --min-height: 0px;
 }
+
 .back-button-has-icon-only.sc-ion-back-button-md-h {
-   --border-radius: 50%; 
-     min-width: 0px; 
-    height: unset; 
+    --border-radius: 50%;
+    min-width      : 0px;
+    height         : unset;
 }
-ion-back-button{
+
+ion-back-button {
     --background-hover: transparent;
-    z-index: 11;
-    --ripple-color: transparent;
+    z-index           : 11;
+    --ripple-color    : transparent;
 }
+
 ion-header ion-toolbar:first-child {
-    --background   : #0575E6 !important;
-    height         : 80px;
-    }
+    --background: #0575E6 !important;
+    height      : 80px;
+    display     : flex;
+}
+
 .header-md:after {
     background-image: unset;
 }
@@ -98,30 +104,33 @@ ion-header ion-toolbar:first-child {
 ion-menu-button {
     --color: #fff;
 }
-.icon_sec{
+
+.icon_sec {
     -webkit-box-pack: center;
-    justify-content: center;
-    height: 100%;
-    align-content: center;
-    display: -webkit-box;
-    display: flex;
-    flex-wrap: wrap;
+    justify-content : center;
+    height          : 100%;
+    align-content   : center;
+    display         : -webkit-box;
+    display         : flex;
+    flex-wrap       : wrap;
 }
+
 .back_icon {
     -webkit-box-pack: center;
-    justify-content: center;
-    height: 100%;
-    align-content: center;
-    display: -webkit-box;
-    display: flex;
-    flex-wrap: wrap;
+    justify-content : center;
+    height          : 100%;
+    align-content   : center;
+    display         : -webkit-box;
+    display         : flex;
+    flex-wrap       : wrap;
 }
+
 .middle_sec {
     justify-content: center;
-    height: 100%;
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
+    height         : 100%;
+    align-content  : center;
+    display        : flex;
+    flex-wrap      : wrap;
 
     ion-img {
         height      : 22px;
@@ -148,7 +157,7 @@ ion-menu-button {
     ion-img {
         // height   : 16px;
         // width    : 16px;
-        // margin: 8px 0px 0px 8px;
+        // margin   : 8px 0px 0px 8px;
     }
 }
 
@@ -174,8 +183,9 @@ ion-label {
 body *[routerlink] {
     outline: none !important;
 }
-ion-datetime.md.in-item.hydrated{
-    color: #7F8DAB;
+
+ion-datetime.md.in-item.hydrated {
+    color    : #7F8DAB;
     font-size: 14px;
 }
 
