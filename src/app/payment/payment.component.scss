@@ -103,7 +103,7 @@ ion-content {
     button {
         background   : linear-gradient(to right, $purple, $blue);
         color        : #ffffff;
-        line-height: 52px;
+        line-height  : 52px;
         border-radius: 6px;
         font-size    : 16px;
         width        : 100%;
@@ -112,13 +112,13 @@ ion-content {
         outline      : none;
         z-index      : 11;
         cursor       : pointer;
-        box-shadow: 2px 1px 3px rgba(129, 59, 219, 0.5);
+        box-shadow   : 2px 1px 3px rgba(129, 59, 219, 0.5);
 
         ion-img {
             position: absolute;
-            left: -4%;
-            top: 18px;
-            height  : 20px;
+            right  : 54%;
+            top    : 18px;
+            height : 20px;
         }
     }
 }

@@ -51,26 +51,26 @@
       </div>
     </div>
     <div class="user_details">
-      <div class="row">
-        <div class="col-6">
-          <div class="user_name">
-            <p>Tirthraj Barot</p>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="valid_date_info w-100">
-            <div class="edit_icon">
-              <ion-img src="../../assets/images/edit_icon.png" class="float-left"></ion-img>
+        <div class="row">
+          <div class="col-6">
+            <div class="user_name" routerLink='/home/user-passport-detail'>
+              <p>Tirthraj Barot</p>
             </div>
-            <div class="valid_date float-right">
-              <small> Valid Up To :
-              </small>
-              <p>17-05-2019</p>
+          </div>
+          <div class="col-6">
+            <div class="valid_date_info w-100">
+              <div class="edit_icon" routerLink='/home/edit-user-passport-detail'>
+                <ion-img src="../../assets/images/edit_icon.png" class="float-left"></ion-img>
+              </div>
+              <div class="valid_date float-right">
+                <small> Valid Up To :
+                </small>
+                <p>17-05-2021</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     <div class="add_button" id="add-password">
       <a href="javascript:void(0);">
         <img src="../../assets/images/plus.png">
@@ -91,7 +91,9 @@
           <input type="file" class="form-control" id="file" placeholder="Enter Your Password" name="files" value="files"
             style="display: none;">
           <label class="text-center" for="file">
-            <ion-img src="../../assets/images/file.png"></ion-img>Select from Files
+             <i class="far fa-copy"></i>
+            <!-- <ion-img src="../../assets/images/file.png"></ion-img> -->
+            Select from Files
           </label>
         </div>
         <div class="selected_image_preview">

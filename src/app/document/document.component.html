@@ -3,12 +3,12 @@
     <ion-row>
       <ion-col size='2'>
         <div class="back_icon">
-            <ion-buttons slot="start">
-                <ion-back-button>
-                  <i class="fa fa-angle-left back_icon_white"></i>
-                </ion-back-button>
-            </ion-buttons>
-                 </div>
+          <ion-buttons slot="start">
+            <ion-back-button>
+              <i class="fa fa-angle-left back_icon_white"></i>
+            </ion-back-button>
+          </ion-buttons>
+        </div>
       </ion-col>
       <ion-col size='8'>
         <div class="middle_sec text-center text-white">
@@ -34,13 +34,15 @@
     <div class="back_color">
       <div class="select_files text-center">
         <button class="tect-center text-white">
-          <ion-img src="../../assets/images/camera.png"></ion-img>Use Camera
+          <i class="fas fa-camera"></i>
+         Use Camera
         </button>
         <p class="text-center or_text">or</p>
         <div class="choose_file">
           <input type="file" id="file" name="files" value="files" style="display: none;">
           <label class="upload_photo" for="file">
-            <ion-img src="../../assets/images/file.png"></ion-img>Select from Files
+            <i class="far fa-copy"></i>
+            Select from Files
           </label>
         </div>
       </div>
@@ -111,11 +113,12 @@
         </div>
       </div>
     </div>
-      <div class="finish_button">
-        <button type="submit" routerLink='/home/document'>
-          <ion-img src="../../assets/images/cloud.png"></ion-img>
-          Finish
-        </button>
-      </div>
+    <div class="finish_button">
+      <button type="submit" routerLink='/home/document'>
+        <i class="material-icons">cloud_done</i>
+        <!-- <ion-img src="../../assets/images/cloud.png"></ion-img> -->
+        Finish
+      </button>
+    </div>
   </div>
 </ion-content>
