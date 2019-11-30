@@ -69,10 +69,11 @@ ion-content {
 
         ion-input {
             --placeholder-color: #707070;
-            font-size          : 12px !important;
-            --color            : #7F8DAB;
+            font-size          : 14px !important;
+            --color            : #707070;
             --padding-bottom   : 5px;
             --placeholder-color: #D9D9D9;
+            font-family: 'Montserrat', sans-serif !important;
         }
 
         p {

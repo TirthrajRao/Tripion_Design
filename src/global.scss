@@ -94,7 +94,8 @@ ion-menu-button {
     --color: #fff;
 }
 
-.icon_sec, .back_icon {
+.icon_sec,
+.back_icon {
     -webkit-box-pack: center;
     justify-content : center;
     height          : 100%;
@@ -179,6 +180,38 @@ ion-datetime.md.in-item.hydrated {
 }
 
 // header css end here
+
+// ion alert for select option
+
+.alert-wrapper.sc-ion-alert-md {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.alert-wrapper.sc-ion-alert-ios {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+// ion datepicker design start
+
+.picker-wrapper.sc-ion-picker-md {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.picker-toolbar.sc-ion-picker-md {
+    display        : -ms-flexbox;
+    display        : flex;
+    -ms-flex-pack  : end;
+    justify-content: center;
+    height         : 58px;
+    justify-content: center;
+    align-items    : center;
+}
+ion-datetime{
+    font-size: 14px;
+    color: #707070;
+    font-family: 'Montserrat', sans-serif;
+}
+// ion datepicker design end
 
 // custom radio button start 
 

@@ -5,9 +5,10 @@ $green : #2FE57C;
 // header css start here 
 :host ion-back-button {
     button.button-native.sc-ion-back-button-md {
-        background-image   : url('../../assets/images/p_icon.png');
-    } 
+        background-image: url('../../assets/images/p_icon.png');
+    }
 }
+
 i.back_icon_blue {
     color    : $blue;
     font-size: 28px;
@@ -170,9 +171,10 @@ ion-content {
     ion-input {
         border-bottom      : 1px solid rgba(104, 95, 134, 0.4);
         --placeholder-color: #7F8DAB;
-        font-size          : 13px !important;
+        font-size          : 14px !important;
         --color            : #7F8DAB;
         --padding-bottom   : 5px;
+        font-family        : 'Montserrat', sans-serif !important;
     }
 }
 

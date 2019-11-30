@@ -105,20 +105,20 @@ ion-content {
     padding: 5px 20px 40px 20px;
 
     ion-label {
-        font-size: 13px !important;
+        font-size: 14px !important;
         --color  : #7F8DAB;
     }
 
     ion-input {
         // border-bottom      : 1px solid rgba(104, 95, 134, 0.4);
         --placeholder-color   : #707070;
-        font-size: 12px !important;
-        --color               : #7F8DAB;
+        font-size: 14px !important;
+        --color               : #707070;
     }
     ion-input:focus {
         --placeholder-color   : #707070;
         font-size: 12px !important;
-        --color               : #7F8DAB!important;
+        --color               : #707070!important;
     }
 }
 
