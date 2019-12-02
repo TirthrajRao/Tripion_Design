@@ -21,20 +21,33 @@ ion-menu-button {
 
 .home_text {
     -webkit-box-pack: center;
-    justify-content: center;
-    height: 100%;
-    align-content: center;
-    display: -webkit-box;
-    display: flex;
-    flex-wrap: wrap;
-    span{
-    color      : #000;
-    font-weight: 600;
-    margin-left: 5px;
-    font-size  : 22px;
-    line-height: 24px;
-    font-family: 'Montserrat', sans-serif !important;
-}
+    justify-content : center;
+    height          : 100%;
+    align-content   : center;
+    display         : -webkit-box;
+    display         : flex;
+    flex-wrap       : wrap;
+
+    span {
+        color      : #000;
+        font-weight: 600;
+        margin-left: 5px;
+        font-size  : 23px;
+        line-height: 24px;
+        font-family: 'Montserrat', sans-serif !important;
+
+        @media(max-height: 812px) {
+            font-size: 22px;
+        }
+
+        @media(max-height: 750px) {
+            font-size: 20px;
+        }
+
+        @media(max-height: 600px) {
+            font-size: 18px;
+        }
+    }
 }
 
 // ion header css end here
@@ -80,6 +93,14 @@ ion-menu-button:hover {
         span {
             font-size  : 19px;
             font-weight: 600;
+
+            @media(max-height: 750px) {
+                font-size: 18px;
+            }
+
+            @media(max-height: 600px) {
+                font-size: 16px;
+            }
         }
     }
 
@@ -87,6 +108,14 @@ ion-menu-button:hover {
         p {
             font-size  : 19px;
             font-weight: 600;
+
+            @media(max-height: 750px) {
+                font-size: 18px;
+            }
+
+            @media(max-height: 600px) {
+                font-size: 16px;
+            }
         }
     }
 }
@@ -101,19 +130,30 @@ ion-menu-button:hover {
         border-radius: 5px;
         min-height   : 125px;
         cursor       : pointer;
+        @media(max-height: 600px) {
+            padding      : 10px 15px 15px;
+            min-height   : 115px;
+        }
     }
 
-    .booking_details p {
+    .booking_details {
+    p {
         font-size  : 20px;
         font-weight: 400;
-        margin-top : 20px;
+        margin-top : 30px;
+        @media(max-height: 600px) {
+            font-size: 18px;
+        }
     }
-
+    }
     .country_details {
         p {
             font-size  : 16px;
             font-weight: 500;
             line-height: 32px;
+            @media(max-height: 600px) {
+                font-size: 14px;
+            }
         }
 
         li {
@@ -123,6 +163,9 @@ ion-menu-button:hover {
             line-height: 20px;
             position   : relative;
             margin-left: 20px;
+            @media(max-height: 600px) {
+                font-size: 12px;
+            }
 
             &:after {
                 content   : "";
@@ -142,7 +185,10 @@ ion-menu-button:hover {
                 background   : #FFFFFF;
                 position     : absolute;
                 left         : -20px;
-                top          : 8px;
+                top          : 10px;
+                @media(max-height: 600px) {
+                    top: 8px;
+                }
             }
         }
 
@@ -184,6 +230,10 @@ ion-footer ion-toolbar:last-child {
             margin-top : 6px;
             line-height: 16px;
             text-align : center;
+            font-family: 'Montserrat', sans-serif !important;
+            @media(max-height: 600px) {
+                font-size: 11px;
+            }
         }
     }
 }

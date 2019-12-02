@@ -28,10 +28,16 @@ ion-content {
 
 .rawards_point {
     padding: 25px 15px 10px 15px;
+    @media(max-height: 600px) {
+        padding: 12px 15px 5px 15px;
+    }
 
     ion-img {
         width: 100px;
         float: left;
+        @media(max-height: 600px) {
+            width: 85px;
+        }
     }
 
     span {
@@ -39,11 +45,19 @@ ion-content {
         font-weight: 600;
         color      : #fff;
         line-height: 95px;
+        @media(max-height: 600px) {
+            font-size: 54px;
+            line-height: 78px;
+        }
     }
 }
 
 .card {
     margin-top: 15px;
+
+    @media(max-height: 750px) {
+        margin-top: 5px;
+    }
 
     .card_header {
         p {
@@ -53,11 +67,29 @@ ion-content {
             padding      : 20px 15px;
             line-height  : 20px;
             border-bottom: 1px solid #C7CBD6;
+
+            @media(max-height: 750px) {
+                font-size: 16px;
+                padding  : 15px 12px;
+            }
+
+            @media(max-height: 600px) {
+                font-size: 14px;
+                padding  : 12px 8px;
+            }
         }
     }
 
     .card_body {
         padding: 20px 10px 6px 10px;
+
+        @media(max-height: 750px) {
+            padding: 18px 10px 5px 10px;
+        }
+
+        @media(max-height: 600px) {
+            padding: 15px 10px 3px 10px;
+        }
 
         .profile_detail {
             box-shadow   : 1px 2px 7px #95989A;
@@ -65,15 +97,38 @@ ion-content {
             padding      : 6px 10px 12px 10px;
             margin-bottom: 20px;
 
+            @media(max-height: 600px) {
+                padding      : 3px 10px 10px 8px;
+                margin-bottom: 15px;
+            }
+
             p {
                 color      : #7F8DAB;
                 font-size  : 14px;
                 line-height: 35px;
+
+                @media(max-height: 750px) {
+                    font-size  : 12px;
+                    line-height: 30px;
+                }
+
+                @media(max-height: 600px) {
+                    font-size  : 11px;
+                    line-height: 27px;
+                }
             }
 
             h6 {
                 font-size: 17px;
                 color    : #000;
+
+                @media(max-height: 750px) {
+                    font-size: 16px;
+                }
+
+                @media(max-height: 600px) {
+                    font-size: 14px;
+                }
             }
         }
 
@@ -92,7 +147,13 @@ ion-content {
 }
 
 .uograde_premium {
- padding: 40px 30px;
+    padding: 40px 30px;
+    @media(max-height: 750px) {
+        padding: 28px 30px;
+    }
+    @media(max-height: 600px) {
+        padding: 20px 30px;
+    }
 
     button {
         border-radius: 9px;
@@ -110,7 +171,7 @@ ion-content {
         i {
             margin-right: 15px;
             font-size   : 25px;
-            color: #FFF700;
+            color       : #FFF700;
         }
     }
 }

@@ -38,7 +38,9 @@ ion-content {
 
     .payment_for {
         padding: 6vh 30px 7vh 40px;
-
+        @media(max-height: 750px) {
+            padding: 2vh 30px 2vh 40px;
+        }
         .payment_following {
             font-size  : 18px;
             color      : #ADB3C4;
@@ -46,11 +48,21 @@ ion-content {
             margin-top : 22px;
             font-weight: 500;
             line-height: 55px;
+            @media(max-height: 750px) {
+                font-size  : 16px;
+                line-height: 45px;
+                margin-top : 10px;
+            }
         }
 
         .payment_total {
             font-size : 45px;
             margin-top: 9vh;
+
+            @media(max-height: 600px) {
+                font-size : 35px;
+                margin-top: 5vh;
+            }
         }
 
         ul {
@@ -64,6 +76,26 @@ ion-content {
             color      : #fff;
             line-height: 38px;
             position   : relative;
+
+            @media(max-height: 812px) {
+                font-size  : 18px;
+                line-height: 32px;
+            }
+
+            @media(max-height: 750px) {
+                font-size  : 16px;
+                line-height: 30px;
+            }
+
+            @media(max-height: 600px) {
+                font-size  : 15px;
+                line-height: 28px;
+            }
+
+            @media(max-height: 480px) {
+                font-size  : 14px;
+                line-height: 26px;
+            }
 
             &:after {
                 content   : "";
@@ -84,6 +116,10 @@ ion-content {
                 position     : absolute;
                 left         : -20px;
                 top          : 13px;
+
+                    @media(max-height: 750px) {
+                    top: 10px;
+                }
             }
         }
 
@@ -99,6 +135,22 @@ ion-content {
 
 .pay_now_button {
     padding: 45px 30px;
+
+    @media(max-height: 812px) {
+        padding: 35px 30px;
+    }
+
+    @media(max-height: 750px) {
+        padding: 30px 30px;
+    }
+
+    @media(max-height: 600px) {
+        padding: 25px 30px;
+    }
+
+    @media(max-height: 480px) {
+        padding: 20px 30px;
+    }
 
     button {
         background   : linear-gradient(to right, $purple, $blue);
@@ -116,9 +168,9 @@ ion-content {
 
         ion-img {
             position: absolute;
-            right  : 54%;
-            top    : 18px;
-            height : 20px;
+            right   : 54%;
+            top     : 18px;
+            height  : 20px;
         }
     }
 }

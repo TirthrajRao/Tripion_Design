@@ -21,7 +21,7 @@ ion-content {
 }
 
 .benefits_content {
-    padding : 0px 10px 15px 10px;
+    padding : 0px 10px 10px 10px;
     z-index : 11;
     position: relative;
 }
@@ -31,8 +31,15 @@ ion-content {
     background-color: #fff;
     display         : inline-block;
     cursor          : pointer;
-    padding         : 2px 10px 2px 18px;
     position        : relative;
+    padding         : 2px 18px;
+
+    @media(max-height: 750px) {
+        margin-bottom: 5px;
+    }
+    @media(max-height: 600px) {
+        margin-bottom: 2px;
+    }
 
     img {
         height  : 46px;
@@ -49,20 +56,20 @@ ion-content {
         font-size  : 16px;
         font-weight: 600;
         line-height: 52px;
-    }
-}
 
-.add_button {
-    a {
-        border-radius   : 50%;
-        background-color: #FA4D88;
-        position        : fixed;
-        bottom          : 25px;
-        right           : 25px;
-        padding         : 16px;
+        @media(max-height: 812px) {
+            line-height: 46px;
+        }
 
-        img {
-            height: 28px;
+        @media(max-height: 750px) {
+            line-height: 42px;
+            font-size  : 15px;
+        }
+
+        @media(max-height: 600px) {
+            line-height: 38px;
+            font-size  : 14px;
         }
     }
 }
+

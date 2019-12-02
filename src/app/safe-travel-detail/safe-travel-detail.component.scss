@@ -30,24 +30,34 @@ ion-content {
     .card_header {
         border-bottom: 1px solid #C7CBD6;
         padding      : 12px 15px;
-
-        ion-img {
-            height      : 25px;
-            width       : 25px;
-            float       : left;
-            margin-right: 15px;
+        @media(max-height: 750px){
+            padding      : 7px 15px;
         }
-
+        @media(max-height: 600px){
+            padding      : 4px 12px;
+        }
         p {
             color      : #434A5E;
             font-weight: 600;
             line-height: 2;
             font-size  : 18px;
+            @media(max-height: 750px){
+               font-size: 16px;
+            }
+            @media(max-height: 600px){
+                font-size: 14px;
+            }
         }
     }
 
     .card_body {
         padding: 15px 15px 25px 15px;
+        @media(max-height: 750px){
+            padding: 12px 15px 20px 15px;
+         }
+         @media(max-height: 600px){
+            padding: 10px 15px 15px 15px;
+         }
 
         p {
             color      : #707070;
@@ -55,12 +65,21 @@ ion-content {
             line-height: 26px;
             text-align : center;
             font-size  : 15px;
+            @media(max-height: 750px){
+                font-size  : 14px;
+             }
+             @media(max-height: 600px){
+                font-size  : 13px;
+             }
         }
     }
 }
 
 .download_report {
     padding: 30px;
+    @media(max-height: 600px){
+       padding: 15px 30px;
+     }
    
     button {
         border-radius: 30px;

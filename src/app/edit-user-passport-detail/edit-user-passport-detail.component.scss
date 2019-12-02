@@ -5,6 +5,7 @@ $blue  : #021B79;
 i.back_icon_blue {
     color    : #000;
     font-size: 28px;
+    line-height: 55px;
 }
 
 ion-header ion-toolbar:first-child {
@@ -24,12 +25,21 @@ ion-menu-button {
 }
 
 .home_text {
+    -webkit-box-pack: center;
+    justify-content : center;
+    height          : 100%;
+    align-content   : center;
+    display         : -webkit-box;
+    display         : flex;
+    flex-wrap       : wrap;
+    span{
     color      : #000;
     font-weight: 600;
     margin-left: 5px;
     font-size  : 22px;
     line-height: 24px;
     font-family: 'Montserrat', sans-serif !important;
+    }
 }
 
 // ion header css end here
@@ -103,22 +113,6 @@ ion-content {
     .remove_image {
         height: 20px;
         cursor: pointer;
-    }
-}
-
-.add_button {
-    a {
-        border-radius   : 50%;
-        background-color: #FA4D88;
-        position        : fixed;
-        bottom          : 25px;
-        right           : 25px;
-        padding         : 16px;
-        z-index         : 111;
-
-        img {
-            height: 28px;
-        }
     }
 }
 

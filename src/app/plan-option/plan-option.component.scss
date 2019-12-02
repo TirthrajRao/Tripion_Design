@@ -35,10 +35,35 @@ ion-content {
         border-radius   : 7px;
         background-color: #ffffff;
 
+        @media(max-height: 812px) {
+            padding: 18px 20px;
+        }
+
+        @media(max-height: 750px) {
+            padding: 15px 20px;
+        }
+
+        @media(max-height: 600px) {
+            padding: 10px 20px;
+        }
+
         span {
             font-size  : 18px;
             color      : #111111;
             font-weight: 600;
+
+            @media(max-height: 812px) {
+                font-size: 17px;
+            }
+
+            @media(max-height: 750px) {
+                font-size: 16px;
+            }
+
+            @media(max-height: 600px) {
+                font-size  : 14px;
+                line-height: 25px;
+            }
         }
 
         .calendar_img {
@@ -57,12 +82,27 @@ ion-content {
         .card_header {
             border-bottom: 1px solid #C7CBD6;
             width        : 100%;
-            padding      : 12px;
+            padding      : 10px 12px;
+
+            @media(max-height: 750px) {
+                padding: 12px;
+            }
+
+            @media(max-height: 600px) {
+                padding: 7px 12px;
+            }
 
             ion-img {
                 height: 28px;
                 width : 22px;
                 float : left;
+                @media(max-height: 750px) {
+                    height: 24px;
+                 }
+     
+                 @media(max-height: 600px) {
+                    height: 22px;
+                 }
             }
 
             span {
@@ -70,11 +110,21 @@ ion-content {
                 color      : #434A5E;
                 margin-left: 10px;
                 font-weight: 500;
+                @media(max-height: 750px) {
+                   font-size: 17px;
+                }
+    
+                @media(max-height: 600px) {
+                    font-size: 16px;
+                }
             }
         }
 
         .card_body {
             padding: 20px 0px;
+            @media(max-height: 750px) {
+                padding: 12px 0px;
+             }
 
             .total {
                 color           : #434A5E;
@@ -104,6 +154,10 @@ ion-content {
                 line-height: 1.8;
                 margin-left: 20px;
                 position   : relative;
+                @media(max-height: 600px) {
+                    font-size: 11px;
+                    line-height: 1.7;
+                }
 
                 &:after {
                     content   : "";
@@ -113,6 +167,9 @@ ion-content {
                     position  : absolute;
                     left      : -18px;
                     top       : 13px;
+                    @media(max-height: 600px) {
+                        top: 11px;
+                     }
                 }
 
                 &:before {
@@ -124,6 +181,9 @@ ion-content {
                     position     : absolute;
                     left         : -20px;
                     top          : 8px;
+                    @media(max-height: 600px) {
+                       top: 6px;
+                    }
                 }
             }
 
@@ -186,6 +246,11 @@ ion-footer ion-toolbar:last-child {
             margin-top : 6px;
             line-height: 16px;
             text-align : center;
+            font-family: 'Montserrat', sans-serif !important;
+
+            @media(max-height: 600px) {
+                font-size: 11px;
+            }
         }
     }
 }

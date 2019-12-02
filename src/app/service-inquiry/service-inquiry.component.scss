@@ -39,6 +39,9 @@ ion-content {
         border-radius   : 5px;
         background-color: #fff;
         display         : flex;
+        @media(max-height: 750px){
+            padding         : 12px 13px;
+        }
 
         ion-checkbox {
             --checkmark-color     : #000;
@@ -53,6 +56,9 @@ ion-content {
         ion-label {
             font-weight: 500;
             font-size  : 17px;
+            @media(max-height: 750px){
+                font-size: 15px;
+            }
         }
 
     }
@@ -100,6 +106,9 @@ ion-content {
         text-align: center;
         margin-top: 10px;
         padding   : 0px 10px 15px 10px;
+        @media(max-height: 750px){
+            font-size: 13px;
+        }
     }
 }
 

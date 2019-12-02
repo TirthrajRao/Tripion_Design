@@ -3,15 +3,10 @@ $blue  : #021B79;
 $green : #2FE57C;
 
 // header css start here 
-:host ion-back-button {
-    button.button-native.sc-ion-back-button-md {
-        background-image: url('../../assets/images/p_icon.png');
-    }
-}
-
 i.back_icon_blue {
     color    : $blue;
     font-size: 28px;
+    line-height: 55px;
 }
 
 button.button-native.sc-ion-back-button-ios {
@@ -36,6 +31,15 @@ ion-header ion-toolbar:first-child {
         font-weight: 600;
         line-height: 25px;
         color      : #003574 !important;
+        @media(max-height: 812px){
+            font-size   : 22px;
+        }
+        @media(max-height: 750px){
+            font-size   : 20px;
+        }
+        @media(max-height: 600px){
+            font-size   : 18px;
+        }
     }
 }
 
@@ -71,6 +75,9 @@ ion-content {
     padding      : 17px 13px 20px 13px;
     position     : relative;
     margin-top   : 18px;
+    @media(max-height: 600px) {
+        padding      : 10px 13px 12px 13px;
+     }
 
     .user_name {
         p {
@@ -80,6 +87,9 @@ ion-content {
             font-size     : 16px;
             cursor        : pointer;
             text-transform: capitalize;
+            @media(max-height: 600px){
+                font-size   : 14px;
+            }
         }
     }
 
@@ -110,22 +120,10 @@ ion-content {
                 color      : #fff;
                 font-weight: 500;
                 line-height: 5px;
+                @media(max-height: 600px){
+                    font-size   : 11px;
+                }
             }
-        }
-    }
-}
-
-.add_button {
-    a {
-        border-radius   : 50%;
-        background-color: #FA4D88;
-        position        : fixed;
-        bottom          : 25px;
-        right           : 25px;
-        padding         : 16px;
-
-        img {
-            height: 28px;
         }
     }
 }

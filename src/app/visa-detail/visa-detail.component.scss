@@ -52,28 +52,66 @@ ion-content {
     border-bottom: 1px solid gray;
     margin-bottom: 30px;
 
+    @media(max-height: 812px) {
+        margin-bottom: 25px;
+    }
+
+    @media(max-height: 750px) {
+        margin-bottom: 20px;
+    }
+
+    @media(max-height: 600px) {
+        margin-bottom: 15px;
+    }
+
     p {
         font-size  : 13px;
         color      : #fff;
         font-weight: 500;
         line-height: 33px;
+        @media(max-height: 750px) {
+            font-size  : 12px;
+            line-height: 29px;
+        }
+
+        @media(max-height: 600px) {
+            font-size  : 11px;
+            line-height: 25px;
+        }
     }
 
     h6 {
         font-size  : 17px;
         color      : #fff;
         font-weight: 500;
-        line-height: 20px;
         line-height: 25px;
+
+        @media(max-height: 750px) {
+            font-size  : 16px;
+        }
+
+        @media(max-height: 600px) {
+            font-size  : 15px;
+        }
     }
 }
+
 .visa_detail:last-child {
     border-bottom: none;
 }
 
 .card {
-      background: linear-gradient(#E1F5FE, #9FA8DA);
-      padding: 20px 10px 50px 10px;
+    background: linear-gradient(#E1F5FE, #9FA8DA);
+    padding   : 20px 10px 50px 10px;
+    @media(max-height: 800px) {
+        padding   : 18px 10px 40px 10px;
+    }
+    @media(max-height: 750px) {
+        padding   : 15px 10px 32px 10px;
+    }
+    @media(max-height: 600px) {
+        padding   : 12px 10px 25px 10px;
+    }
 
     .all_image {
         height  : 100px;
@@ -98,7 +136,7 @@ ion-content {
         font-size       : 18px;
         font-weight     : 500;
         padding         : 0px 15px;
-        line-height: 50px;
+        line-height     : 50px;
         text-align      : center;
         color           : #fff;
         border-radius   : 7px;

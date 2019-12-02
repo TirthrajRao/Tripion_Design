@@ -10,6 +10,7 @@ button.button-native.sc-ion-back-button-ios {
 .back_icon_purple{
     color: #804EE8;
     font-size: 28px;
+    line-height: 55px;
 }
 ion-header ion-toolbar:first-child {
     --background   : #fff !important;
@@ -29,10 +30,19 @@ ion-menu-button {
 
 .home_text {
     color      : #AA55FF!important;
+    font-size  : 23px;
     font-weight: 600;
-    margin-left: 5px;
-    font-size  : 22px;
-    line-height: 24px
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif !important;
+    @media(max-height: 812px){
+        font-size   : 22px;
+    }
+    @media(max-height: 750px){
+        font-size   : 20px;
+    }
+    @media(max-height: 600px){
+        font-size   : 18px;
+    }
 }
 
 // ion header css end here
@@ -62,11 +72,17 @@ ion-content {
 }
 
 .card {
-    box-shadow: 2px 10px 4px #F2EEEE;
+    box-shadow: 0px 2px 4px #F2EEEE;
     border: none;
     .card_header {
         border-bottom: 1px solid #C7CBD6;
         padding      : 12px 15px;
+        @media(max-height: 750px){
+            padding      : 10px 12px;
+        }
+        @media(max-height: 600px){
+            padding      : 7px 10px;
+        }
 
         ion-img {
             height      : 25px;
@@ -79,11 +95,23 @@ ion-content {
             color      : #434A5E;
             font-weight: 600;
             line-height: 26px;
+            @media(max-height: 750px){
+              font-size: 15px;
+            }
+            @media(max-height: 600px){
+                font-size: 14px;
+            }
         }
     }
 
     .card_body {
         padding: 15px;
+        @media(max-height: 750px){
+           padding: 12px 15px;
+          }
+          @media(max-height: 600px){
+             padding: 9px 15px;
+          }
 
         p {
             color      : #707070;
@@ -92,11 +120,25 @@ ion-content {
             text-align : center;
             margin-top : 15px;
             font-size  : 15px;
+            @media(max-height: 750px){
+                font-size: 14px;
+                margin-top : 12px;
+                line-height: 1.7;
+              }
+              @media(max-height: 600px){
+                  font-size: 13px;
+              }
         }
 
         h3 {
             color    : #434A5E;
             font-size: 20px;
+            @media(max-height: 750px){
+                font-size: 18px;
+                             }
+              @media(max-height: 600px){
+                  font-size: 16px;
+              }
         }
     }
 

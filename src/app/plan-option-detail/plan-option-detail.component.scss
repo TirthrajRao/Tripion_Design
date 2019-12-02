@@ -1,47 +1,80 @@
 $purple: #0575E6;
 $blue  : #021B79;
- 
+
 // content css start here 
 ion-content {
     --background: linear-gradient(#0575E6, #021B79);
+
     &:after {
-        content: "";
-        background-image: url('../../assets/images/illustration.png');
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        background-size: contain;
+        content              : "";
+        background-image     : url('../../assets/images/illustration.png');
+        background-repeat    : no-repeat;
+        background-position  : center bottom;
+        background-size      : contain;
         background-attachment: fixed;
-        padding-right: 100%;
-        padding-bottom: calc(100vh - 76px);
-        z-index: 1;
-        position: absolute;
+        padding-right        : 100%;
+        padding-bottom       : calc(100vh - 76px);
+        z-index              : 1;
+        position             : absolute;
     }
 }
 
 .plan_option_content {
-    padding: 0px 10px;
+    padding : 0px 10px;
     position: relative;
-    z-index: 11;
+    z-index : 11;
+
     .card {
         border: none;
         cursor: pointer;
+
         h6 {
-            color: #434A5E;
-            font-size: 17px;
-            padding: 18px 15px;
-            font-weight: 500;
+            color        : #434A5E;
+            font-size    : 17px;
+            padding      : 18px 15px;
+            font-weight  : 500;
             border-bottom: 1px solid #C7CBD6;
+            @media(max-height: 750px) {
+               padding  : 12px 10px;
+            }
+
+            @media(max-height: 600px) {
+                font-size: 16px;
+                padding  : 10px 10px;
+            }
         }
+
         h3 {
-            color: #434A5E;
+            color    : #434A5E;
             font-size: 18px;
-            padding: 18px 0px;
+            padding  : 18px 0px;
+
+            @media(max-height: 750px) {
+                font-size: 17px;
+                padding  : 12px 0px;
+            }
+
+            @media(max-height: 600px) {
+                font-size: 16px;
+                padding  : 8px 0px;
+            }
         }
+
         p {
-            padding: 0px 12px 15px 12px;
-            font-size: 15px;
-            color: #434A5E;
+            padding    : 0px 12px 15px 12px;
+            font-size  : 15px;
+            color      : #434A5E;
             line-height: 23px;
+
+            @media(max-height: 750px) {
+                padding  : 0px 12px 10px 12px;
+                font-size: 14px;
+            }
+
+            @media(max-height: 600px) {
+                padding: 5px 12px 10px 12px;
+                font-size: 13px;
+            }
         }
     }
 }
