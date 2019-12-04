@@ -12,6 +12,7 @@ export class OtherDocsComponent implements OnInit {
 
   ngOnInit() {
 
+    // modal for create new folfer 
     $('#open-folder').click(function () {
       $('#folder-modal').fadeIn();
     });
@@ -24,6 +25,22 @@ export class OtherDocsComponent implements OnInit {
     $('.make_folder button').click(function(){
       $('#folder-modal').fadeOut();
     });
+
+     // modal for upload new documents 
+
+     $('#upload-documents').click(function () {
+      $('#add-documents').fadeIn();
+    });
+    $('#add-documents .modal_body').click(function(event){
+      event.stopPropagation();
+    });
+    $('#add-documents').click(function(){
+      $(this).fadeOut();
+    });
+    $('.make_folder button').click(function(){
+      $('#add-documents').fadeOut();
+    });
+
       }
 
 }

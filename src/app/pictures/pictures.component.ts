@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-pictures',
@@ -7,8 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PicturesComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
 
-  ngOnInit() {}
+  }
+
+  ngOnInit() {
+    // modal for upload new pictures 
+
+    $('#upload-pictures').click(function () {
+      $('#add-pictures').fadeIn();
+    });
+    $('#add-pictures .modal_body').click(function (event) {
+      event.stopPropagation();
+    });
+    $('#add-pictures').click(function () {
+      $(this).fadeOut();
+    });
+    $('.make_folder button').click(function () {
+      $('#add-pictures').fadeOut();
+    });
+
+
+  }
 
 }

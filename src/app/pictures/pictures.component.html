@@ -48,10 +48,35 @@
       </div>
       <p>Rose-2.jpg</p>
     </div>
-    <div class="add_button">
+    <div class="add_button" id="upload-pictures">
       <a href="javascript:void(0);">
         <img src="../../assets/images/plus.png">
       </a>
     </div>
   </div>
+  <!-- add pictures modal open here  -->
+  <div class="modal_content_with_overlay" id="add-pictures" style="display: none;">
+      <div class="modal_body">
+        <div class="modal_header">
+          <p class="text-center">Add Pictures</p>
+        </div>
+        <div class="modal_content">
+          <div class="select_files">
+              <input type="file" class="form-control" id="file" placeholder="Enter Your Password" name="files" value="files"
+              style="display: none;">
+            <label class="text-center" for="file">
+              <i class="far fa-copy"></i>
+              Select from Files
+            </label>
+          </div>
+          <div class="selected_image">
+            <ion-img src="../../assets/images/p1.png"></ion-img>
+          </div>
+  
+          <div class="make_folder">
+            <button type="submit"><i class="fas fa-plus"></i>Upload Pictures</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </ion-content>
