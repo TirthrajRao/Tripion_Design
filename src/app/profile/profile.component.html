@@ -30,51 +30,49 @@
       <ion-img src="../../assets/images/rewards.png"></ion-img>
       <span class="ml-4">150</span>
     </div>
+
     <div class="card">
       <div class="card_header">
         <p>Mohit Shah</p>
       </div>
-
-      <div class="card_body">
-        
-        <div class="profile_detail">
+      <ion-card>
+        <ion-card-content>
           <div class="personal_detail">
             <p>Name in Passport</p>
             <h6>Mohit Shah</h6>
           </div>
-          <div class="edit_img" id="edit-name-icon">
-            <ion-img src="../../assets/images/pen.png"></ion-img>
-          </div>
-        </div>
+          <ion-img src="../../assets/images/pen.png" id="edit-name-icon"></ion-img>
+        </ion-card-content>
+      </ion-card>
+        <ion-card>
+          <ion-card-content>
+            <div class="personal_detail">
+              <p>Date of Birth</p>
+              <h6>5/09/1994</h6>
+            </div>
+            <ion-img src="../../assets/images/pen.png" id="edit-birth-icon"></ion-img>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-content>
+            <div class="personal_detail">
+              <p>Email</p>
+              <h6>shahmohitm@gmail.com</h6>
+            </div>
+            <ion-img src="../../assets/images/pen.png" id="edit-email-icon"></ion-img>
+          </ion-card-content>
+        </ion-card>
+         </div>
 
-        <div class="profile_detail">
-          <div class="personal_detail">
-            <p>Date of Birth</p>
-            <h6>5/09/1994</h6>
-          </div>
-          <div class="edit_img" id="edit-birth-icon">
-            <ion-img src="../../assets/images/pen.png"></ion-img>
-          </div>
-        </div>
-
-        <div class="profile_detail">
-          <div class="personal_detail">
-            <p>Email</p>
-            <h6>shahmohitm@gmail.com</h6>
-          </div>
-          <div class="edit_img" id="edit-email-icon">
-            <ion-img src="../../assets/images/pen.png"></ion-img>
-          </div>
-        </div>
-
-      </div>
-    </div>
     <div class="uograde_premium">
       <button routerLink='/home/benefits'>
         <i class="fas fa-crown"></i>
         Upgrade To Premium</button>
     </div>
   </div>
+
+  <!-- all modal start here  -->
+  <!-- edit name modal  -->
   <div class="modal_content_with_overlay" id="edit-name" style="display: none;">
     <div class="modal_body">
       <div class="modal_content">
@@ -85,6 +83,7 @@
       </div>
     </div>
   </div>
+  <!-- edit birth date modal  -->
   <div class="modal_content_with_overlay" id="edit-birth-date" style="display: none;">
     <div class="modal_body">
       <div class="modal_content">
@@ -95,6 +94,7 @@
       </div>
     </div>
   </div>
+  <!-- edit email modal  -->
   <div class="modal_content_with_overlay" id="edit-email" style="display: none;">
     <div class="modal_body">
       <div class="modal_content">

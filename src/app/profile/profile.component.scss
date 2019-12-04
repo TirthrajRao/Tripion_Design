@@ -47,10 +47,6 @@ ion-content {
         font-weight: 600;
         color      : #fff;
         line-height: 95px;
-        // @media(max-height: 600px) {
-        //     font-size  : 54px;
-        //     line-height: 78px;
-        // }
     }
 }
 
@@ -68,73 +64,44 @@ ion-content {
             color        : #434A5E;
             font-size    : 17px;
             font-weight  : 600;
-            padding      : 20px 15px;
+            padding      : 15px;
             line-height  : 20px;
             border-bottom: 1px solid #C7CBD6;
-
-            @media(max-height: 750px) {
-                // font-size: 16px;
-                padding     : 15px 12px;
-            }
-
-            @media(max-height: 600px) {
-                // font-size: 14px;
-                padding     : 12px 8px;
-            }
         }
     }
 
-    .card_body {
-        padding: 20px 10px 6px 10px;
+    ion-card-content {
+        width      : 100%;
+        display    : inline-block;
+        font-family: 'Montserrat', sans-serif !important;
 
-        @media(max-height: 750px) {
-            padding: 18px 10px 5px 10px;
-        }
+        .personal_detail {
+            width: 85%;
+            float: left;
 
-        @media(max-height: 600px) {
-            padding: 15px 10px 3px 10px;
-        }
-
-        .profile_detail {
-            width        : 100%;
-            box-shadow   : 1px 2px 7px #95989A;
-            border-radius: 4px;
-            padding      : 6px 10px 12px 10px;
-            margin-bottom: 20px;
-            position: relative;
-            display      : inline-block;
-
-            @media(max-height: 600px) {
-                padding      : 3px 10px 10px 8px;
-                margin-bottom: 15px;
+            p {
+                color      : #7F8DAB;
+                font-size  : 14px;
+                line-height: 27px;
             }
 
-            .personal_detail {
-                width: 85%;
-                p {
-                    color      : #7F8DAB;
-                    font-size  : 14px;
-                    line-height: 35px;
-                }
-
-                h6 {
-                    font-size: 17px;
-                    color    : #000;
-                }
-            }
-            .edit_img {
-                ion-img {
-                                     width   : 25px;
-                    margin  : auto;
-                    position: absolute;
-                    top     : 0;
-                    bottom  : 0;
-                    right   : 10px;
-                }
+            h6 {
+                font-size  : 17px;
+                color      : #000;
+                font-weight: 600;
             }
         }
 
-        
+        ion-img {
+            cursor  : pointer;
+            width   : 25px;
+            float   : right;
+            position: absolute;
+            top     : 0;
+            bottom  : 0;
+            right   : 10px;
+        }
+
     }
 }
 
