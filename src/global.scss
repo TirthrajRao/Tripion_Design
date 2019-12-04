@@ -56,7 +56,9 @@ ion-menu {
 // header css start here 
 
 // ion back button start
-
+.header-ios ion-toolbar:last-child {
+    --border-width: 0 0 0px;
+}
 ion-icon.sc-ion-back-button-md {
     display: none;
 }
@@ -142,15 +144,15 @@ i.back_icon_white {
         font-weight: 600;
         line-height: 30px;
         font-family: 'Montserrat', sans-serif !important;
-        @media(max-height: 812px){
-            font-size   : 22px;
-        }
-        @media(max-height: 750px){
-            font-size   : 20px;
-        }
-        @media(max-height: 600px){
-            font-size   : 18px;
-        }
+        // @media(max-height: 812px){
+        //     font-size   : 22px;
+        // }
+        // @media(max-height: 750px){
+        //     font-size   : 20px;
+        // }
+        // @media(max-height: 600px){
+        //     font-size   : 18px;
+        // }
            }
 }
 
@@ -296,6 +298,7 @@ ion-datetime {
         bottom          : 20px;
         right           : 20px;
         padding         : 16px;
+        z-index: 111;
         @media(max-height: 600px){
            padding: 13px;
         }

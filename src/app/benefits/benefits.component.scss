@@ -30,20 +30,11 @@ ion-menu-button {
 
 .home_text {
     color      : #AA55FF!important;
-    font-size  : 23px;
+    font-size  : 24px;
     font-weight: 600;
     line-height: 30px;
     font-family: 'Montserrat', sans-serif !important;
-    @media(max-height: 812px){
-        font-size   : 22px;
     }
-    @media(max-height: 750px){
-        font-size   : 20px;
-    }
-    @media(max-height: 600px){
-        font-size   : 18px;
-    }
-}
 
 // ion header css end here
 
@@ -95,13 +86,7 @@ ion-content {
             color      : #434A5E;
             font-weight: 600;
             line-height: 26px;
-            @media(max-height: 750px){
-              font-size: 15px;
-            }
-            @media(max-height: 600px){
-                font-size: 14px;
-            }
-        }
+                   }
     }
 
     .card_body {
@@ -120,25 +105,17 @@ ion-content {
             text-align : center;
             margin-top : 15px;
             font-size  : 15px;
-            @media(max-height: 750px){
-                font-size: 14px;
-                margin-top : 12px;
-                line-height: 1.7;
-              }
-              @media(max-height: 600px){
-                  font-size: 13px;
-              }
-        }
+             }
 
         h3 {
             color    : #434A5E;
             font-size: 20px;
-            @media(max-height: 750px){
-                font-size: 18px;
-                             }
-              @media(max-height: 600px){
-                  font-size: 16px;
-              }
+            // @media(max-height: 750px){
+            //     font-size: 18px;
+            //                  }
+            //   @media(max-height: 600px){
+            //       font-size: 16px;
+            //   }
         }
     }
 

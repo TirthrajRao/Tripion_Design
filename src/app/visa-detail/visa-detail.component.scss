@@ -69,15 +69,15 @@ ion-content {
         color      : #fff;
         font-weight: 500;
         line-height: 33px;
-        @media(max-height: 750px) {
-            font-size  : 12px;
-            line-height: 29px;
-        }
+        // @media(max-height: 750px) {
+        //     font-size  : 12px;
+        //     line-height: 29px;
+        // }
 
-        @media(max-height: 600px) {
-            font-size  : 11px;
-            line-height: 25px;
-        }
+        // @media(max-height: 600px) {
+        //     font-size  : 11px;
+        //     line-height: 25px;
+        // }
     }
 
     h6 {
@@ -86,13 +86,13 @@ ion-content {
         font-weight: 500;
         line-height: 25px;
 
-        @media(max-height: 750px) {
-            font-size  : 16px;
-        }
+        // @media(max-height: 750px) {
+        //     font-size  : 16px;
+        // }
 
-        @media(max-height: 600px) {
-            font-size  : 15px;
-        }
+        // @media(max-height: 600px) {
+        //     font-size  : 15px;
+        // }
     }
 }
 

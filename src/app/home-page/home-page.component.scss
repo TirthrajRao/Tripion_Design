@@ -32,21 +32,21 @@ ion-menu-button {
         color      : #000;
         font-weight: 600;
         margin-left: 5px;
-        font-size  : 23px;
+        font-size  : 24px;
         line-height: 24px;
         font-family: 'Montserrat', sans-serif !important;
 
-        @media(max-height: 812px) {
-            font-size: 22px;
-        }
+        // @media(max-height: 812px) {
+        //     font-size: 22px;
+        // }
 
-        @media(max-height: 750px) {
-            font-size: 20px;
-        }
+        // @media(max-height: 750px) {
+        //     font-size: 20px;
+        // }
 
-        @media(max-height: 600px) {
-            font-size: 18px;
-        }
+        // @media(max-height: 600px) {
+        //     font-size: 18px;
+        // }
     }
 }
 
@@ -94,13 +94,13 @@ ion-menu-button:hover {
             font-size  : 19px;
             font-weight: 600;
 
-            @media(max-height: 750px) {
-                font-size: 18px;
-            }
+            // @media(max-height: 750px) {
+            //     font-size: 18px;
+            // }
 
-            @media(max-height: 600px) {
-                font-size: 16px;
-            }
+            // @media(max-height: 600px) {
+            //     font-size: 16px;
+            // }
         }
     }
 
@@ -109,13 +109,13 @@ ion-menu-button:hover {
             font-size  : 19px;
             font-weight: 600;
 
-            @media(max-height: 750px) {
-                font-size: 18px;
-            }
+            // @media(max-height: 750px) {
+            //     font-size: 18px;
+            // }
 
-            @media(max-height: 600px) {
-                font-size: 16px;
-            }
+            // @media(max-height: 600px) {
+            //     font-size: 16px;
+            // }
         }
     }
 }
@@ -141,9 +141,9 @@ ion-menu-button:hover {
         font-size  : 20px;
         font-weight: 400;
         margin-top : 30px;
-        @media(max-height: 600px) {
-            font-size: 18px;
-        }
+        // @media(max-height: 600px) {
+        //     font-size: 18px;
+        // }
     }
     }
     .country_details {
@@ -151,9 +151,9 @@ ion-menu-button:hover {
             font-size  : 16px;
             font-weight: 500;
             line-height: 32px;
-            @media(max-height: 600px) {
-                font-size: 14px;
-            }
+            // @media(max-height: 600px) {
+            //     font-size: 14px;
+            // }
         }
 
         li {
@@ -163,9 +163,9 @@ ion-menu-button:hover {
             line-height: 20px;
             position   : relative;
             margin-left: 20px;
-            @media(max-height: 600px) {
-                font-size: 12px;
-            }
+            // @media(max-height: 600px) {
+            //     font-size: 12px;
+            // }
 
             &:after {
                 content   : "";
@@ -186,9 +186,9 @@ ion-menu-button:hover {
                 position     : absolute;
                 left         : -20px;
                 top          : 10px;
-                @media(max-height: 600px) {
-                    top: 8px;
-                }
+                // @media(max-height: 600px) {
+                //     top: 8px;
+                // }
             }
         }
 
@@ -231,9 +231,9 @@ ion-footer ion-toolbar:last-child {
             line-height: 16px;
             text-align : center;
             font-family: 'Montserrat', sans-serif !important;
-            @media(max-height: 600px) {
-                font-size: 11px;
-            }
+            // @media(max-height: 600px) {
+            //     font-size: 11px;
+            // }
         }
     }
 }

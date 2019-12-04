@@ -3,11 +3,11 @@
     <ion-row>
       <ion-col size='2'>
         <div class="back_icon">
-            <ion-buttons slot="start">
-                <ion-back-button>
-                    <i class="fa fa-angle-left back_icon_blue"></i>
-                </ion-back-button>
-            </ion-buttons>         
+          <ion-buttons slot="start">
+            <ion-back-button>
+              <i class="fa fa-angle-left back_icon_blue"></i>
+            </ion-back-button>
+          </ion-buttons>
         </div>
       </ion-col>
       <ion-col size='8'>
@@ -26,27 +26,31 @@
 
 <ion-content>
   <div class="all_content">
+
     <div class="all_detail w-100">
       <div class="user_detail float-left">
         <small>Name in Passport</small>
         <p>Mohit Shah</p>
       </div>
-      <ion-img src="../../assets/images/pen.png" class="float-right"></ion-img>
+      <ion-img src="../../assets/images/pen.png" class="float-right" id="edit-name-icon"></ion-img>
     </div>
+
     <div class="all_detail w-100">
       <div class="user_detail float-left">
         <small>Date of Expiry</small>
         <p>16-05-2021</p>
       </div>
-      <ion-img src="../../assets/images/pen.png" class="float-right"></ion-img>
+      <ion-img src="../../assets/images/pen.png" class="float-right" id="edit-expiry-icon"></ion-img>
     </div>
+
     <div class="all_detail w-100">
       <div class="user_detail float-left">
         <small>Passport Number</small>
         <p>J9181729</p>
       </div>
-      <ion-img src="../../assets/images/pen.png" class="float-right"></ion-img>
+      <ion-img src="../../assets/images/pen.png" class="float-right" id="edit-pnumber-icon"></ion-img>
     </div>
+    
     <div class="card">
       <div class="row">
         <div class="col-4">
@@ -78,41 +82,87 @@
       </a>
     </div>
   </div>
+
+  <!-- add visa modal start here  -->
   <div class="modal_content_with_overlay" id="add-visa-modal" style="display: none;">
     <div class="modal_body">
       <div class="modal_header">
         <p class="text-center">Add Visa</p>
       </div>
-      <div class="modal_content">
-        <select class="form-control">
-          <option selected>Passport</option>
-          <option>2</option>
-        </select>
-        <ion-input placeholder="Country" type="text"></ion-input>
-        <ion-input placeholder="Date of Expiry" type="text"></ion-input>
-        <div class="select_files">
-          <input type="file" class="form-control" id="file" placeholder="Enter Your Password" name="files" value="files"
-            style="display: none;">
-          <label class="text-center" for="file">
-              <i class="far fa-copy"></i>
-            <!-- <ion-img src="../../assets/images/file.png"></ion-img> -->
-            Select from Files
-          </label>
-        </div>
-        <div class="selected_image_preview">
-          <ul>
-            <li>
-              <ion-img src="../../assets/images/doc1.png"></ion-img>
-            </li>
-            <li>
-              <ion-img src="../../assets/images/Passport.png"></ion-img>
-            </li>
-          </ul>
-        </div>
-        <div class="make_folder">
-          <button><i class="fas fa-plus"></i>Add Visa</button>
-        </div>
+      <div class="modal_content">     
+        <ion-item>
+          <ion-label position="floating">Passport</ion-label>
+          <ion-select>
+            <ion-select-option value="pass1">Passport 1</ion-select-option>
+            <ion-select-option value="pass2">Passport 2</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Country</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Date of Expiry</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+            <div class="select_files">
+              <input type="file" class="form-control" id="file" placeholder="Enter Your Password" name="files"
+                value="files" style="display: none;">
+              <label class="text-center" for="file">
+                <i class="far fa-copy"></i>
+                Select from Files
+              </label>
+            </div>
+            <div class="selected_image_preview">
+              <ul>
+                <li>
+                  <ion-img src="../../assets/images/doc1.png"></ion-img>
+                </li>
+                <li>
+                  <ion-img src="../../assets/images/Passport.png"></ion-img>
+                </li>
+              </ul>
+            </div>
+            <div class="make_folder">
+              <button><i class="fas fa-plus"></i>Add Visa</button>
+            </div>
       </div>
     </div>
   </div>
+
+<!-- edit name modal  -->
+
+  <div class="modal_content_with_overlay" id="edit-name" style="display: none;">
+    <div class="modal_body">
+      <div class="modal_content">
+        <ion-item>
+          <ion-label position="floating">Add Name</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </div>
+    </div>
+  </div>
+  <!-- edit expiry date modal start here  -->
+  <div class="modal_content_with_overlay" id="edit-expiry-date" style="display: none;">
+    <div class="modal_body">
+      <div class="modal_content">
+        <ion-item>
+          <ion-label position="floating">Add Expiry Date</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </div>
+    </div>
+  </div>
+  <!-- edit passport number modal start here  -->
+  <div class="modal_content_with_overlay" id="edit-passport-number" style="display: none;">
+    <div class="modal_body">
+      <div class="modal_content">
+        <ion-item>
+          <ion-label position="floating">Add Passport Number</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </div>
+    </div>
+  </div>
+
 </ion-content>

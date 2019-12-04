@@ -34,8 +34,9 @@ ion-content {
             padding      : 18px 15px;
             font-weight  : 500;
             border-bottom: 1px solid #C7CBD6;
+
             @media(max-height: 750px) {
-               padding  : 12px 10px;
+                padding: 12px 10px;
             }
 
             @media(max-height: 600px) {
@@ -49,32 +50,29 @@ ion-content {
             font-size: 18px;
             padding  : 18px 0px;
 
-            @media(max-height: 750px) {
-                font-size: 17px;
-                padding  : 12px 0px;
-            }
+            // @media(max-height: 750px) {
+            //     font-size: 17px;
+            //     padding  : 15px 0px;
+            // }
 
-            @media(max-height: 600px) {
-                font-size: 16px;
-                padding  : 8px 0px;
-            }
+            // @media(max-height: 600px) {
+            //     font-size: 16px;
+            // }
         }
 
         p {
-            padding    : 0px 12px 15px 12px;
+            padding    : 0px 12px 20px 12px;
             font-size  : 15px;
             color      : #434A5E;
             line-height: 23px;
 
-            @media(max-height: 750px) {
-                padding  : 0px 12px 10px 12px;
-                font-size: 14px;
-            }
-
-            @media(max-height: 600px) {
-                padding: 5px 12px 10px 12px;
-                font-size: 13px;
-            }
+            // @media(max-height: 750px) {
+            //     font-size: 14px;
+            // }
+            // @media(max-height: 600px) {
+            //     padding    : 0px 12px 15px 12px;
+            //     font-size: 13.5px;
+            // }
         }
     }
 }

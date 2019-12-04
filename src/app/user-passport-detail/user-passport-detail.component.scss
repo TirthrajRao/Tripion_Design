@@ -55,13 +55,13 @@ ion-content {
             font-weight: 600;
             line-height: 23px;
 
-            @media(max-height: 750px) {
-                font-size: 16px;
-            }
+            // @media(max-height: 750px) {
+            //     font-size: 16px;
+            // }
 
-            @media(max-height: 600px) {
-                font-size: 15px;
-            }
+            // @media(max-height: 600px) {
+            //     font-size: 15px;
+            // }
         }
     }
 
@@ -258,22 +258,28 @@ ion-content {
 .modal_content {
     padding: 5px 20px 30px 20px;
 
+    ion-label {
+        font-size  : 14px !important;
+        --color    : #7F8DAB;
+           }
+
     ion-input {
-        border-bottom      : 1px solid rgba(104, 95, 134, 0.4);
-        --placeholder-color: #7F8DAB;
+        --placeholder-color: #707070;
         font-size          : 14px !important;
-        --color            : #7F8DAB;
+        --color            : #707070;
         --padding-bottom   : 5px;
         font-family        : 'Montserrat', sans-serif !important;
     }
 
-    .form-control {
-        border       : none;
-        font-size    : 14px !important;
-        border-bottom: 1px solid rgba(104, 95, 134, 0.4);
-        color        : #7F8DAB;
-        border-radius: 0px;
-        padding      : 0px 3px;
+    ion-item {
+        --padding-start    : 0px;
+        --inner-padding-top: 0px;
+    }
+
+    ion-select {
+        color      : #707070;
+        font-size  : 14px;
+        font-family: 'Montserrat', sans-serif !important;
     }
 }
 

@@ -52,18 +52,18 @@ ion-content {
             color      : #111111;
             font-weight: 600;
 
-            @media(max-height: 812px) {
-                font-size: 17px;
-            }
+            // @media(max-height: 812px) {
+            //     font-size: 17px;
+            // }
 
-            @media(max-height: 750px) {
-                font-size: 16px;
-            }
+            // @media(max-height: 750px) {
+            //     font-size: 16px;
+            // }
 
-            @media(max-height: 600px) {
-                font-size  : 14px;
-                line-height: 25px;
-            }
+            // @media(max-height: 600px) {
+            //     font-size  : 14px;
+            //     line-height: 25px;
+            // }
         }
 
         .calendar_img {
@@ -110,13 +110,13 @@ ion-content {
                 color      : #434A5E;
                 margin-left: 10px;
                 font-weight: 500;
-                @media(max-height: 750px) {
-                   font-size: 17px;
-                }
+                // @media(max-height: 750px) {
+                //    font-size: 17px;
+                // }
     
-                @media(max-height: 600px) {
-                    font-size: 16px;
-                }
+                // @media(max-height: 600px) {
+                //     font-size: 16px;
+                // }
             }
         }
 
@@ -154,10 +154,10 @@ ion-content {
                 line-height: 1.8;
                 margin-left: 20px;
                 position   : relative;
-                @media(max-height: 600px) {
-                    font-size: 11px;
-                    line-height: 1.7;
-                }
+                // @media(max-height: 600px) {
+                //     font-size: 11px;
+                //     line-height: 1.7;
+                // }
 
                 &:after {
                     content   : "";
@@ -167,9 +167,9 @@ ion-content {
                     position  : absolute;
                     left      : -18px;
                     top       : 13px;
-                    @media(max-height: 600px) {
-                        top: 11px;
-                     }
+                    // @media(max-height: 600px) {
+                    //     top: 11px;
+                    //  }
                 }
 
                 &:before {
@@ -181,9 +181,9 @@ ion-content {
                     position     : absolute;
                     left         : -20px;
                     top          : 8px;
-                    @media(max-height: 600px) {
-                       top: 6px;
-                    }
+                    // @media(max-height: 600px) {
+                    //    top: 6px;
+                    // }
                 }
             }
 
@@ -248,9 +248,6 @@ ion-footer ion-toolbar:last-child {
             text-align : center;
             font-family: 'Montserrat', sans-serif !important;
 
-            @media(max-height: 600px) {
-                font-size: 11px;
-            }
         }
     }
 }

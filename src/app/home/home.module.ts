@@ -34,6 +34,7 @@ import { ToursInquiryComponent } from '../tours-inquiry/tours-inquiry.component'
 import { TransferInquiryComponent } from '../transfer-inquiry/transfer-inquiry.component';
 import { OtherDetailsInquiryComponent } from '../other-details-inquiry/other-details-inquiry.component';
 import { AmendmentsComponent } from '../amendments/amendments.component';
+import { PremiumAccountPaymentComponent } from '../premium-account-payment/premium-account-payment.component'
 
 
 import { from } from 'rxjs';
@@ -157,6 +158,10 @@ import { from } from 'rxjs';
             component: AmendmentsComponent
           },
           {
+            path: 'premium-account',
+            component: PremiumAccountPaymentComponent
+          },
+          {
             path: 'plan-option-detail',
             component: PlanOptionDetailComponent
           },
@@ -209,7 +214,8 @@ import { from } from 'rxjs';
     ToursInquiryComponent,
     TransferInquiryComponent,
     OtherDetailsInquiryComponent,
-    AmendmentsComponent
+    AmendmentsComponent,
+    PremiumAccountPaymentComponent
   ]
 })
 export class HomePageModule { }

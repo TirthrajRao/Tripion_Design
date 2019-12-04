@@ -31,15 +31,15 @@ ion-header ion-toolbar:first-child {
         font-weight: 600;
         line-height: 25px;
         color      : #003574 !important;
-        @media(max-height: 812px){
-            font-size   : 22px;
-        }
-        @media(max-height: 750px){
-            font-size   : 20px;
-        }
-        @media(max-height: 600px){
-            font-size   : 18px;
-        }
+        // @media(max-height: 812px){
+        //     font-size   : 22px;
+        // }
+        // @media(max-height: 750px){
+        //     font-size   : 20px;
+        // }
+        // @media(max-height: 600px){
+        //     font-size   : 18px;
+        // }
     }
 }
 
@@ -87,9 +87,9 @@ ion-content {
             font-size     : 16px;
             cursor        : pointer;
             text-transform: capitalize;
-            @media(max-height: 600px){
-                font-size   : 14px;
-            }
+            // @media(max-height: 600px){
+            //     font-size   : 14px;
+            // }
         }
     }
 
@@ -120,9 +120,9 @@ ion-content {
                 color      : #fff;
                 font-weight: 500;
                 line-height: 5px;
-                @media(max-height: 600px){
-                    font-size   : 11px;
-                }
+                // @media(max-height: 600px){
+                //     font-size   : 11px;
+                // }
             }
         }
     }
@@ -166,13 +166,28 @@ ion-content {
 .modal_content {
     padding: 5px 20px 30px 20px;
 
+    ion-label {
+        font-size  : 14px !important;
+        --color    : #7F8DAB;
+           }
+
     ion-input {
-        border-bottom      : 1px solid rgba(104, 95, 134, 0.4);
-        --placeholder-color: #7F8DAB;
+        --placeholder-color: #707070;
         font-size          : 14px !important;
-        --color            : #7F8DAB;
+        --color            : #707070;
         --padding-bottom   : 5px;
         font-family        : 'Montserrat', sans-serif !important;
+    }
+
+    ion-item {
+        --padding-start    : 0px;
+        --inner-padding-top: 0px;
+    }
+
+    ion-select {
+        color      : #707070;
+        font-size  : 14px;
+        font-family: 'Montserrat', sans-serif !important;
     }
 }
 
@@ -201,9 +216,15 @@ ion-content {
 }
 
 .select_files {
-    margin: 20px 0px;
+    p {
+        font-size  : 14px !important;
+        color    : #7F8DAB;
+        font-weight: 500;
+        padding-top: 10px;
+    }
 
     label {
+        margin-top: 20px;
         background   : linear-gradient(#584BDD, #B755FF);
         padding      : 0px 10px;
         font-size    : 16px;

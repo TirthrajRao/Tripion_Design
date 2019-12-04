@@ -77,17 +77,31 @@
       </a>
     </div>
   </div>
+
+  <!-- add passport modal start here -->
   <div class="modal_content_with_overlay" id="add-passport-modal" style="display: none;">
     <div class="modal_body">
       <div class="modal_header">
         <p class="text-center">Add Passport</p>
       </div>
       <div class="modal_content">
-        <ion-input placeholder="Name in Passport" type="text"></ion-input>
-        <ion-input placeholder="Passport Number" type="text"></ion-input>
-        <ion-input placeholder="Date of Expiry" type="text"></ion-input>
-        <ion-input placeholder="Pictures of the Passport" type="text"></ion-input>
+          <ion-item>
+              <ion-label position="floating">Passport</ion-label>
+              <ion-select>
+                <ion-select-option value="pass1">Passport 1</ion-select-option>
+                <ion-select-option value="pass2">Passport 2</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Country</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Date of Expiry</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
         <div class="select_files">
+            <p>Pictures of the Passport</p>
           <input type="file" class="form-control" id="file" placeholder="Enter Your Password" name="files" value="files"
             style="display: none;">
           <label class="text-center" for="file">

@@ -53,13 +53,13 @@ ion-content {
         color    : #003574;
         font-size: 42px;
 
-        @media(max-height: 750px) {
-            font-size: 38px;
-        }
+        // @media(max-height: 750px) {
+        //     font-size: 38px;
+        // }
 
-        @media(max-height: 600px) {
-            font-size: 30px;
-        }
+        // @media(max-height: 600px) {
+        //     font-size: 30px;
+        // }
     }
 
     .image_detail {
@@ -89,18 +89,18 @@ ion-content {
         margin-left: 60px;
         line-height: 42px;
 
-        @media(max-height: 812px) {
-            font-size: 18px;
-        }
+        // @media(max-height: 812px) {
+        //     font-size: 18px;
+        // }
 
-        @media(max-height: 750px) {
-            font-size  : 16px;
-            line-height: 38px;
-        }
+        // @media(max-height: 750px) {
+        //     font-size  : 16px;
+        //     line-height: 38px;
+        // }
 
-        @media(max-height: 600px) {
-            font-size  : 15px;
-            line-height: 30px;
-        }
+        // @media(max-height: 600px) {
+        //     font-size  : 15px;
+        //     line-height: 30px;
+        // }
     }
 }

@@ -21,6 +21,9 @@ export class OtherDocsComponent implements OnInit {
     $('#folder-modal').click(function(){
       $(this).fadeOut();
     });
+    $('.make_folder button').click(function(){
+      $('#folder-modal').fadeOut();
+    });
       }
 
 }

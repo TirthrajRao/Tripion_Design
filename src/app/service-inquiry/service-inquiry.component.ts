@@ -12,5 +12,10 @@ export class ServiceInquiryComponent implements OnInit {
 
   ngOnInit() {
   }
+  next_form(){
+    console.log("====");
+    $('.all_service_details').css('display','none');
+    $('. visa_form').css('display','block');
+   }
 
 }

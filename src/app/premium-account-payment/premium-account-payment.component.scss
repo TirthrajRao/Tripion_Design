@@ -38,19 +38,16 @@ ion-content {
 
     .payment_for {
         padding: 6vh 30px 7vh 40px;
-
         @media(max-height: 750px) {
             padding: 2vh 30px 2vh 40px;
         }
-
         .payment_following {
             font-size  : 17px;
             color      : #ADB3C4;
             margin-left: -18px;
-            padding    : 18px 0px;
+           padding: 18px 0px;
             font-weight: 500;
-
-            // @media(max-height: 750px) {
+           // @media(max-height: 750px) {
             //     font-size  : 16px;
             //     line-height: 45px;
             //     margin-top : 10px;
@@ -63,7 +60,7 @@ ion-content {
 
             @media(max-height: 600px) {
                 // font-size : 35px;
-                margin-top   : 5vh;
+                margin-top: 5vh;
             }
         }
 
@@ -73,7 +70,7 @@ ion-content {
 
         li {
             list-style : none;
-            font-size  : 18px;
+            font-size  : 16px;
             font-weight: 500;
             color      : #fff;
             line-height: 38px;

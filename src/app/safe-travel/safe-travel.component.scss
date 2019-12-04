@@ -57,19 +57,19 @@ ion-content {
         font-weight: 600;
         line-height: 52px;
 
-        @media(max-height: 812px) {
-            line-height: 46px;
-        }
+        // @media(max-height: 812px) {
+        //     line-height: 46px;
+        // }
 
-        @media(max-height: 750px) {
-            line-height: 42px;
-            font-size  : 15px;
-        }
+        // @media(max-height: 750px) {
+        //     line-height: 42px;
+        //     font-size  : 15px;
+        // }
 
-        @media(max-height: 600px) {
-            line-height: 38px;
-            font-size  : 14px;
-        }
+        // @media(max-height: 600px) {
+        //     line-height: 38px;
+        //     font-size  : 14px;
+        // }
     }
 }
 
