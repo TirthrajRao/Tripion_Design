@@ -73,11 +73,11 @@
             <p>Date and Duration Status</p>
             <div class="row">
               <div class="col-5">
-                <input type="radio" class="mr-2" id="flexible" name="radio-group" checked>
+                <input type="radio" class="mr-2" id="flexible" name="Duration" >
                 <label for="flexible">Flexible</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="fix" name="radio-group">
+                <input type="radio" class="mr-2" id="fix" name="Duration" checked>
                 <label for="fix">Fixed</label>
               </div>
             </div>
@@ -91,15 +91,15 @@
             <p>Purpose of Travel</p>
             <div class="row">
               <div class="col-5">
-                <input type="radio" class="mr-2" id="tourism" name="radio-group" checked>
+                <input type="radio" class="mr-2" id="tourism" name="Travel" >
                 <label for="tourism">Tourism</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="buisness" name="radio-group">
+                <input type="radio" class="mr-2" id="buisness" name="Travel" checked>
                 <label for="buisness">Business</label>
               </div>
               <div class="col-12">
-                <input type="radio" class="mr-2" id="function" name="radio-group">
+                <input type="radio" class="mr-2" id="function" name="Travel">
                 <label for="function">Family Reunion / Functions</label>
               </div>
             </div>
@@ -113,16 +113,16 @@
             <p>Type of Visa</p>
             <div class="row">
               <div class="col-5">
-                <input type="radio" class="mr-2" id="buis" name="radio-group" checked>
+                <input type="radio" class="mr-2" id="buis" name="Travel-visa" checked>
                 <label for="buis">Business</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="student" name="radio-group">
+                <input type="radio" class="mr-2" id="student" name="Travel-visa">
                 <label for="student">Student</label>
               </div>
               <div class="col-12 ">
-                <input type="radio" class="mr-2" id="tourist1" name="radio-group">
-                <label for="test8">tourist1</label>
+                <input type="radio" class="mr-2" id="tourist1" name="Travel-visa">
+                <label for="tourist1">tourist1</label>
               </div>
             </div>
             <ion-item>
@@ -134,12 +134,12 @@
           <form action="#">
             <div class="row">
               <div class="col-5">
-                <input type="radio" class="mr-2" id="test11" name="radio-group" checked>
-                <label for="test11">Yes</label>
+                <input type="radio" class="mr-2" id="rejections1" name="Rejections" checked>
+                <label for="rejections1">Yes</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="test12" name="radio-group">
-                <label for="test12">No</label>
+                <input type="radio" class="mr-2" id="rejections2" name="Rejections">
+                <label for="rejections2">No</label>
               </div>
             </div>
             <ion-item>
@@ -156,12 +156,12 @@
             <p>Previous International Travel</p>
             <div class="row">
               <div class="col-5">
-                <input type="radio" class="mr-2" id="yes" name="radio-group" checked>
-                <label for="yes">Yes</label>
+                <input type="radio" class="mr-2" id="international1" name="International" checked>
+                <label for="international1">Yes</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="no" name="radio-group">
-                <label for="no">No</label>
+                <input type="radio" class="mr-2" id="international2" name="International">
+                <label for="international2">No</label>
               </div>
             </div>
             <h6 class="mt-2">France - 12 days, USA - 18 days.</h6>
@@ -186,9 +186,9 @@
     <div class="next_btn" *ngIf="formUrl.length">
       <button type="submit" (click)="nextForm()">Next<i class="fas fa-arrow-right"></i></button>
     </div>
-    <div class="next_btn"  *ngIf="!formUrl.length">
+    <!-- <div class="next_btn"  *ngIf="!formUrl.length">
       <button type="submit" >Submit</button>
-    </div>
+    </div> -->
   </div>
 </ion-content>
 

@@ -26,7 +26,7 @@
 
 <ion-content>
   <div class="all_content">
-    <div class="card folder_detail" routerLink='/home/folder-detail'>
+    <div class="card folder_detail">
       <ion-img src="../../assets/images/green.png"></ion-img>
       <p>IDs</p>
     </div>
@@ -63,7 +63,10 @@
         <p class="text-center">Folder Title</p>
       </div>
       <div class="modal_content">
-        <ion-input placeholder="Title" type="text"></ion-input>
+          <ion-item>
+              <ion-label position="floating">Title</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
         <div class="make_folder">
           <button type="submit"><i class="fas fa-plus"></i>Make Folder</button>
         </div>

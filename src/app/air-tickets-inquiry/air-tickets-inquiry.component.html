@@ -60,11 +60,11 @@
           <form action="#">
             <div class="row">
               <div class="col-5">
-                <input type="radio" class="mr-2" id="round" name="radio-group" checked>
+                <input type="radio" class="mr-2" id="round" name="Journey" checked>
                 <label for="round">Round Trip</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="way" name="radio-group">
+                <input type="radio" class="mr-2" id="way" name="Journey">
                 <label for="way">One Way</label>
               </div>
             </div>
@@ -80,15 +80,15 @@
           <form action="#">
             <div class="row">
               <div class="col-5">
-                <input type="radio" class="mr-2" id="economy" name="radio-group" checked>
+                <input type="radio" class="mr-2" id="economy" name="Tire" checked>
                 <label for="economy">Economy</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="class" name="radio-group">
+                <input type="radio" class="mr-2" id="class" name="Tire">
                 <label for="class">Business Class</label>
               </div>
               <div class="col-12">
-                <input type="radio" class="mr-2" id="first" name="radio-group">
+                <input type="radio" class="mr-2" id="first" name="Tire">
                 <label for="first">First Class</label>
               </div>
             </div>
@@ -104,20 +104,20 @@
           <form action="#">
             <div class="row">
               <div class="col-5">
-                <input type="radio" class="mr-2" id="ais" name="radio-group" checked>
+                <input type="radio" class="mr-2" id="ais" name="Flight" checked>
                 <label for="ais">Aisle</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="mid" name="radio-group">
+                <input type="radio" class="mr-2" id="mid" name="Flight">
                 <label for="mid">Middle</label>
               </div>
               <div class="col-5">
-                <input type="radio" class="mr-2" id="window" name="radio-group">
+                <input type="radio" class="mr-2" id="window" name="Flight">
                 <label for="window">Window</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="Exit" name="radio-group">
-                <label for="Exit">Emergency Exit Row</label>
+                <input type="radio" class="mr-2" id="exit" name="Flight">
+                <label for="exit">Emergency Exit Row</label>
               </div>
             </div>
             <ion-item>
@@ -160,12 +160,12 @@
           <form action="#">
             <div class="row">
               <div class="col-5">
-                <input type="radio" class="mr-2" id="test1" name="radio-group" checked>
-                <label for="test1">Yes</label>
+                <input type="radio" class="mr-2" id="seatbelt1" name="Extender" checked>
+                <label for="seatbelt1">Yes</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="test2" name="radio-group">
-                <label for="test2">No</label>
+                <input type="radio" class="mr-2" id="seatbelt2" name="Extender">
+                <label for="seatbelt2">No</label>
               </div>
             </div>
           </form>
@@ -180,12 +180,12 @@
           <form action="#">
             <div class="row">
               <div class="col-5">
-                <input type="radio" class="mr-2" id="yes1" name="radio-group" checked>
-                <label for="yes1">Yes</label>
+                <input type="radio" class="mr-2" id="Wheelchair1" name="Assistance" checked>
+                <label for="Wheelchair1">Yes</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="no1" name="radio-group">
-                <label for="no1">No</label>
+                <input type="radio" class="mr-2" id="Wheelchair2" name="Assistance">
+                <label for="Wheelchair2">No</label>
               </div>
             </div>
           </form>
@@ -209,8 +209,8 @@
     <div class="next_btn" *ngIf="formUrl.length">
       <button type="submit" (click)="nextForm()">Next<i class="fas fa-arrow-right"></i></button>
     </div>
-    <div class="next_btn"  *ngIf="!formUrl.length">
+    <!-- <div class="next_btn"  *ngIf="!formUrl.length">
       <button type="submit" >Submit</button>
-    </div>
+    </div> -->
   </div>
 </ion-content>

@@ -57,20 +57,20 @@
             <div class="row">
               <p class="w-100 pl-3">Smoking Room</p>
               <div class="col-5">
-                <input type="radio" class="mr-2" id="test1" name="radio-group" checked>
-                <label for="test1">Yes</label>
+                <input type="radio" class="mr-2" id="Smoking1" name="Smoking" checked>
+                <label for="Smoking1">Yes</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="test2" name="radio-group">
-                <label for="test2">No</label>
+                <input type="radio" class="mr-2" id="Smoking2" name="Smoking">
+                <label for="Smoking2">No</label>
               </div>
               <p class="w-100 pl-3">Wheelchair Accessible</p>
               <div class="col-5">
-                <input type="radio" class="mr-2" id="Accessible1" name="radio-group" checked>
+                <input type="radio" class="mr-2" id="Accessible1" name="Accessible" checked>
                 <label for="Accessible1">Yes</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="Accessible2" name="radio-group">
+                <input type="radio" class="mr-2" id="Accessible2" name="Accessible">
                 <label for="Accessible2">No</label>
               </div>
             </div>
@@ -90,15 +90,15 @@
           <form action="#">
             <div class="row">
               <div class="col-12">
-                <input type="radio" class="mr-2" id="Plans1" name="radio-group" checked>
+                <input type="radio" class="mr-2" id="Plans1" name="Meal" checked>
                 <label for="Plans1">CP ( Continental Plan ) - Only Breakfast</label>
               </div>
               <div class="col-12">
-                <input type="radio" class="mr-2" id="Plans2" name="radio-group">
+                <input type="radio" class="mr-2" id="Plans2" name="Meal">
                 <label for="Plans2">AP ( American Plan ) - All Meals</label>
               </div>
               <div class="col-12">
-                <input type="radio" class="mr-2" id="Plans3" name="radio-group">
+                <input type="radio" class="mr-2" id="Plans3" name="Meal">
                 <label for="Plans3">MAP - Breakfast & 1 Major Meal</label>
               </div>
             </div>
@@ -114,28 +114,28 @@
           <form action="#">
             <div class="row">
               <div class="col-12">
-                <input type="radio" class="mr-2" id="test3" name="radio-group" checked>
-                <label for="test3">Vegetarian</label>
+                <input type="radio" class="mr-2" id="Culinary1" name="Preferrence" checked>
+                <label for="Culinary1">Vegetarian</label>
               </div>
               <div class="col-12">
-                <input type="radio" class="mr-2" id="test4" name="radio-group">
-                <label for="test4">Vegan</label>
+                <input type="radio" class="mr-2" id="Culinary2" name="Preferrence">
+                <label for="Culinary2">Vegan</label>
               </div>
               <div class="col-12">
-                <input type="radio" class="mr-2" id="test5" name="radio-group">
-                <label for="test5">Gluten & Lactose Free</label>
+                <input type="radio" class="mr-2" id="Culinary3" name="Preferrence">
+                <label for="Culinary3">Gluten & Lactose Free</label>
               </div>
               <div class="col-12">
-                <input type="radio" class="mr-2" id="test6" name="radio-group">
-                <label for="test6">Non Veg</label>
+                <input type="radio" class="mr-2" id="Culinary4" name="Preferrence">
+                <label for="Culinary4">Non Veg</label>
               </div>
               <div class="col-12">
-                <input type="radio" class="mr-2" id="test7" name="radio-group">
-                <label for="test7">Jain ( Only where available )</label>
+                <input type="radio" class="mr-2" id="Culinary5" name="Preferrence">
+                <label for="Culinary5">Jain ( Only where available )</label>
               </div>
               <div class="col-12">
-                <input type="radio" class="mr-2" id="test8" name="radio-group">
-                <label for="test8">Other</label>
+                <input type="radio" class="mr-2" id="Culinary6" name="Preferrence">
+                <label for="Culinary6">Other</label>
               </div>
             </div>
             <ion-item>
@@ -194,8 +194,8 @@
     <div class="next_btn" *ngIf="formUrl.length">
       <button type="submit" (click)="nextForm()">Next<i class="fas fa-arrow-right"></i></button>
     </div>
-    <div class="next_btn"  *ngIf="!formUrl.length">
+    <!-- <div class="next_btn"  *ngIf="!formUrl.length">
       <button type="submit" >Submit</button>
-    </div>
+    </div> -->
   </div>
 </ion-content>

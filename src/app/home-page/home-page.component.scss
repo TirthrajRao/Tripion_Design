@@ -40,6 +40,9 @@ ion-menu-button {
 
 // ion header css end here
 // ion content css start here
+ion-content {
+    --background: #fff !important;
+}
 
 .wether {
     display: inline-block;

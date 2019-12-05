@@ -3,12 +3,12 @@
     <ion-row>
       <ion-col size='2'>
         <div class="back_icon">
-            <ion-buttons slot="start">
-                <ion-back-button>
-                  <i class="fa fa-angle-left back_icon_white"></i>
-                </ion-back-button>
-            </ion-buttons>
-                 </div>
+          <ion-buttons slot="start">
+            <ion-back-button>
+              <i class="fa fa-angle-left back_icon_white"></i>
+            </ion-back-button>
+          </ion-buttons>
+        </div>
       </ion-col>
       <ion-col size='8'>
         <div class="middle_sec text-center text-white">
@@ -42,12 +42,12 @@
             <p class="mt-2">Transfer Basis</p>
             <div class="row mt-2">
               <div class="col-5">
-                <input type="radio" class="mr-2" id="Plans1" name="radio-group" checked>
-                <label for="Plans1">Private</label>
+                <input type="radio" class="mr-2" id="Basis1" name="Transfer1" checked>
+                <label for="Basis1">Private</label>
               </div>
               <div class="col-7">
-                <input type="radio" class="mr-2" id="Plans2" name="radio-group">
-                <label for="Plans2">Sharing</label>
+                <input type="radio" class="mr-2" id="Basis2" name="Transfer1">
+                <label for="Basis2">Sharing</label>
               </div>
             </div>
             <ion-item>
@@ -87,7 +87,7 @@
               <ion-select-option value="mute">Business</ion-select-option>
               <ion-select-option value="mute_week">First</ion-select-option>
               <ion-select-option value="mute_week">Premium Economy</ion-select-option>
-              </ion-select>
+            </ion-select>
           </ion-item>
         </div>
       </div>
@@ -206,8 +206,8 @@
     <div class="next_btn" *ngIf="formUrl.length">
       <button type="submit" (click)="nextForm()">Next<i class="fas fa-arrow-right"></i></button>
     </div>
-    <div class="next_btn" *ngIf="!formUrl.length">
+    <!-- <div class="next_btn" *ngIf="!formUrl.length">
       <button type="submit" >Submit</button>
-    </div>
+    </div> -->
   </div>
 </ion-content>
