@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 declare var $: any;
 
 @Component({
@@ -7,15 +8,30 @@ declare var $: any;
   styleUrls: ['./service-inquiry.component.scss'],
 })
 export class ServiceInquiryComponent implements OnInit {
- 
-  constructor() { }
+  checkBoxValue: any = [];
+  constructor(public route: Router) { }
 
   ngOnInit() {
   }
-  next_form(){
-    console.log("====");
-    $('.all_service_details').css('display','none');
-    $('. visa_form').css('display','block');
-   }
+
+  // open next form function
+  nextForm() {
+    const formRoute = this.checkBoxValue[0];
+    this.route.navigate(['/home/' + formRoute])
+  }
+  // select id from checkbox 
+  selectMember(data) {
+    console.log('data=====>', data);
+    console.log(this.checkBoxValue.includes(data));
+    if (!this.checkBoxValue.includes(data)) {
+      this.checkBoxValue.push(data);
+    } else {
+      var index = this.checkBoxValue.indexOf(data);
+      console.log("index", index);
+      this.checkBoxValue.splice(index, 1);
+    }
+    console.log("tjhis ==>", this.checkBoxValue);
+    localStorage.setItem('formId', JSON.stringify(this.checkBoxValue))
+  }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-accomodation-inquiry',
@@ -7,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccomodationInquiryComponent implements OnInit {
 
-  constructor() { }
+  formUrl: any = [];
+  constructor(public route: Router) {
+    this.formUrl = JSON.parse(localStorage.getItem('formId'));
+    this.formUrl.splice(0, 1)
+    localStorage.setItem('formId', JSON.stringify(this.formUrl));
+  }
+  ngOnInit() { }
 
-  ngOnInit() {}
+  // open next form function
+  nextForm() {
+    this.route.navigate(['/home/' + this.formUrl[0]])
+  }
 
 }

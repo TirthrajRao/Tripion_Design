@@ -1,12 +1,13 @@
 $purple: #0575E6;
 $blue  : #021B79;
 $green : #2FE57C;
+$button_color: #003574;
 
+// ion content start 
 ion-content {
     --background: #0575E6 !important;
 
 }
-
 .all_content {
     position: relative;
     z-index : 11;

@@ -1,15 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-tours-inquiry',
   templateUrl: './tours-inquiry.component.html',
   styleUrls: ['./tours-inquiry.component.scss'],
 })
 export class ToursInquiryComponent implements OnInit {
-
-  constructor() { }
+  formUrl:any;
+  constructor(public route: Router) {
+    this.formUrl = JSON.parse(localStorage.getItem('formId'));
+    this.formUrl.splice(0, 1);
+    localStorage.setItem('formId',JSON.stringify(this.formUrl));
+   }
 
   ngOnInit() {
+    /**
+     * status bar color change
+     */
     const colorStopMap = {
       pink: 0,
       blue: 20,
@@ -29,6 +36,12 @@ export class ToursInquiryComponent implements OnInit {
       }
     });
 
+  }
+
+  // open next form function
+  
+  nextForm(){
+    this.route.navigate(['/home/' + this.formUrl[0]])
   }
 
 }

@@ -191,8 +191,11 @@
         <button type="submit"><i class="fas fa-plus-circle"></i>Add Room</button>
       </div>
     </div>
-    <div class="next_btn">
-      <button type="submit" routerLink='/home/tours'>Next<i class="fas fa-arrow-right"></i></button>
+    <div class="next_btn" *ngIf="formUrl.length">
+      <button type="submit" (click)="nextForm()">Next<i class="fas fa-arrow-right"></i></button>
+    </div>
+    <div class="next_btn"  *ngIf="!formUrl.length">
+      <button type="submit" >Submit</button>
     </div>
   </div>
 </ion-content>

@@ -31,15 +31,15 @@
       <div class="services_detail">
         <p class="ml-2">Services</p>
         <div class="select_plan">
-          <ion-checkbox checked="false" id="visa"> </ion-checkbox>
+          <ion-checkbox  id="visa" (ionChange)="selectMember('visa')"> </ion-checkbox>
           <ion-label class="ml-3">Visa</ion-label>
         </div>
         <div class="select_plan">
-          <ion-checkbox checked="false" id="air-ticket"> </ion-checkbox>
+          <ion-checkbox  id="air-tickets" (ionChange)="selectMember( 'air-tickets')"> </ion-checkbox>
           <ion-label class="ml-3">Air Tickets</ion-label>
         </div>
         <div class="select_plan">
-          <ion-checkbox checked="false" id="passport"> </ion-checkbox>
+          <ion-checkbox  id="passport"> </ion-checkbox>
           <ion-label class="ml-3">Passport</ion-label>
         </div>
       </div>
@@ -60,7 +60,7 @@
         <p class="ml-2">Personalize (Minimum : 3)</p>
         <div class="select_plan_accomndation">
           <div class="select_plan">
-            <ion-checkbox checked="false" id="accomodation"> </ion-checkbox>
+            <ion-checkbox  id="accomodation" (ionChange)="selectMember('accomodation')"> </ion-checkbox>
             <ion-label class="ml-3">Accomodation</ion-label>
           </div>
           <p>Lorem ipsum dolor sit amet,
@@ -73,11 +73,11 @@
             commodo consequat.</p>
         </div>
         <div class="select_plan">
-          <ion-checkbox checked="false" id="tours"> </ion-checkbox>
+          <ion-checkbox  id="tours" (ionChange)="selectMember('tours')"> </ion-checkbox>
           <ion-label class="ml-3">Tours</ion-label>
         </div>
         <div class="select_plan">
-          <ion-checkbox checked="false" id="tranfer"> </ion-checkbox>
+          <ion-checkbox checked="false" id="transfers" (ionChange)="selectMember('transfers')"> </ion-checkbox>
           <ion-label class="ml-3">Transfers</ion-label>
         </div>
         <div class="select_plan">
@@ -116,10 +116,10 @@
       </div>
 
       <div class="next_btn">
-        <button type="submit" routerLink='/home/visa' (click)="next_form()">Next<i class="fas fa-arrow-right"></i></button>
+        <button type="submit"  (click)="nextForm()">Next<i class="fas fa-arrow-right"></i></button>
       </div>
     </div>
-
+    <!-- routerLink='/home/visa' -->
     <!-- all form start here  -->
     <!-- visa form start here  -->
     <div class="visa_form" style="display: none;">

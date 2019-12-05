@@ -5,22 +5,9 @@ $green : #2FE57C;
 // content css start here
 ion-content {
     --background: #fff !important;
-
-    &:after {
-        content              : "";
-        background-image     : url('../../assets/images/illustration.png');
-        background-repeat    : no-repeat;
-        background-position  : center bottom;
-        background-size      : contain;
-        background-attachment: fixed;
-        padding-right        : 100%;
-        padding-bottom       : calc(100vh - 76px);
-        z-index              : 1;
-        position             : absolute;
-    }
 }
 
-.all_content {
+.all_payment_content {
     position: relative;
     z-index : 11;
 }
@@ -47,20 +34,14 @@ ion-content {
             margin-left: -18px;
            padding: 18px 0px;
             font-weight: 500;
-           // @media(max-height: 750px) {
-            //     font-size  : 16px;
-            //     line-height: 45px;
-            //     margin-top : 10px;
-            // }
-        }
+                   }
 
         .payment_total {
             font-size : 45px;
             margin-top: 9vh;
 
             @media(max-height: 600px) {
-                // font-size : 35px;
-                margin-top: 5vh;
+                             margin-top: 5vh;
             }
         }
 
@@ -75,26 +56,6 @@ ion-content {
             color      : #fff;
             line-height: 38px;
             position   : relative;
-
-            // @media(max-height: 812px) {
-            //     font-size  : 18px;
-            //     line-height: 32px;
-            // }
-
-            // @media(max-height: 750px) {
-            //     font-size  : 16px;
-            //     line-height: 30px;
-            // }
-
-            // @media(max-height: 600px) {
-            //     font-size  : 15px;
-            //     line-height: 28px;
-            // }
-
-            // @media(max-height: 480px) {
-            //     font-size  : 14px;
-            //     line-height: 26px;
-            // }
 
             &:after {
                 content   : "";
@@ -116,9 +77,6 @@ ion-content {
                 left         : -20px;
                 top          : 13px;
 
-                //     @media(max-height: 750px) {
-                //     top: 10px;
-                // }
             }
         }
 

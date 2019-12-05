@@ -59,6 +59,7 @@ ion-menu {
 .header-ios ion-toolbar:last-child {
     --border-width: 0 0 0px;
 }
+
 ion-icon.sc-ion-back-button-md {
     display: none;
 }
@@ -129,9 +130,6 @@ i.back_icon_white {
         float       : left;
         margin-top  : 2px;
         margin-right: 10px;
-        @media(max-height: 600px){
-           height : 19px;
-        }
     }
 
     i {
@@ -144,22 +142,11 @@ i.back_icon_white {
         font-weight: 600;
         line-height: 30px;
         font-family: 'Montserrat', sans-serif !important;
-        // @media(max-height: 812px){
-        //     font-size   : 22px;
-        // }
-        // @media(max-height: 750px){
-        //     font-size   : 20px;
-        // }
-        // @media(max-height: 600px){
-        //     font-size   : 18px;
-        // }
-           }
+    }
 }
-
 ion-content {
     font-family: 'Montserrat', sans-serif !important;
 }
-
 ion-label {
     font-family: 'Montserrat', sans-serif !important;
 }
@@ -217,7 +204,29 @@ ion-datetime {
 }
 
 // ion datepicker design end
+// ion content common css start here 
 
+ion-content {
+    --background: linear-gradient(#0575E6, #021B79);
+
+    &:after {
+        content              : "";
+        background-image     : url('./assets/images/illustration.png');
+        background-repeat    : no-repeat;
+        background-position  : center bottom;
+        background-size      : contain;
+        background-attachment: fixed;
+        padding-right        : 100%;
+        padding-bottom       : calc(100vh - 76px);
+        z-index              : 1;
+        position             : absolute;
+    }
+}
+.all_content {
+    padding : 0px 10px;
+    position: relative;
+    z-index : 11;
+}
 // custom radio button start 
 
 [type="radio"]:checked,
@@ -298,14 +307,14 @@ ion-datetime {
         bottom          : 20px;
         right           : 20px;
         padding         : 16px;
-        z-index: 111;
-        @media(max-height: 600px){
-           padding: 13px;
-        }
+        z-index         : 111;
 
+        @media(max-height: 600px) {
+            padding: 13px;
+        }
         img {
             height: 28px;
-            @media(max-height: 600px){
+            @media(max-height: 600px) {
                 height: 22px;
             }
         }

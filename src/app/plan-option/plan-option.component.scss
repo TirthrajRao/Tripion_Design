@@ -2,23 +2,6 @@ $purple: #0575E6;
 $blue  : #021B79;
 
 // content css start here 
-ion-content {
-    --background: linear-gradient(#0575E6, #021B79);
-
-    &:after {
-        content              : "";
-        background-image     : url('../../assets/images/illustration.png');
-        background-repeat    : no-repeat;
-        background-position  : center bottom;
-        background-size      : contain;
-        background-attachment: fixed;
-        padding-right        : 100%;
-        padding-bottom       : calc(100vh - 76px);
-        z-index              : 1;
-        position             : absolute;
-    }
-}
-
 .plan_option_content {
     padding : 0px 10px 20px 10px;
     position: relative;
@@ -51,19 +34,6 @@ ion-content {
             font-size  : 18px;
             color      : #111111;
             font-weight: 600;
-
-            // @media(max-height: 812px) {
-            //     font-size: 17px;
-            // }
-
-            // @media(max-height: 750px) {
-            //     font-size: 16px;
-            // }
-
-            // @media(max-height: 600px) {
-            //     font-size  : 14px;
-            //     line-height: 25px;
-            // }
         }
 
         .calendar_img {
@@ -110,14 +80,7 @@ ion-content {
                 color      : #434A5E;
                 margin-left: 10px;
                 font-weight: 500;
-                // @media(max-height: 750px) {
-                //    font-size: 17px;
-                // }
-    
-                // @media(max-height: 600px) {
-                //     font-size: 16px;
-                // }
-            }
+                            }
         }
 
         .card_body {
@@ -154,11 +117,7 @@ ion-content {
                 line-height: 1.8;
                 margin-left: 20px;
                 position   : relative;
-                // @media(max-height: 600px) {
-                //     font-size: 11px;
-                //     line-height: 1.7;
-                // }
-
+                
                 &:after {
                     content   : "";
                     width     : 1px;
@@ -167,10 +126,7 @@ ion-content {
                     position  : absolute;
                     left      : -18px;
                     top       : 13px;
-                    // @media(max-height: 600px) {
-                    //     top: 11px;
-                    //  }
-                }
+                                 }
 
                 &:before {
                     content      : "";
@@ -181,10 +137,7 @@ ion-content {
                     position     : absolute;
                     left         : -20px;
                     top          : 8px;
-                    // @media(max-height: 600px) {
-                    //    top: 6px;
-                    // }
-                }
+                                    }
             }
 
             :last-child {

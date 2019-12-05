@@ -1,6 +1,7 @@
 $purple: #0575E6;
 $blue  : #021B79;
 $green : #2FE57C;
+$button_color: #003574;
 
 .home_text {
     -webkit-box-pack: center;
@@ -12,9 +13,9 @@ $green : #2FE57C;
     flex-wrap       : wrap;
 
     span {
-        color: #fff;
+        color      : #fff;
         font-weight: 600;
-        font-size: 22px;
+        font-size  : 22px;
         line-height: 46px;
         margin-left: 20px;
         font-family: 'Montserrat', sans-serif !important;
@@ -23,87 +24,63 @@ $green : #2FE57C;
 
 // header css end here 
 // ION content START HERE
-ion-content {
-    --background: linear-gradient(#0575E6, #021B79) !important;
 
-    &:after {
-        content              : "";
-        background-image     : url('../../assets/images/illustration.png');
-        background-repeat    : no-repeat;
-        background-position  : center bottom;
-        background-size      : contain;
-        background-attachment: fixed;
-        padding-right        : 100%;
-        padding-bottom       : calc(100vh - 76px);
-        z-index              : 1;
-        position             : absolute;
-    }
-}
+.card {
+    cursor       : pointer;
+    padding      : 20px 14px;
+    display      : inline-block;
+    margin-bottom: 5px;
+    border-radius: 7px;
 
-.all_plan {
-    padding : 0px 10px 15px 10px;
-    position: relative;
-    z-index : 11;
-
-    p {
-        font-size    : 18px;
-        margin-bottom: 8px;
+    @media(max-height: 750px) {
+        padding: 10px 14px;
     }
 
-    .card {
-        cursor       : pointer;
-        padding      : 20px 14px;
-        display      : inline-block;
-        margin-bottom: 5px;
-        border-radius: 7px;
-        @media(max-height: 750px){
-            padding      : 10px 14px;
+    .select_plan {
+        margin-top: 3px;
+
+        ion-checkbox {
+            vertical-align        : middle;
+            --background-checked  : #A354FD;
+            --border-color-checked: #A354FD;
+            --border-color        : #707070;
+            --size                : 28px;
         }
 
-        .select_plan {
-            margin-top: 3px;
-
-            ion-checkbox {
-                vertical-align        : middle;
-                --background-checked  : #A354FD;
-                --border-color-checked: #A354FD;
-                --border-color        : #707070;
-                --size                : 28px;
-            }
-
-            ion-label {
-                vertical-align: middle;
-                font-weight   : 600;
-                font-size     : 18px;
-                            }
+        ion-label {
+            vertical-align: middle;
+            font-weight   : 600;
+            font-size     : 18px;
         }
+    }
 
-        .plan_img {
-            height: 30px;
-            width : 30px;
+    .plan_img {
+        height: 30px;
+        width : 30px;
 
-            i {
-                font-size   : 30px;
-                color       : #c7cbd6;
-                margin-right: 10px;
-            }
+        i {
+            font-size   : 30px;
+            color       : #c7cbd6;
+            margin-right: 10px;
         }
     }
 }
+
 
 .select_for_continue {
     padding : 20px 10px;
     z-index : 11;
     position: relative;
-    @media(max-height: 750px){
-        padding : 15px 10px;
+
+    @media(max-height: 750px) {
+        padding: 15px 10px;
     }
 
     p {
         font-weight: 500;
         font-size  : 16px;
         line-height: 26px;
-           }
+    }
 
     button {
         margin-top      : 17px;
@@ -112,9 +89,9 @@ ion-content {
         padding         : 16px 10px;
         border-radius   : 5px;
         font-size       : 16px;
-        background-color: #003574;
+        background-color: $button_color;
         outline         : none;
         cursor          : pointer;
-        box-shadow      : 1px 1px 2px #2FE57C;
+        box-shadow      : 1px 1px 2px $green;
     }
 }

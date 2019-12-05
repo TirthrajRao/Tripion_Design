@@ -16,21 +16,7 @@ $green : #2FE57C;
 // header css end here 
 // content css start here
 ion-content {
-    --background: #fff;
-
-    &:after {
-
-        content              : "";
-        background-image     : url('../../assets/images/illustration.png');
-        background-repeat    : no-repeat;
-        background-position  : center bottom;
-        background-size      : contain;
-        background-attachment: fixed;
-        padding-right        : 100%;
-        padding-bottom       : calc(100vh - 76px);
-        z-index              : 1;
-        position             : absolute;
-    }
+    --background: #fff !important;
 }
 
 .document_content {

@@ -1,30 +1,9 @@
 $purple: #0575E6;
 $blue  : #021B79;
 $green : #2FE57C;
+$button_color: #003574;
 
 // content css start here
-ion-content {
-    --background: linear-gradient(#0575E6, #021B79) !important;
-
-    &:after {
-        content              : "";
-        background-image     : url('../../assets/images/illustration.png');
-        background-repeat    : no-repeat;
-        background-position  : center bottom;
-        background-size      : contain;
-        background-attachment: fixed;
-        padding-right        : 100%;
-        padding-bottom       : calc(100vh - 76px);
-        z-index              : 1;
-        position             : absolute;
-    }
-}
-
-.all_content {
-    padding : 0px 10px 15px 10px;
-    position: relative;
-    z-index : 11;
-}
 
 .folder_detail {
     width        : 100%;
@@ -69,20 +48,7 @@ ion-content {
         font-size  : 19px;
         margin-left: 60px;
         line-height: 30px;
-
-        // @media(max-height: 812px) {
-        //     font-size: 18px;
-        // }
-
-        // @media(max-height: 720px) {
-        //     font-size: 16px;
-        // }
-
-        // @media(max-height: 600px) {
-        //     font-size  : 15px;
-        //     line-height: 26px;
-        // }
-
+        
     }
 }
 
@@ -115,13 +81,6 @@ ion-content {
             font-size      : 16px;
             font-weight    : 600;
             text-decoration: none;
-
-            // @media(max-height: 600px) {
-            //     font-size: 14px;
-            // }
-            // @media(max-height: 480px) {
-            //     font-size: 12px;
-            // }
         }
     }
 }
@@ -187,7 +146,7 @@ ion-content {
                 text-align      : center;
                 color           : #fff;
                 border-radius   : 7px;
-                background-color: #003574;
+                background-color: $button_color;
                 box-shadow      : 1px 3px 7px rgba(119, 59, 219, 0.5);
                 position        : relative;
 
