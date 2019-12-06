@@ -101,12 +101,10 @@ ion-content {
         background   : linear-gradient(to right, #0575E6, #021B79);
         box-shadow   : 2px 1px 3px rgba(129, 59, 219, 0.5);
 
-        i {
-            font-size   : 28px;
-            margin-right: 16px;
-            position    : absolute;
-            top         : 9px;
-            right       : 55%;
+        ion-img{
+            margin-right: 15px;
+            display: inline-block;
+            width: 24px;
         }
     }
 }

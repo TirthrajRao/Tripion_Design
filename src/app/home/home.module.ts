@@ -150,7 +150,7 @@ import { from } from 'rxjs';
             component: TransferInquiryComponent
           },
           {
-            path: 'other-detail',
+            path: 'other-details',
             component: OtherDetailsInquiryComponent
           },
           {

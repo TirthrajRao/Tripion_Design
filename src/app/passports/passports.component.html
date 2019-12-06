@@ -2,10 +2,10 @@
   <ion-toolbar class="toolbar-color1">
     <ion-row>
       <ion-col size='2'>
-        <div class="back_icon">           
+        <div class="back_icon">
           <ion-buttons slot="start">
-            <ion-back-button>              
-                <i class="fa fa-angle-left back_icon_blue"></i>
+            <ion-back-button>
+              <i class="fa fa-angle-left back_icon_blue"></i>
             </ion-back-button>
           </ion-buttons>
         </div>
@@ -29,7 +29,7 @@
 
 <ion-content>
   <div class="all_content">
-      <div class="user_details">
+    <div class="user_details">
       <div class="row">
         <div class="col-6">
           <div class="user_name" routerLink='/home/user-passport-detail'>
@@ -51,26 +51,26 @@
       </div>
     </div>
     <div class="user_details">
-        <div class="row">
-          <div class="col-6">
-            <div class="user_name" routerLink='/home/user-passport-detail'>
-              <p>Tirthraj Barot</p>
-            </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="user_name" routerLink='/home/user-passport-detail'>
+            <p>Tirthraj Barot</p>
           </div>
-          <div class="col-6">
-            <div class="valid_date_info w-100">
-              <div class="edit_icon" routerLink='/home/edit-user-passport-detail'>
-                <ion-img src="../../assets/images/edit_icon.png" class="float-left"></ion-img>
-              </div>
-              <div class="valid_date float-right">
-                <small> Valid Up To :
-                </small>
-                <p>17-05-2021</p>
-              </div>
+        </div>
+        <div class="col-6">
+          <div class="valid_date_info w-100">
+            <div class="edit_icon" routerLink='/home/edit-user-passport-detail'>
+              <ion-img src="../../assets/images/edit_icon.png" class="float-left"></ion-img>
+            </div>
+            <div class="valid_date float-right">
+              <small> Valid Up To :
+              </small>
+              <p>17-05-2021</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
     <div class="add_button">
       <a href="javascript:void(0);" id="add-password">
         <img src="../../assets/images/plus.png">
@@ -85,28 +85,27 @@
         <p class="text-center">Add Passport</p>
       </div>
       <div class="modal_content">
-          <ion-item>
-              <ion-label position="floating">Passport</ion-label>
-              <ion-select>
-                <ion-select-option value="pass1">Passport 1</ion-select-option>
-                <ion-select-option value="pass2">Passport 2</ion-select-option>
-              </ion-select>
-            </ion-item>
-            <ion-item>
-                <ion-label position="floating">Country</ion-label>
-              <ion-input type="text"></ion-input>
-            </ion-item>
-            <ion-item>
-                <ion-label position="floating">Date of Expiry</ion-label>
-              <ion-input type="text"></ion-input>
-            </ion-item>
+        <ion-item>
+          <ion-label position="floating">Passport</ion-label>
+          <ion-select>
+            <ion-select-option value="pass1">Passport 1</ion-select-option>
+            <ion-select-option value="pass2">Passport 2</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Country</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Date of Expiry</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
         <div class="select_files">
-            <p>Pictures of the Passport</p>
+          <p>Pictures of the Passport</p>
           <input type="file" class="form-control" id="file" placeholder="Enter Your Password" name="files" value="files"
             style="display: none;">
           <label class="text-center" for="file">
-             <i class="far fa-copy"></i>
-            <!-- <ion-img src="../../assets/images/file.png"></ion-img> -->
+            <i class="far fa-copy"></i>
             Select from Files
           </label>
         </div>

@@ -172,35 +172,3 @@ $blue  : #021B79;
     }
 }
 
-// footer start here 
-.footer-md:before {
-    background-image: unset;
-}
-
-ion-footer ion-toolbar:last-child {
-    --background: linear-gradient(#0575E6, #021B79) !important;
-    position    : relative;
-    opacity     : 0.9;
-}
-
-.footer_sec {
-    padding: 10px 4px 10px 3px;
-
-    .footer_img {
-        cursor: pointer;
-
-        ion-img {
-            height: 25px;
-        }
-
-        p {
-            color      : #fff;
-            font-size  : 12px;
-            margin-top : 6px;
-            line-height: 16px;
-            text-align : center;
-            font-family: 'Montserrat', sans-serif !important;
-
-        }
-    }
-}
