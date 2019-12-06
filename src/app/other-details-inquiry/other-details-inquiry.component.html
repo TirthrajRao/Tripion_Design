@@ -3,12 +3,12 @@
     <ion-row>
       <ion-col size='2'>
         <div class="back_icon">
-            <ion-buttons slot="start">
-                <ion-back-button>
-                  <i class="fa fa-angle-left back_icon_white"></i>
-                </ion-back-button>
-            </ion-buttons>
-                 </div>
+          <ion-buttons slot="start">
+            <ion-back-button>
+              <i class="fa fa-angle-left back_icon_white"></i>
+            </ion-back-button>
+          </ion-buttons>
+        </div>
       </ion-col>
       <ion-col size='8'>
         <div class="middle_sec text-center text-white">
@@ -37,23 +37,24 @@
           <form action="#">
             <div class="row">
               <div class="col-12">
-                <input type="radio" class="mr-2" id="Communication1" name="Communication" checked>
+                <input type="radio" class="mr-2" id="Communication1" value="Communication1" name="Communication"
+                  checked>
                 <label for="Communication1">Whatsapp</label>
               </div>
               <div class="col-12">
-                <input type="radio" class="mr-2" id="Communication2" name="Communication">
+                <input type="radio" class="mr-2" id="Communication2" value="Communication2" name="Communication">
                 <label for="Communication2">Phone</label>
               </div>
               <div class="col-12">
-                <input type="radio" class="mr-2" id="Communication3" name="Communication">
+                <input type="radio" class="mr-2" id="Communication3" value="Communication3" name="Communication">
                 <label for="Communication3">Mail</label>
               </div>
               <div class="col-12">
-                <input type="radio" class="mr-2" id="Communication4" name="Communication">
+                <input type="radio" class="mr-2" id="Communication4" value="Communication4" name="Communication">
                 <label for="Communication4">Visit Us</label>
               </div>
               <div class="col-12">
-                <input type="radio" class="mr-2" id="Communication5" name="Communication">
+                <input type="radio" class="mr-2" id="Communication5" value="Communication5" name="Communication">
                 <label for="Communication5">Message</label>
               </div>
             </div>
@@ -131,12 +132,10 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <div class="next_btn">
       <button type="submit" routerLink='/home/payment'>Next<i class="fas fa-arrow-right"></i></button>
     </div>
-
   </div>
 </ion-content>
