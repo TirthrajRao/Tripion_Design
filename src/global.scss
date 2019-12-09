@@ -374,17 +374,17 @@ ion-content {
             margin-top: 25px;
 
             button {
-                width           : 80%;
-                outline         : none;
-                font-size       : 16px;
-                font-weight     : 500;
-                padding         : 15px 0px;
-                text-align      : center;
-                color           : #fff;
-                border-radius   : 7px;
-                background-color: $button_color;
-                box-shadow      : 1px 3px 7px rgba(119, 59, 219, 0.5);
-                position        : relative;
+                width: 80%;
+                outline: none;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 15px 0px;
+                text-align: center;
+                color: #fff;
+                border-radius: 7px;
+                background-color: #003574;
+                box-shadow: 1px 2px 6px rgba(119, 59, 219, 0.5);
+                position: relative;
 
                 i {
                     font-size   : 18px !important;
@@ -411,7 +411,7 @@ ion-content {
                 font-weight  : 500;
                 width        : 100%;
                 border-radius: 5px;
-                box-shadow   : 1px 3px 7px rgba(119, 59, 219, 0.5);
+                box-shadow: 1px 2px 6px rgba(119, 59, 219, 0.5);
                 outline      : none;
                 position     : relative;
                 color        : #fff;

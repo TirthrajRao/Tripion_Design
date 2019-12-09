@@ -83,15 +83,15 @@ $button_color: #003574;
     }
 
     button {
-        margin-top      : 17px;
-        width           : 100%;
-        font-weight     : 500;
-        padding         : 16px 10px;
-        border-radius   : 5px;
-        font-size       : 16px;
+        margin-top: 17px;
+        width: 100%;
+        font-weight: 500;
+        padding: 17px 10px;
+        border-radius: 5px;
+        font-size: 16px;
         background-color: $button_color;
-        outline         : none;
-        cursor          : pointer;
-        box-shadow      : 1px 1px 2px $green;
+        outline: none;
+        cursor: pointer;
+        box-shadow: 0px 1px 9px rgba(59, 219, 127, 0.5)
     }
 }

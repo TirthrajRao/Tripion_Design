@@ -12,6 +12,12 @@ export class OtherDocsComponent implements OnInit {
 
   ngOnInit() {
 
+    // open menu folder 
+    // $('#open-menu-button').click(function(){
+    //   $('.create_folder').css({'display': 'block', 'bottom': '90px'});
+
+    // })
+
     // modal for create new folfer 
     $('#open-folder').click(function () {
       $('#folder-modal').fadeIn();

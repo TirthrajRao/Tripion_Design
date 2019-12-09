@@ -59,6 +59,7 @@ $button_color: #003574;
     border-radius   : 5px;
     padding         : 8px 0px;
     background-color: #FFFFFF;
+    transition: 5s;
 
     @media(max-height: 600px) {
         padding: 5px 0px;
