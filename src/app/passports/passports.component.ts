@@ -12,8 +12,7 @@ export class PassportsComponent implements OnInit {
 
   ngOnInit() {
 
-    // $ionicConfigProvider.backButton.icon('my-back-button');
-
+    
     $('#add-password').click(function () {
       $('#add-passport-modal').fadeIn();
     });
@@ -23,6 +22,7 @@ export class PassportsComponent implements OnInit {
     $('#add-passport-modal').click(function(){
       $(this).fadeOut();
     });
+    
   }
 
 

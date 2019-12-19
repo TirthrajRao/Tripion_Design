@@ -158,3 +158,9 @@ $blue  : #021B79;
 ion-menu {
     --background: transparent !important;
 }
+
+.menu {
+    -webkit-transition-duration: 1500ms;
+    -moz-transition-duration: 1500ms;
+    transition-duration: 1500ms;
+}
