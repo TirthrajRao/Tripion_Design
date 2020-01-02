@@ -1,0 +1,87 @@
+// all css start here 
+ion-content {
+    &:after {
+        padding-bottom       : 100vh !important;
+           }
+}
+
+.login_form_page {
+    z-index        : 11;
+    padding        : 10px;
+    height         : 100%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    position       : relative;
+   margin: 15px 0px;
+    &:after {
+        content   : " ";
+        position  : absolute;
+        background: #003574;
+    }
+
+    .login_header {
+        text-align   : center;
+        font-size    : 40px;
+        font-weight  : 600;
+        color        : #fff;
+        margin-bottom: 25px;
+    }
+}
+
+
+
+.login_form {
+    width           : 300px;
+    background-color: #fff;
+    border-radius   : 8px;
+    padding         : 18px;
+    box-shadow      : 2px 2px 7px rgba(0, 0, 0, 0.5);
+
+    .login_btn {
+        background-color: #003574;
+        padding         : 0px 10px;
+        font-size       : 16px;
+        line-height     : 50px;
+        font-weight     : 500;
+        width           : 100%;
+        border-radius   : 5px;
+        box-shadow      : 1px 2px 6px rgba(119, 59, 219, 0.5);
+        outline         : none;
+        position        : relative;
+        color           : #fff;
+        cursor          : pointer;
+    }
+}
+
+.form-control {
+    font-size: 14px;
+     border          : none;
+     border-radius   : 5px;
+     height          : 50px;
+     font-weight     : 500;
+     color           : #000;
+     background-color: #15207f12;
+ }
+ 
+ ::placeholder {
+     /* Chrome, Firefox, Opera, Safari 10.1+ */
+     font-weight: 500;
+     color      : #000;
+    font-size: 14px;
+ }
+ 
+ :-ms-input-placeholder {
+     /* Internet Explorer 10-11 */
+     font-weight: 500;
+     color      : #000;
+    font-size: 14px;
+ }
+ 
+ ::-ms-input-placeholder {
+     /* Microsoft Edge */
+     font-weight: 500;
+     color      : #000;
+    font-size: 14px;
+ }
+ 

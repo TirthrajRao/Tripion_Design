@@ -35,7 +35,8 @@ import { TransferInquiryComponent } from '../transfer-inquiry/transfer-inquiry.c
 import { OtherDetailsInquiryComponent } from '../other-details-inquiry/other-details-inquiry.component';
 import { AmendmentsComponent } from '../amendments/amendments.component';
 import { PremiumAccountPaymentComponent } from '../premium-account-payment/premium-account-payment.component'
-
+import { LoginComponent } from '../login/login.component';
+import { SignupComponent } from '../signup/signup.component';
 
 import { from } from 'rxjs';
 @NgModule({
@@ -177,6 +178,14 @@ import { from } from 'rxjs';
             path: 'all-plan',
             component: AllPlanComponent
           },
+          {
+            path: 'login',
+            component: LoginComponent
+          },
+          {
+            path: 'signup',
+            component: SignupComponent
+          },
 
         ]
       },
@@ -215,7 +224,9 @@ import { from } from 'rxjs';
     TransferInquiryComponent,
     OtherDetailsInquiryComponent,
     AmendmentsComponent,
-    PremiumAccountPaymentComponent
+    PremiumAccountPaymentComponent,
+    LoginComponent,
+    SignupComponent
   ]
 })
 export class HomePageModule { }
