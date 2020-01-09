@@ -35,6 +35,17 @@ $blue        : #021B79;
 $green       : #5ce67b;
 $button_color: #003574;
 
+// tahu font family 
+
+
+@font-face {
+    font-family: 'tahuregular';
+    src: url('./assets/fonts/tahu-webfont.woff') format('woff'),
+    url('./assets/fonts/tahu-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1,
 h2,
 h3,
@@ -89,7 +100,7 @@ button.button-native.sc-ion-back-button-ios {
 // ion back button end
 
 ion-header ion-toolbar:first-child {
-    --background: #0575E6 !important;
+    --background: #0575E6;
     height      : 80px;
     display     : flex;
 }
@@ -326,13 +337,14 @@ ion-content {
 }
 
 .modal_body {
-    display         : table;
     margin          : auto;
     position        : relative;
     background-color: #fff;
     box-shadow      : 0px 20px 30px rgba(0, 0, 0, 0.5);
     border-radius   : 8px;
     width           : 92vw;
+    max-height: 85vh;
+    overflow: scroll;
 
     .modal_header {
         border-bottom: 1px solid rgba(156, 156, 156, 0.27);

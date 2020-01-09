@@ -37,6 +37,10 @@ import { AmendmentsComponent } from '../amendments/amendments.component';
 import { PremiumAccountPaymentComponent } from '../premium-account-payment/premium-account-payment.component'
 import { LoginComponent } from '../login/login.component';
 import { SignupComponent } from '../signup/signup.component';
+import { TripPlaningComponent } from '../trip-planing/trip-planing.component';
+import { TripPlaningDetailComponent } from '../trip-planing-detail/trip-planing-detail.component';
+import { PastTripsComponent } from '../past-trips/past-trips.component';
+import { NotificationComponent } from '../notification/notification.component';
 
 import { from } from 'rxjs';
 @NgModule({
@@ -186,6 +190,22 @@ import { from } from 'rxjs';
             path: 'signup',
             component: SignupComponent
           },
+          {
+            path: 'trip-planing',
+            component: TripPlaningComponent
+          },
+          {
+            path: 'trip-planing-detail',
+            component: TripPlaningDetailComponent
+          },
+          {
+            path: 'past-trips',
+            component: PastTripsComponent
+          },
+          {
+            path: 'notification',
+            component: NotificationComponent
+          },
 
         ]
       },
@@ -226,7 +246,12 @@ import { from } from 'rxjs';
     AmendmentsComponent,
     PremiumAccountPaymentComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    TripPlaningComponent,
+    TripPlaningDetailComponent,
+    PastTripsComponent,
+    NotificationComponent
+
   ]
 })
 export class HomePageModule { }
